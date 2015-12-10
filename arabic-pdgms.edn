@@ -22,6 +22,12 @@
 	  :tam [:Nonpast, :Past]
 	  :voice [:Active, :Passive, :Stative]
 	  }
+:pclass {
+           :pngClass [:person :number :gender ]
+           :synsemClass [:aspect :case :deixis :derivedStem :mood :polarity :pos :proClass :state :tam :voice ]
+           :inflClass [:infinitiveVar :rootClass  ]
+           :otherClass [ ]
+          }
 :morphemes {
   :PRODEM {:gloss "[x]", :lemma "[y]", }
   :PROIND {:gloss "[x]", :lemma "[y]", }
