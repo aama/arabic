@@ -1,5 +1,5 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/arabic/arabic-pdgms.edn
+#../aama-data/data/arabic//arabic-pdgms.edn
 
 @prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
@@ -309,6 +309,38 @@ arb:CCC rdfs:label "CCC" .
 
 #PCLASSES:
 
+arb:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:aspect aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:case aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:deixis aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:derivedStem aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:mood aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:polarity aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:state aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:tam aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:voice aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:infinitiveVar aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+arb:rootClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
 
 #MORPHEMES:
 
@@ -362,7 +394,7 @@ arb:arabic-Vform1ActImptv-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID2028279c-437f-4032-986e-16bdd8f1733a a aamas:Term ;
+aama:IDa9f845d3-a286-456a-8051-05a765602024 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -381,7 +413,7 @@ aama:ID2028279c-437f-4032-986e-16bdd8f1733a a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID56ca5572-6ab1-4e70-91d4-c439202356cf a aamas:Term ;
+aama:ID5ff0e1f6-d8b4-4359-8247-128996edc198 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -400,7 +432,7 @@ aama:ID56ca5572-6ab1-4e70-91d4-c439202356cf a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID8ee5c9db-50fb-46d0-9ca7-42ccdff72121 a aamas:Term ;
+aama:IDd984f8e6-b4ae-4508-bb13-2dcbfb96ec0e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -419,7 +451,7 @@ aama:ID8ee5c9db-50fb-46d0-9ca7-42ccdff72121 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDe5d473f1-83e3-4c05-a00b-fe3f859966fd a aamas:Term ;
+aama:ID355b1ead-6d95-467a-919e-c4e242e44061 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -445,7 +477,7 @@ arb:arabic-Vform3-fʕl a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:IDfd19703d-1b09-41bc-bb43-7ca5bca62c77 a aamas:Term ;
+aama:ID9aee15d8-7503-403d-9f74-2d4e12ccffa7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -461,7 +493,7 @@ aama:IDfd19703d-1b09-41bc-bb43-7ca5bca62c77 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID9a5612fa-6bc0-40fd-8059-bea4a7ef4843 a aamas:Term ;
+aama:ID0f243507-8dac-4388-a274-f57fd4b19ab3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -477,7 +509,7 @@ aama:ID9a5612fa-6bc0-40fd-8059-bea4a7ef4843 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID911e1a33-4239-470c-b574-2ed8072121cb a aamas:Term ;
+aama:ID48b9b6da-843b-41a5-8f77-247c552586f2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -493,7 +525,7 @@ aama:ID911e1a33-4239-470c-b574-2ed8072121cb a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDba0456cf-40d9-4ed6-9d34-cdd28e1469b6 a aamas:Term ;
+aama:ID0bf340e0-dfbb-4e78-8848-dcf7fb06b2ad a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -509,7 +541,7 @@ aama:IDba0456cf-40d9-4ed6-9d34-cdd28e1469b6 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID32ae9f8f-312b-49c8-9bcd-54c9b1e3ad74 a aamas:Term ;
+aama:IDd5bcad3c-448d-4483-b4f9-5502150cfe44 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -525,7 +557,7 @@ aama:ID32ae9f8f-312b-49c8-9bcd-54c9b1e3ad74 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDace1be64-1429-44e9-ac42-d25c734335c6 a aamas:Term ;
+aama:ID1117add4-8e5f-41a4-b34f-241a9f9d29ef a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -541,7 +573,7 @@ aama:IDace1be64-1429-44e9-ac42-d25c734335c6 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDa0c491ec-e147-429d-9fca-859e22310545 a aamas:Term ;
+aama:IDf1d47a9f-38c6-492a-8257-093f78426466 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -557,7 +589,7 @@ aama:IDa0c491ec-e147-429d-9fca-859e22310545 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID405bfcf5-1c2e-4499-a2ea-d9318f2ebc27 a aamas:Term ;
+aama:IDbed6b0f8-9363-41bd-a88b-ac5f5c8faafb a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -573,7 +605,7 @@ aama:ID405bfcf5-1c2e-4499-a2ea-d9318f2ebc27 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDe15ebd8b-8867-482e-b35e-2e22edcb5297 a aamas:Term ;
+aama:ID59bc4aa7-3fa0-4f3c-b82f-8fdfc5f45560 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -589,7 +621,7 @@ aama:IDe15ebd8b-8867-482e-b35e-2e22edcb5297 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDa49bd637-e4a6-4865-b7e0-dd5fb9f5adce a aamas:Term ;
+aama:IDe28efbec-293d-423f-9178-8bafa7d3a6ac a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -605,7 +637,7 @@ aama:IDa49bd637-e4a6-4865-b7e0-dd5fb9f5adce a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID6b8612ef-54bd-4d0f-974e-15fc84ef91d2 a aamas:Term ;
+aama:IDd60f2e4f-42a2-4aee-9c38-065293d02ca1 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -621,7 +653,7 @@ aama:ID6b8612ef-54bd-4d0f-974e-15fc84ef91d2 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID91822b3a-61a0-4a1b-b0e4-eb686205a658 a aamas:Term ;
+aama:ID5fac54b3-f43c-4d88-abb8-7c305b1ea410 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -637,7 +669,7 @@ aama:ID91822b3a-61a0-4a1b-b0e4-eb686205a658 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDa8c44ef1-7cb8-44cf-b915-1d656138a9ca a aamas:Term ;
+aama:IDcfa48415-f967-4656-a948-95914964738e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -653,7 +685,7 @@ aama:IDa8c44ef1-7cb8-44cf-b915-1d656138a9ca a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1d1a827b-c802-46aa-ab96-dfccd4e1ee4f a aamas:Term ;
+aama:IDba6e60da-a0f6-4002-a91d-99809cd49c8e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -669,7 +701,7 @@ aama:ID1d1a827b-c802-46aa-ab96-dfccd4e1ee4f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID23214b6c-4cf1-41ae-a675-36cbd4489812 a aamas:Term ;
+aama:ID4192bfc3-8207-4789-9cf6-518d05d7b9ec a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -685,7 +717,7 @@ aama:ID23214b6c-4cf1-41ae-a675-36cbd4489812 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6fcbf297-90f4-49ba-ba97-eb5704274610 a aamas:Term ;
+aama:ID844b2a81-551d-4741-a8fa-1085226b56cd a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -701,7 +733,7 @@ aama:ID6fcbf297-90f4-49ba-ba97-eb5704274610 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDbb720a4b-07ab-4245-83e4-b651fe6a6f6c a aamas:Term ;
+aama:ID077d2c46-673c-465e-a176-980c827ef15f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -717,7 +749,7 @@ aama:IDbb720a4b-07ab-4245-83e4-b651fe6a6f6c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa68e2df5-025c-4f1f-86e5-4841f44a8bb5 a aamas:Term ;
+aama:IDc55f660e-6768-43b4-af64-c2a64c9abec7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -733,7 +765,7 @@ aama:IDa68e2df5-025c-4f1f-86e5-4841f44a8bb5 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID54bb0bde-f221-4d15-9066-4d5ed4141716 a aamas:Term ;
+aama:ID13270b33-562a-4fa7-aa02-d579a0aeec4d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -749,7 +781,7 @@ aama:ID54bb0bde-f221-4d15-9066-4d5ed4141716 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDd956b449-14e0-420d-877c-5219a78d06e1 a aamas:Term ;
+aama:IDa607d866-601c-415b-90f8-ae2087b7fe79 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -765,7 +797,7 @@ aama:IDd956b449-14e0-420d-877c-5219a78d06e1 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID16828bf5-c5fc-4818-a2a4-7245f03a7d0f a aamas:Term ;
+aama:ID6c72bda3-2959-417b-8649-42aa0ccd43e2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -781,7 +813,7 @@ aama:ID16828bf5-c5fc-4818-a2a4-7245f03a7d0f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3074c95b-c6b0-4539-b101-96ee2e05f3b6 a aamas:Term ;
+aama:ID0d131c13-f877-4347-9642-deee242ab3c5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -797,7 +829,7 @@ aama:ID3074c95b-c6b0-4539-b101-96ee2e05f3b6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1b45390e-c263-47ea-937e-ea59075f1d51 a aamas:Term ;
+aama:IDde3bdb96-1a95-43dc-8e9f-312feb52cf90 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -813,7 +845,7 @@ aama:ID1b45390e-c263-47ea-937e-ea59075f1d51 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID786204d3-893a-4f5e-b41c-27b5ccc8dda3 a aamas:Term ;
+aama:IDa9f56655-3b46-4126-a873-b89ee6e7c992 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -829,7 +861,7 @@ aama:ID786204d3-893a-4f5e-b41c-27b5ccc8dda3 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID89a0ebc4-e555-4183-8860-71da6e0cb697 a aamas:Term ;
+aama:ID49a5b8dd-5b8c-449d-80f1-b95df8fa7239 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -845,7 +877,7 @@ aama:ID89a0ebc4-e555-4183-8860-71da6e0cb697 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID24346da7-445b-4633-a424-dd0dff31ca18 a aamas:Term ;
+aama:ID8e0a8562-d168-4132-b705-bd97e05a1c95 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -861,7 +893,7 @@ aama:ID24346da7-445b-4633-a424-dd0dff31ca18 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3b18a024-c844-4e90-ab2c-a91964ac3ef8 a aamas:Term ;
+aama:ID09e8a382-58db-4ac1-8976-d4ff149641ba a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -877,7 +909,7 @@ aama:ID3b18a024-c844-4e90-ab2c-a91964ac3ef8 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID02e8d1f2-25d0-4fb6-82bf-ab4c042c6b5f a aamas:Term ;
+aama:IDd941f604-de98-488d-9f97-36e435a068b7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -893,7 +925,7 @@ aama:ID02e8d1f2-25d0-4fb6-82bf-ab4c042c6b5f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID5ff6bf60-b089-4fb3-8b5c-a7e5feb6f462 a aamas:Term ;
+aama:IDad72f6bc-1a9d-4f62-affc-bd3b29eafcbb a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -909,7 +941,7 @@ aama:ID5ff6bf60-b089-4fb3-8b5c-a7e5feb6f462 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID8fbeaa1b-c3f8-4c02-8892-2b1f174c500d a aamas:Term ;
+aama:ID573202ba-1727-4512-98f0-2b0128025944 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -925,7 +957,7 @@ aama:ID8fbeaa1b-c3f8-4c02-8892-2b1f174c500d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID8b9c36e0-3d63-4a39-8e13-ad75aed5b0df a aamas:Term ;
+aama:IDb644ce9f-894c-4d3c-b1b6-a616e17c6e62 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -941,7 +973,7 @@ aama:ID8b9c36e0-3d63-4a39-8e13-ad75aed5b0df a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc7f17167-c056-49e6-989a-c96b783f7273 a aamas:Term ;
+aama:IDc6db4d9c-62f5-4336-9ad8-873f8adfa56a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -957,7 +989,7 @@ aama:IDc7f17167-c056-49e6-989a-c96b783f7273 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6ce0346a-4e35-4919-a1c4-958ac571f6f6 a aamas:Term ;
+aama:ID6d8e8390-a5ff-4dd8-89eb-c62a9c680f88 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -973,7 +1005,7 @@ aama:ID6ce0346a-4e35-4919-a1c4-958ac571f6f6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID76c5cd36-5bf3-481d-897e-2dddb6980651 a aamas:Term ;
+aama:IDb4c0da92-8aad-4832-9d93-1a551fd3ff9d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -989,7 +1021,7 @@ aama:ID76c5cd36-5bf3-481d-897e-2dddb6980651 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe2c0b24b-96af-4776-9dbd-c1a2da0eb37d a aamas:Term ;
+aama:ID003099e9-2e20-472d-a1d5-463495c8b0de a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1005,7 +1037,7 @@ aama:IDe2c0b24b-96af-4776-9dbd-c1a2da0eb37d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID46e5792e-0547-43e7-9a9b-8be70bc21b50 a aamas:Term ;
+aama:IDd10ccdce-2fb5-4507-9d57-f8c4ffa4fcd0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1021,7 +1053,7 @@ aama:ID46e5792e-0547-43e7-9a9b-8be70bc21b50 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID265ce90c-4e82-42b9-97f7-a61e37bf39c1 a aamas:Term ;
+aama:IDed1b89d1-0466-4fa2-8401-87b01a693f62 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1037,7 +1069,7 @@ aama:ID265ce90c-4e82-42b9-97f7-a61e37bf39c1 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDb44facf6-4551-4ebc-ab04-4c70e9e5fd2b a aamas:Term ;
+aama:ID41c052c5-a2a9-4533-ba9f-caa334fe84ad a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1053,7 +1085,7 @@ aama:IDb44facf6-4551-4ebc-ab04-4c70e9e5fd2b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0b424984-d8dd-4b84-8195-0f4c22b806cd a aamas:Term ;
+aama:ID2e489927-53ab-4881-a8a7-bad375c2be67 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1069,7 +1101,7 @@ aama:ID0b424984-d8dd-4b84-8195-0f4c22b806cd a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDb18e73c9-420a-483d-9645-67b9109b492b a aamas:Term ;
+aama:ID7931e91a-5317-48f2-bba0-e204510f15bb a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1085,7 +1117,7 @@ aama:IDb18e73c9-420a-483d-9645-67b9109b492b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDfbbcd7e0-577a-4e76-8d3c-07c52cd9210a a aamas:Term ;
+aama:IDefba7f3f-2b78-4a01-b806-5d839a3fbd9b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1101,7 +1133,7 @@ aama:IDfbbcd7e0-577a-4e76-8d3c-07c52cd9210a a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDfd78bafb-9f18-4a8b-8ff1-ab0a82cd5b85 a aamas:Term ;
+aama:ID9e21d1ad-3047-4747-8338-14f07c5a95ae a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1117,7 +1149,7 @@ aama:IDfd78bafb-9f18-4a8b-8ff1-ab0a82cd5b85 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa9d698a7-dccd-4ec6-9c1f-ece7e0b57e8c a aamas:Term ;
+aama:ID00cb797c-1bfa-406e-bbeb-228e9c74f196 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1133,7 +1165,7 @@ aama:IDa9d698a7-dccd-4ec6-9c1f-ece7e0b57e8c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDcbd551f5-5a84-4de2-ad19-28eb4ea90e0d a aamas:Term ;
+aama:IDfb0549ce-bb5e-4a5d-8964-e45ec864a73c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1149,7 +1181,7 @@ aama:IDcbd551f5-5a84-4de2-ad19-28eb4ea90e0d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID80d81543-6370-4677-ab0b-a511ee41cacc a aamas:Term ;
+aama:ID2a52fe10-4809-46e6-b79f-4ad9aea14ff4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1165,7 +1197,7 @@ aama:ID80d81543-6370-4677-ab0b-a511ee41cacc a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID09a4efd1-4b78-42a8-a5fd-9713c6a77226 a aamas:Term ;
+aama:ID520c8fbf-22f2-4ec7-bbe5-ccd10b632b29 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1181,7 +1213,7 @@ aama:ID09a4efd1-4b78-42a8-a5fd-9713c6a77226 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID479b07bb-578c-4565-a73f-13d6fa34654b a aamas:Term ;
+aama:IDe49961f0-ce06-4296-915e-1a8a6813d59a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1197,7 +1229,7 @@ aama:ID479b07bb-578c-4565-a73f-13d6fa34654b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID5b870ca0-b0bd-4a03-a1d9-7310dad4c46a a aamas:Term ;
+aama:ID003bd556-a60d-42e9-872c-81b2d1c0a216 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1213,7 +1245,7 @@ aama:ID5b870ca0-b0bd-4a03-a1d9-7310dad4c46a a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDff03227c-b086-457c-a1c2-b7887a7c49fa a aamas:Term ;
+aama:ID877805ec-9aad-45c3-8f34-d88416a2845b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1229,7 +1261,7 @@ aama:IDff03227c-b086-457c-a1c2-b7887a7c49fa a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID802d49ca-a841-4513-9159-797c43f5e79c a aamas:Term ;
+aama:IDda5ec968-c4d4-4e39-81a4-2d3bb7a2c1aa a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1245,7 +1277,7 @@ aama:ID802d49ca-a841-4513-9159-797c43f5e79c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID8457d10b-68ae-41b1-a4dd-70c99cf081b1 a aamas:Term ;
+aama:ID39a7c612-1df1-4b30-b6eb-ae7e0be2b370 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1261,7 +1293,7 @@ aama:ID8457d10b-68ae-41b1-a4dd-70c99cf081b1 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID405d7b3b-12ef-4470-a05c-00d513cfc2b0 a aamas:Term ;
+aama:ID34b09e51-7132-4059-97cf-bb74f0b1682c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1277,7 +1309,7 @@ aama:ID405d7b3b-12ef-4470-a05c-00d513cfc2b0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDb4f69834-0d84-47e9-be64-7c0e22262cbc a aamas:Term ;
+aama:ID888a6574-b458-42c6-ba56-e1a8d4e8d819 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1293,7 +1325,7 @@ aama:IDb4f69834-0d84-47e9-be64-7c0e22262cbc a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa0c87f84-1472-42a0-aabd-7d1139e1807c a aamas:Term ;
+aama:ID92f4799a-dd10-4ed9-9c2f-6a0743a500e2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1309,7 +1341,7 @@ aama:IDa0c87f84-1472-42a0-aabd-7d1139e1807c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID80fd1799-d635-4a2e-9a18-593ffde25ecf a aamas:Term ;
+aama:ID3ad6b1c0-ae8c-4813-8967-74a3d6aff3dd a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1325,7 +1357,7 @@ aama:ID80fd1799-d635-4a2e-9a18-593ffde25ecf a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0a22d17e-2bc3-42d9-86b9-86faf736078e a aamas:Term ;
+aama:IDcc85cadb-1e82-442f-b83d-b2e2f1618812 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1341,7 +1373,7 @@ aama:ID0a22d17e-2bc3-42d9-86b9-86faf736078e a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc8dcdbf3-a66c-4897-93e1-b2ecf3bc5ec1 a aamas:Term ;
+aama:ID7fa44fe1-25a4-4063-909f-9f74f44ca43d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1357,7 +1389,7 @@ aama:IDc8dcdbf3-a66c-4897-93e1-b2ecf3bc5ec1 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID218e51e6-8d4e-401d-8152-f43f31bb1a8a a aamas:Term ;
+aama:ID6f519fa5-3d88-476a-baeb-a5e23043dc69 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1373,7 +1405,7 @@ aama:ID218e51e6-8d4e-401d-8152-f43f31bb1a8a a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID77adfd68-b37e-4c94-843d-682001db1537 a aamas:Term ;
+aama:IDd220143f-048b-479c-bcfb-c50e06f3178c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1389,7 +1421,7 @@ aama:ID77adfd68-b37e-4c94-843d-682001db1537 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDb9e9d11e-fac9-4170-9c56-2fcaf9ed5dd4 a aamas:Term ;
+aama:IDf2bc45f3-d798-49cc-ad77-6b3ffd3cc81e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1405,7 +1437,7 @@ aama:IDb9e9d11e-fac9-4170-9c56-2fcaf9ed5dd4 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID775aa67b-c6e4-4ace-9e4d-90627f1c0485 a aamas:Term ;
+aama:IDfa80d8ba-8797-4609-9f8f-f7095aadd90f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1421,7 +1453,7 @@ aama:ID775aa67b-c6e4-4ace-9e4d-90627f1c0485 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID5047546c-a3f1-4140-8403-7c4a3b6d4e92 a aamas:Term ;
+aama:IDf7689e31-a4ba-4b0a-8ac2-2608d0f9b28a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1437,7 +1469,7 @@ aama:ID5047546c-a3f1-4140-8403-7c4a3b6d4e92 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID319596dd-745f-4c6f-8914-c9de370da15a a aamas:Term ;
+aama:ID7c9eea7d-c7b8-4f62-87a9-a578dbe3b374 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1453,7 +1485,7 @@ aama:ID319596dd-745f-4c6f-8914-c9de370da15a a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID96dda5f0-093a-482f-a6aa-a97024da248e a aamas:Term ;
+aama:ID24b96d75-e974-4d46-8d98-f62758d7e194 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1469,7 +1501,7 @@ aama:ID96dda5f0-093a-482f-a6aa-a97024da248e a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID60703a7d-4e25-4a29-86fe-fc06f69775e9 a aamas:Term ;
+aama:IDbad9e56d-1564-4a75-96bb-7fcfd5effe0e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1485,7 +1517,7 @@ aama:ID60703a7d-4e25-4a29-86fe-fc06f69775e9 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDd77f2dca-3fa6-4412-8d73-d2a8058d39dc a aamas:Term ;
+aama:ID7de50d6f-2e65-4911-b85a-9f25cbf58b33 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1501,7 +1533,7 @@ aama:IDd77f2dca-3fa6-4412-8d73-d2a8058d39dc a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDeb79526e-129f-4722-9682-161c156e2960 a aamas:Term ;
+aama:ID65798eae-3c1b-4e6a-8292-d811bd20a32d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1517,7 +1549,7 @@ aama:IDeb79526e-129f-4722-9682-161c156e2960 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDc4daf59d-62e9-44ce-9f8a-33701c2fb39b a aamas:Term ;
+aama:IDdc94f971-210e-4846-90bb-6691c3cf89a0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1533,7 +1565,7 @@ aama:IDc4daf59d-62e9-44ce-9f8a-33701c2fb39b a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDe848c061-c0ad-450f-b899-caea4bb9efa0 a aamas:Term ;
+aama:IDb0f9f04b-4130-40cc-845c-fb2ca7cb82ba a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1549,7 +1581,7 @@ aama:IDe848c061-c0ad-450f-b899-caea4bb9efa0 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDa7dad22a-ec56-4308-b9cc-24d954902410 a aamas:Term ;
+aama:IDcebab824-5116-43ec-93e1-0f4fb7546563 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1565,7 +1597,7 @@ aama:IDa7dad22a-ec56-4308-b9cc-24d954902410 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID48c7af23-462b-488d-ab1f-a23c41c5a11e a aamas:Term ;
+aama:ID984b5217-5c7c-4b86-93f6-392537be322b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1581,7 +1613,7 @@ aama:ID48c7af23-462b-488d-ab1f-a23c41c5a11e a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDfd115e72-e08b-4ac8-baa0-c5b7355d2e3c a aamas:Term ;
+aama:IDd60d3730-77f4-4029-9458-e8d1d679329a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1597,7 +1629,7 @@ aama:IDfd115e72-e08b-4ac8-baa0-c5b7355d2e3c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID149e89f2-6ae8-4d3b-be09-b20b5dfca025 a aamas:Term ;
+aama:ID2b897a9c-d8db-4a1b-b461-7cf39bebb65c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1613,7 +1645,7 @@ aama:ID149e89f2-6ae8-4d3b-be09-b20b5dfca025 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf7c2fb8a-1a38-47aa-8dff-c62ea8a18a11 a aamas:Term ;
+aama:ID6cc0d06b-45c7-44a7-a30d-8fd969a9e2a9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1629,7 +1661,7 @@ aama:IDf7c2fb8a-1a38-47aa-8dff-c62ea8a18a11 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe7cd80a5-53ce-4925-80fe-a0bd0ca5b7de a aamas:Term ;
+aama:ID4af0c55d-2da6-4c48-a682-76be82dcd84d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1645,7 +1677,7 @@ aama:IDe7cd80a5-53ce-4925-80fe-a0bd0ca5b7de a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID16dbcc7b-8581-4e64-8f6a-ee8d89c9cb4b a aamas:Term ;
+aama:ID18c9a274-4783-4b1f-8344-5773d1848d9a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1661,7 +1693,7 @@ aama:ID16dbcc7b-8581-4e64-8f6a-ee8d89c9cb4b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDd0dd70fd-3b8d-4ad7-99f3-a998154d1b18 a aamas:Term ;
+aama:IDefb66bf7-d0ab-4024-87aa-fa924f47ebd0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1677,7 +1709,7 @@ aama:IDd0dd70fd-3b8d-4ad7-99f3-a998154d1b18 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID49665d22-0c94-455e-97d0-8d08ae7cbeda a aamas:Term ;
+aama:ID2f282de7-27a4-433d-9d91-46ab42a8a960 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1693,7 +1725,7 @@ aama:ID49665d22-0c94-455e-97d0-8d08ae7cbeda a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID2617ee13-5b76-4dd9-90a5-004f03d2c3c3 a aamas:Term ;
+aama:ID8e287b42-369b-473b-8e23-06ed1973d287 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1709,7 +1741,7 @@ aama:ID2617ee13-5b76-4dd9-90a5-004f03d2c3c3 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID7c3625c7-de2b-4e13-887d-7374fcf8581b a aamas:Term ;
+aama:ID278faf5c-461e-44dc-998f-d17332ad8788 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1725,7 +1757,7 @@ aama:ID7c3625c7-de2b-4e13-887d-7374fcf8581b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID81e2b4b0-a8ea-4456-9183-5a503d4fa85c a aamas:Term ;
+aama:ID6dbf0742-f8cb-4d11-9cdb-0e9cbad6d5dd a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1741,7 +1773,7 @@ aama:ID81e2b4b0-a8ea-4456-9183-5a503d4fa85c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3fe57026-9a1a-4a92-a96e-25f7e7f18e48 a aamas:Term ;
+aama:ID8c9ed481-216d-4c54-ac79-7379162f4ad6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1757,7 +1789,7 @@ aama:ID3fe57026-9a1a-4a92-a96e-25f7e7f18e48 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID21c5f2cc-a59f-419a-9e8e-9edfc0f74b5b a aamas:Term ;
+aama:ID2f05490d-d006-4475-aeca-c40a949d2602 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1773,7 +1805,7 @@ aama:ID21c5f2cc-a59f-419a-9e8e-9edfc0f74b5b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDfa3cb7b8-494f-44c3-a329-42ad8a182188 a aamas:Term ;
+aama:ID618c683d-cd10-45d3-bdd7-af6095e2b156 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1789,7 +1821,7 @@ aama:IDfa3cb7b8-494f-44c3-a329-42ad8a182188 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc1059438-15b1-4c10-bf3a-d082a5609796 a aamas:Term ;
+aama:ID8905de08-ddf7-4c13-b7b3-2c482cad3948 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1805,7 +1837,7 @@ aama:IDc1059438-15b1-4c10-bf3a-d082a5609796 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDdae672b0-0605-49a9-8339-478824425862 a aamas:Term ;
+aama:IDf0e9cd18-2b16-47bb-b17c-2b261fab22ce a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1821,7 +1853,7 @@ aama:IDdae672b0-0605-49a9-8339-478824425862 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID9b8f2045-0c8b-4b7d-aa57-0d7375dddd6c a aamas:Term ;
+aama:IDc87396d8-426b-424e-b39f-70ccc5ea14a4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1837,7 +1869,7 @@ aama:ID9b8f2045-0c8b-4b7d-aa57-0d7375dddd6c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0f0e0d31-1b8d-4011-827a-285ec8a03c3b a aamas:Term ;
+aama:ID18fa9486-7488-4b25-985a-b4e094a5fadc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1853,7 +1885,7 @@ aama:ID0f0e0d31-1b8d-4011-827a-285ec8a03c3b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDbe494683-ae17-4eee-a49d-e9fd794f1804 a aamas:Term ;
+aama:ID990cc882-5972-4744-9b75-b43002f7e114 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1869,7 +1901,7 @@ aama:IDbe494683-ae17-4eee-a49d-e9fd794f1804 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc7640623-269b-42de-b707-69f910f8591b a aamas:Term ;
+aama:ID322bccf1-fe72-4249-9439-9d0aacee3962 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1885,7 +1917,7 @@ aama:IDc7640623-269b-42de-b707-69f910f8591b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID8e3cda8b-3d79-4a8a-977b-5360d1852821 a aamas:Term ;
+aama:ID11e1a54a-8a9b-460c-99cc-6a49f49da8ba a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1901,7 +1933,7 @@ aama:ID8e3cda8b-3d79-4a8a-977b-5360d1852821 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1a164baf-d78a-4ffa-a44e-c6c67e353ddb a aamas:Term ;
+aama:IDab13780c-1d83-4642-9e63-c35ba5eed99b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1917,7 +1949,7 @@ aama:ID1a164baf-d78a-4ffa-a44e-c6c67e353ddb a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID816c4d56-4dd6-4c89-ad09-9cd06da8d115 a aamas:Term ;
+aama:ID8d244cc0-0965-436b-8d48-f2da87bbf3a9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1933,7 +1965,7 @@ aama:ID816c4d56-4dd6-4c89-ad09-9cd06da8d115 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3dff430a-8791-409a-b022-ebeccc6c285d a aamas:Term ;
+aama:ID9ea2606f-0452-4397-b763-6f551b278057 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1949,7 +1981,7 @@ aama:ID3dff430a-8791-409a-b022-ebeccc6c285d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID963fe881-60ff-41e1-b34f-606ffb5a6aa0 a aamas:Term ;
+aama:ID52a6485d-4d96-496f-b699-0966d1105099 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1965,7 +1997,7 @@ aama:ID963fe881-60ff-41e1-b34f-606ffb5a6aa0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID7d94a311-13bd-4db0-85ff-bbd1fab89fea a aamas:Term ;
+aama:ID261c7feb-b0d4-4ee5-b7f0-7affc6b77703 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1981,7 +2013,7 @@ aama:ID7d94a311-13bd-4db0-85ff-bbd1fab89fea a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDcc47efba-08c0-436d-ba91-9b38a54f7796 a aamas:Term ;
+aama:ID66c2b777-8bf5-47e0-98cb-d31f49af4893 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -1997,7 +2029,7 @@ aama:IDcc47efba-08c0-436d-ba91-9b38a54f7796 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID42fdda8c-a361-42f2-af5b-024c5bf7533f a aamas:Term ;
+aama:IDb632c140-39fd-4a81-a4be-5b8db34a943e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2013,7 +2045,7 @@ aama:ID42fdda8c-a361-42f2-af5b-024c5bf7533f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf8c21e6a-39b4-43cb-a608-04ca2d11a00f a aamas:Term ;
+aama:IDd02535e5-a0fe-4dd7-847d-912123b26577 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2029,7 +2061,7 @@ aama:IDf8c21e6a-39b4-43cb-a608-04ca2d11a00f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe5c06d00-c68d-4b07-a1f9-21f182c63fe4 a aamas:Term ;
+aama:ID8d593601-ff2d-474e-aed3-c89eb1fc9a33 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2045,7 +2077,7 @@ aama:IDe5c06d00-c68d-4b07-a1f9-21f182c63fe4 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID46b8960b-c3af-455a-87d8-bf9d5510125d a aamas:Term ;
+aama:ID8f0a6c19-d7cb-4427-a88a-45b538adfddc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2061,7 +2093,7 @@ aama:ID46b8960b-c3af-455a-87d8-bf9d5510125d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID17763bc8-9073-4230-a406-348fdd142b4e a aamas:Term ;
+aama:ID7e309ee6-6ec7-4b5d-a69a-996752f049a8 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2077,7 +2109,7 @@ aama:ID17763bc8-9073-4230-a406-348fdd142b4e a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID86d91a0d-6928-4433-a8b3-17ba8874c281 a aamas:Term ;
+aama:ID97de0b13-9ae2-468a-92d9-ad453e179226 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2093,7 +2125,7 @@ aama:ID86d91a0d-6928-4433-a8b3-17ba8874c281 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDdbc9764b-65de-47dc-848b-9fb6c70f3517 a aamas:Term ;
+aama:ID279678d3-0b2f-4d97-a221-e1e1b1611daa a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2109,7 +2141,7 @@ aama:IDdbc9764b-65de-47dc-848b-9fb6c70f3517 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa3328090-efb4-47cb-82f3-3a0ec9e3160f a aamas:Term ;
+aama:ID80b94d1c-6219-4945-ac16-7103cbb7a4d2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2125,7 +2157,7 @@ aama:IDa3328090-efb4-47cb-82f3-3a0ec9e3160f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf3628e50-5d7c-482d-987f-4f16f5fc6fe0 a aamas:Term ;
+aama:ID41814d47-c053-401d-b16b-70e9cd7b3db7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2141,7 +2173,7 @@ aama:IDf3628e50-5d7c-482d-987f-4f16f5fc6fe0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID45e3004b-ffd7-44c3-98a5-e8f2f7110dd5 a aamas:Term ;
+aama:ID8ae8c673-1705-424f-8cd2-93ffa1c61240 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2157,7 +2189,7 @@ aama:ID45e3004b-ffd7-44c3-98a5-e8f2f7110dd5 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID797eb7ed-842a-467f-b444-108c3f333834 a aamas:Term ;
+aama:ID513829f8-a573-4750-8dd6-4cbb8cdc1ee7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2180,7 +2212,7 @@ arb:arabic-Vform1PassJuss-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID06aa7dd3-bf81-4dda-ae38-e2a64f7c81b6 a aamas:Term ;
+aama:IDe3894219-b7e4-4cd6-babf-1dfbe78e670f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2199,7 +2231,7 @@ aama:ID06aa7dd3-bf81-4dda-ae38-e2a64f7c81b6 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID4ff0f3dd-f019-4592-b6ab-dd10ea5466f2 a aamas:Term ;
+aama:IDbac9120b-de37-414d-b2e0-3edc8f6511fc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2218,7 +2250,7 @@ aama:ID4ff0f3dd-f019-4592-b6ab-dd10ea5466f2 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDc210b5f2-2fc3-484d-8f63-fdf52512041b a aamas:Term ;
+aama:ID372dcd16-8b68-42b4-8c21-07907d4e56bc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2237,7 +2269,7 @@ aama:IDc210b5f2-2fc3-484d-8f63-fdf52512041b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID5264e151-7568-4dcb-ad49-62cd81a1a4ad a aamas:Term ;
+aama:ID6f3d34b3-1bf1-4f5a-9234-579f6d171bf6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2256,7 +2288,7 @@ aama:ID5264e151-7568-4dcb-ad49-62cd81a1a4ad a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDa1f5479b-5499-4bc2-a93c-468285163ebf a aamas:Term ;
+aama:ID05d102ed-33d6-4086-86a3-2d64d434b5b0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2275,7 +2307,7 @@ aama:IDa1f5479b-5499-4bc2-a93c-468285163ebf a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID14c4d29d-5489-40b6-8e8d-18d552b033c0 a aamas:Term ;
+aama:IDf52fbdd2-9c54-400a-8be4-a59f31ca0370 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2294,7 +2326,7 @@ aama:ID14c4d29d-5489-40b6-8e8d-18d552b033c0 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID1735a6d8-427e-4249-b048-3a5fc471b6d1 a aamas:Term ;
+aama:ID02327040-6a5c-40e9-b8a2-f6c1e2716f17 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2313,7 +2345,7 @@ aama:ID1735a6d8-427e-4249-b048-3a5fc471b6d1 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDef8196e4-9b15-44cd-9339-418225c97a0a a aamas:Term ;
+aama:IDa605b68e-6867-4d48-aecc-83278f64cde9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2332,7 +2364,7 @@ aama:IDef8196e4-9b15-44cd-9339-418225c97a0a a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb3f6ae09-4ea9-4c77-a5ba-94da369a54e6 a aamas:Term ;
+aama:ID4643d52e-07bb-4dcd-947e-004a1aef13fc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2351,7 +2383,7 @@ aama:IDb3f6ae09-4ea9-4c77-a5ba-94da369a54e6 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDe9c7bd5b-2ca8-4088-969f-36104741cf44 a aamas:Term ;
+aama:ID733ff562-9261-4ee7-9e48-4299e72eda92 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2370,7 +2402,7 @@ aama:IDe9c7bd5b-2ca8-4088-969f-36104741cf44 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDbffc802d-45a0-41b2-bf30-7cfecb5ea157 a aamas:Term ;
+aama:ID18febf18-ca6c-4ef8-9a30-17e38b2aacee a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2389,7 +2421,7 @@ aama:IDbffc802d-45a0-41b2-bf30-7cfecb5ea157 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID9856ebb0-b5d0-4e55-9437-e17a76fd3473 a aamas:Term ;
+aama:ID7d752b9a-b471-4dc3-86d7-1995302d8b12 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2408,7 +2440,7 @@ aama:ID9856ebb0-b5d0-4e55-9437-e17a76fd3473 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb0e37422-5875-4a96-838b-5f7614c1f13d a aamas:Term ;
+aama:ID2017cc0e-31ee-475c-a04e-d1eab6d3fe9c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -2434,7 +2466,7 @@ arb:arabic-Vform2Participle-fʕl a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:IDd92a1135-5f77-438d-8a34-04c053f4f798 a aamas:Term ;
+aama:IDe641cbc1-0f1a-488e-8e47-ffbd30216525 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2448,7 +2480,7 @@ aama:IDd92a1135-5f77-438d-8a34-04c053f4f798 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID88ad3840-8cfd-4531-87da-86ab0d824a68 a aamas:Term ;
+aama:ID6a44f6db-125d-4dac-8fda-66fd47ed7dae a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2462,7 +2494,7 @@ aama:ID88ad3840-8cfd-4531-87da-86ab0d824a68 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID64c1b32b-4730-4f3a-b0ba-6c9357318a50 a aamas:Term ;
+aama:ID4db896f6-1007-446a-9683-976d87c60d43 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2476,7 +2508,7 @@ aama:ID64c1b32b-4730-4f3a-b0ba-6c9357318a50 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDc001f04b-529a-448f-8974-5e64c6551d39 a aamas:Term ;
+aama:ID44d6e012-9e00-4aad-a885-e445ca145e20 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2490,7 +2522,7 @@ aama:IDc001f04b-529a-448f-8974-5e64c6551d39 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID5aa9a085-837b-4c6e-8cd2-985ed9c028f8 a aamas:Term ;
+aama:ID6bbe31ef-3ceb-4550-8953-744a7610579b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2504,7 +2536,7 @@ aama:ID5aa9a085-837b-4c6e-8cd2-985ed9c028f8 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID1d76465c-f66d-4b8f-a8c7-77a4b5146c2b a aamas:Term ;
+aama:IDfe778e2f-a85c-4306-a12f-315321ae5244 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2518,7 +2550,7 @@ aama:ID1d76465c-f66d-4b8f-a8c7-77a4b5146c2b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID8c34e6f1-6b1f-4212-ad21-b7630287d86a a aamas:Term ;
+aama:IDf6608e0a-b2a2-4a36-bae4-b4f9a25eb8f6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2532,7 +2564,7 @@ aama:ID8c34e6f1-6b1f-4212-ad21-b7630287d86a a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb5e52923-faf9-483a-983a-3df115c2e184 a aamas:Term ;
+aama:ID94cff7f2-bc86-4f8c-b21d-4b7679ebd645 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2546,7 +2578,7 @@ aama:IDb5e52923-faf9-483a-983a-3df115c2e184 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDd9da678d-ae81-4be7-91a7-79ef1bece07e a aamas:Term ;
+aama:ID921fa8b9-a5e4-4ecf-ad0c-236bab786c5e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2560,7 +2592,7 @@ aama:IDd9da678d-ae81-4be7-91a7-79ef1bece07e a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID3eefdefc-a33f-4110-85a1-b829df7c4326 a aamas:Term ;
+aama:IDd32a588e-daf6-4c77-ac85-aa1256bc9909 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2574,7 +2606,7 @@ aama:ID3eefdefc-a33f-4110-85a1-b829df7c4326 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDbbb44747-c54f-4212-bd58-dc3dd1861c01 a aamas:Term ;
+aama:IDf96b6528-cf11-4b45-8b00-75107f989be1 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2588,7 +2620,7 @@ aama:IDbbb44747-c54f-4212-bd58-dc3dd1861c01 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDbaceab49-6302-42d0-a7ad-8928741ff3c7 a aamas:Term ;
+aama:IDff6abbbd-ce93-441b-a346-6170b7533379 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2602,7 +2634,7 @@ aama:IDbaceab49-6302-42d0-a7ad-8928741ff3c7 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID217135d9-43c3-42d3-8a5f-89ff2e0ca8ef a aamas:Term ;
+aama:IDd391e44f-c9ad-441f-824f-2d8e2df54b17 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2616,7 +2648,7 @@ aama:ID217135d9-43c3-42d3-8a5f-89ff2e0ca8ef a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDaabcc4f6-7e5e-4dff-8be6-36bd15e47b6f a aamas:Term ;
+aama:IDe6325909-f78e-410e-b5c2-3809b5f56cc5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2630,7 +2662,7 @@ aama:IDaabcc4f6-7e5e-4dff-8be6-36bd15e47b6f a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID325e451f-5faf-4da2-b6d3-c556a830db58 a aamas:Term ;
+aama:IDf84569dd-b403-4764-83f2-05a31a539e37 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2644,7 +2676,7 @@ aama:ID325e451f-5faf-4da2-b6d3-c556a830db58 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID6543c6db-71b1-47fe-aeee-bcf0a6d5de7b a aamas:Term ;
+aama:ID8cb154d4-aeaf-45f8-a6eb-b3d1181f53f3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2658,7 +2690,7 @@ aama:ID6543c6db-71b1-47fe-aeee-bcf0a6d5de7b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDda115db7-ec4a-4bd1-96f4-77babcd6a0c7 a aamas:Term ;
+aama:ID68214d72-2851-456e-8209-9b37f3ef861f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2672,7 +2704,7 @@ aama:IDda115db7-ec4a-4bd1-96f4-77babcd6a0c7 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDf6b77c5c-c762-476f-bf46-22948c5f72f5 a aamas:Term ;
+aama:IDe9ed7e07-4926-4733-82df-4c4914ad2a56 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -2693,7 +2725,7 @@ arb:arabic-Vform1ActPerf-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID7585218d-7049-4edf-b9a2-0bb2b78dc136 a aamas:Term ;
+aama:ID89e0fa49-33ec-4e41-bb79-5bf51ae811b6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2712,7 +2744,7 @@ aama:ID7585218d-7049-4edf-b9a2-0bb2b78dc136 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID946ab333-1f08-4add-8904-a37bf10fcc30 a aamas:Term ;
+aama:ID5c7a846d-2425-403f-9016-b6213fc9f87b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2731,7 +2763,7 @@ aama:ID946ab333-1f08-4add-8904-a37bf10fcc30 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID2c10cff4-4aa8-4a81-ac9e-b46ecc362202 a aamas:Term ;
+aama:IDfaa7bd72-16a1-42f8-9054-19d6d66fd10f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2750,7 +2782,7 @@ aama:ID2c10cff4-4aa8-4a81-ac9e-b46ecc362202 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDe889e3c6-07c5-4e47-a510-5ef60f2cb777 a aamas:Term ;
+aama:ID9338d330-0765-49ab-916c-f73998e32820 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2769,7 +2801,7 @@ aama:IDe889e3c6-07c5-4e47-a510-5ef60f2cb777 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID358849db-731d-424d-902a-8b7996fd70f2 a aamas:Term ;
+aama:IDe3bff2b6-3135-417d-9555-7eb86c0740a5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2788,7 +2820,7 @@ aama:ID358849db-731d-424d-902a-8b7996fd70f2 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID3fa239ee-5de7-4813-abf4-917185f12837 a aamas:Term ;
+aama:ID61461d29-25b2-4101-8cb5-54e4a23111e2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2807,7 +2839,7 @@ aama:ID3fa239ee-5de7-4813-abf4-917185f12837 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID8fbee4c7-041e-492e-a14e-83a1c4074573 a aamas:Term ;
+aama:IDf7784433-cae2-48ec-a17c-cd331bf3b809 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2826,7 +2858,7 @@ aama:ID8fbee4c7-041e-492e-a14e-83a1c4074573 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDbb1e8740-2026-483d-80af-66e10722cd8c a aamas:Term ;
+aama:IDfd81d521-b909-4110-a935-def04359b4be a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2845,7 +2877,7 @@ aama:IDbb1e8740-2026-483d-80af-66e10722cd8c a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDa7969727-619e-4919-91d3-d86dd9a4bb8f a aamas:Term ;
+aama:ID4b071844-e1e7-4060-b290-5271ddf9ee66 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2864,7 +2896,7 @@ aama:IDa7969727-619e-4919-91d3-d86dd9a4bb8f a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID930f295d-b38e-4f35-bf97-2f9762feb4f7 a aamas:Term ;
+aama:ID5f9d8b13-6fcc-4b32-a509-a53bc1ff3479 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2883,7 +2915,7 @@ aama:ID930f295d-b38e-4f35-bf97-2f9762feb4f7 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID1fe8dd4d-14b5-4b4f-8eeb-b987e64b1d80 a aamas:Term ;
+aama:IDf81e45d2-70be-448f-b2d4-d84ef9cef029 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2902,7 +2934,7 @@ aama:ID1fe8dd4d-14b5-4b4f-8eeb-b987e64b1d80 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID2a32d5bb-17ab-4ddb-b82b-da812d9f9dd8 a aamas:Term ;
+aama:IDf3c0588a-6de1-4836-a94c-41aad32d83f8 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2921,7 +2953,7 @@ aama:ID2a32d5bb-17ab-4ddb-b82b-da812d9f9dd8 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID49850f7f-a5c0-4c5d-b40c-7984bace80bc a aamas:Term ;
+aama:IDa5610e6f-cc91-4c34-965f-dbb9b172dd0b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -2947,7 +2979,7 @@ arb:arabic-Vform3Participloe-fʕl a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID11ba8136-ad94-483e-89b5-86746868160f a aamas:Term ;
+aama:ID1ce38de7-8eb2-4591-8e62-59ee92681589 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2960,7 +2992,7 @@ aama:ID11ba8136-ad94-483e-89b5-86746868160f a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID0f3a39b6-ee6b-42e3-b35d-a740c40cbdbe a aamas:Term ;
+aama:ID30cd8e6d-1857-4435-9614-2a21d4691f13 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2973,7 +3005,7 @@ aama:ID0f3a39b6-ee6b-42e3-b35d-a740c40cbdbe a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDafd73d77-cfb2-4b10-9d70-e72bb0f34073 a aamas:Term ;
+aama:ID436895a4-7baa-4bbf-a744-02e175118089 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -2986,7 +3018,7 @@ aama:IDafd73d77-cfb2-4b10-9d70-e72bb0f34073 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0aaf9365-fef9-4ac1-9e1f-f426d5e5a8d1 a aamas:Term ;
+aama:ID33f2ff44-1577-4882-ba1d-56db20c11652 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -3006,7 +3038,7 @@ arb:arabic-Vform1ActImperf-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID3e9b4c8d-c49f-4861-9451-71a2bc018973 a aamas:Term ;
+aama:ID833c3dce-6250-47fc-ad55-242bfba7db74 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3025,7 +3057,7 @@ aama:ID3e9b4c8d-c49f-4861-9451-71a2bc018973 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID8f29d835-a568-426b-9455-39d26d43ee6a a aamas:Term ;
+aama:IDfa4d5417-887f-4fd6-9178-3ce4bbc438e9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3044,7 +3076,7 @@ aama:ID8f29d835-a568-426b-9455-39d26d43ee6a a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID927f73d6-14c1-4137-a4fa-b4c5231ceb16 a aamas:Term ;
+aama:ID92d2a1fc-a781-4620-a8aa-77f49ff1abb8 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3063,7 +3095,7 @@ aama:ID927f73d6-14c1-4137-a4fa-b4c5231ceb16 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID89b8b291-2902-4943-ba67-5d916ae6c902 a aamas:Term ;
+aama:IDf36c702a-23b5-4c3a-899c-264359ef8757 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3082,7 +3114,7 @@ aama:ID89b8b291-2902-4943-ba67-5d916ae6c902 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDa702472c-12c5-4139-9f9a-392b14f89d55 a aamas:Term ;
+aama:ID2d3173ea-dae4-4c98-9744-3e041fb58a38 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3101,7 +3133,7 @@ aama:IDa702472c-12c5-4139-9f9a-392b14f89d55 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID4c4bf020-89fd-4194-8c9b-3eb348f6da11 a aamas:Term ;
+aama:IDa4557a9d-5429-4b63-a5f6-079e6f8172fe a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3120,7 +3152,7 @@ aama:ID4c4bf020-89fd-4194-8c9b-3eb348f6da11 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID5d028dd1-a91c-4a87-bcd5-e6f813c3b445 a aamas:Term ;
+aama:ID3cf5772d-0020-456d-9db3-f307c09ad5f7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3139,7 +3171,7 @@ aama:ID5d028dd1-a91c-4a87-bcd5-e6f813c3b445 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDc6f75b94-2a41-4ce6-b045-0344950a7b2e a aamas:Term ;
+aama:ID225d3e6c-2bc9-4070-9ebf-58b1b2e07d66 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3158,7 +3190,7 @@ aama:IDc6f75b94-2a41-4ce6-b045-0344950a7b2e a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0d612403-a53f-4307-a50f-86a20cb9b014 a aamas:Term ;
+aama:IDe27c7053-09b8-4cd4-8f42-fa1ee43aadab a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3177,7 +3209,7 @@ aama:ID0d612403-a53f-4307-a50f-86a20cb9b014 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDd1b3a723-98a7-42df-9c41-f4214346ce67 a aamas:Term ;
+aama:IDa8eb5b46-b664-4d8b-b25a-dc14398e81e5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3196,7 +3228,7 @@ aama:IDd1b3a723-98a7-42df-9c41-f4214346ce67 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDcaee5a73-7f9e-420f-b940-0f2742b4cfe9 a aamas:Term ;
+aama:IDc7c6ad11-5a88-4972-aaf1-e50391f10497 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3215,7 +3247,7 @@ aama:IDcaee5a73-7f9e-420f-b940-0f2742b4cfe9 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDc800f56f-0805-401d-838b-8f7c91660d5c a aamas:Term ;
+aama:IDd0810832-1f14-42f6-80d8-04df052411a3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3234,7 +3266,7 @@ aama:IDc800f56f-0805-401d-838b-8f7c91660d5c a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0fec38c1-fac1-43b5-a701-7c8a0b6bd7fd a aamas:Term ;
+aama:ID3f0128d5-90f7-465f-a3d7-d33062dba0c7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3260,7 +3292,7 @@ arb:arabic-Vform1PassPerf-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:IDd935f4f3-c153-445e-9c82-a589d4b2a62e a aamas:Term ;
+aama:ID1fc0b357-c56d-4a07-9084-89d7f9df58a4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3279,7 +3311,7 @@ aama:IDd935f4f3-c153-445e-9c82-a589d4b2a62e a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID6c0a744c-1d2d-4602-b29a-c6ac5d12c1f1 a aamas:Term ;
+aama:ID31bdcfff-7253-4ea8-9e1d-b6872981d87d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3298,7 +3330,7 @@ aama:ID6c0a744c-1d2d-4602-b29a-c6ac5d12c1f1 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID3076bcfb-df6c-49b2-a05c-827901a462a2 a aamas:Term ;
+aama:ID46b37a95-52b0-4320-9583-36f4c714ecb2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3317,7 +3349,7 @@ aama:ID3076bcfb-df6c-49b2-a05c-827901a462a2 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0c459f2f-04b1-42d4-aef4-734b79ca5bef a aamas:Term ;
+aama:ID5461bdf5-246c-47d3-92ed-f35389d4ba68 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3336,7 +3368,7 @@ aama:ID0c459f2f-04b1-42d4-aef4-734b79ca5bef a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID74cf747f-800f-4e0d-94d9-8b55de2abed2 a aamas:Term ;
+aama:IDa6bc329b-c0c2-4c0d-af0b-a63578326a4f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3355,7 +3387,7 @@ aama:ID74cf747f-800f-4e0d-94d9-8b55de2abed2 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID749be052-c38b-4611-a6ed-4749b813aed2 a aamas:Term ;
+aama:ID3394d6f7-b3f8-4b5f-927d-a374b3c02f36 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3374,7 +3406,7 @@ aama:ID749be052-c38b-4611-a6ed-4749b813aed2 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDbbfecf83-ea7a-4a0e-b2c9-cfc904a5146f a aamas:Term ;
+aama:IDfcce26fe-2490-489d-926e-4c9eb5b36c7d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3393,7 +3425,7 @@ aama:IDbbfecf83-ea7a-4a0e-b2c9-cfc904a5146f a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID9df8653b-db8e-4177-b707-afb6bb4c50dd a aamas:Term ;
+aama:IDcad1bfb8-b482-4279-a48c-a37e1cf3fdab a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3412,7 +3444,7 @@ aama:ID9df8653b-db8e-4177-b707-afb6bb4c50dd a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID6f19feb6-497b-4a74-b27b-560b61b177b9 a aamas:Term ;
+aama:ID99e2877e-b353-4cea-9e7c-9776a7c6b756 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3431,7 +3463,7 @@ aama:ID6f19feb6-497b-4a74-b27b-560b61b177b9 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDff8788ac-eafb-41d5-81bf-8176ed319466 a aamas:Term ;
+aama:ID64b8f9b9-a7d6-4b4e-815c-6a606184741e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3450,7 +3482,7 @@ aama:IDff8788ac-eafb-41d5-81bf-8176ed319466 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID4e084078-0b53-45a2-97e6-6922a7f2afe9 a aamas:Term ;
+aama:ID6fa69592-446e-40af-9f40-9cba2c705176 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3469,7 +3501,7 @@ aama:ID4e084078-0b53-45a2-97e6-6922a7f2afe9 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID576a4bda-1c34-4a3b-b98f-8d40f8da6dc7 a aamas:Term ;
+aama:IDf5bf27ee-b90c-4634-bfc2-bc09f196853a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3488,7 +3520,7 @@ aama:ID576a4bda-1c34-4a3b-b98f-8d40f8da6dc7 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID68f31b3f-3cd0-41a8-ad30-bd6718ec77fc a aamas:Term ;
+aama:IDdd523714-5e4c-4b04-8bb1-2d791e165755 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
 	arb:aspect arb:Perfect ;
@@ -3514,7 +3546,7 @@ arb:arabic-Vform1PassImperf-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID8b45795f-802b-49d5-be8a-3d30dc60ef68 a aamas:Term ;
+aama:ID65783217-a47f-407b-b914-f5f146772da0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3533,7 +3565,7 @@ aama:ID8b45795f-802b-49d5-be8a-3d30dc60ef68 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDbc926d9a-435e-4d2e-b3a2-1a0e0c61d04d a aamas:Term ;
+aama:ID76ed7d87-9bf9-4e55-9bd9-545276932472 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3552,7 +3584,7 @@ aama:IDbc926d9a-435e-4d2e-b3a2-1a0e0c61d04d a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDb57e3dec-6eb8-4561-9a15-cb001a3993e6 a aamas:Term ;
+aama:IDa8d7d880-ee05-48c8-a59d-a8cebd0200e1 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3571,7 +3603,7 @@ aama:IDb57e3dec-6eb8-4561-9a15-cb001a3993e6 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDc471c8d3-e1a7-4a99-a4cf-bce9214eb716 a aamas:Term ;
+aama:IDb24c40f0-153a-4078-abca-067ce7901bd9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3590,7 +3622,7 @@ aama:IDc471c8d3-e1a7-4a99-a4cf-bce9214eb716 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID7d034023-a4d6-42d6-b07f-bfcecc3acd35 a aamas:Term ;
+aama:ID90a5b71f-cda9-47ce-85ed-98b5ac415aed a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3609,7 +3641,7 @@ aama:ID7d034023-a4d6-42d6-b07f-bfcecc3acd35 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID81a30b1f-24a9-4d29-872c-ac95f2cfd6f9 a aamas:Term ;
+aama:ID35a4b12e-3980-40d8-bcd0-0aec9ad34ee2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3628,7 +3660,7 @@ aama:ID81a30b1f-24a9-4d29-872c-ac95f2cfd6f9 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDe072a1df-7c4e-4e83-a3cf-80b488b161cd a aamas:Term ;
+aama:IDd3bd8842-2d10-46ab-862c-fe9c6303ae37 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3647,7 +3679,7 @@ aama:IDe072a1df-7c4e-4e83-a3cf-80b488b161cd a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDcab6f1ec-a6a0-4a03-8ba5-ea8019988789 a aamas:Term ;
+aama:IDc047cb6b-fc22-40b8-8d16-4a7851718c16 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3666,7 +3698,7 @@ aama:IDcab6f1ec-a6a0-4a03-8ba5-ea8019988789 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDa8d3e380-c328-43b0-ad3e-5b0ec710e825 a aamas:Term ;
+aama:ID74898ea9-4688-4b3d-a2ed-9d7423570342 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3685,7 +3717,7 @@ aama:IDa8d3e380-c328-43b0-ad3e-5b0ec710e825 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID58e78017-63fd-4aa3-b095-13f83ac23f5b a aamas:Term ;
+aama:IDb671425c-f65b-4f28-88df-d393cf6892d5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3704,7 +3736,7 @@ aama:ID58e78017-63fd-4aa3-b095-13f83ac23f5b a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDa138614f-e5ca-47a0-a070-d62e33b7be47 a aamas:Term ;
+aama:ID018fe4b7-9f79-44a6-8bc8-bc94b4b922ad a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3723,7 +3755,7 @@ aama:IDa138614f-e5ca-47a0-a070-d62e33b7be47 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID66c4e832-3528-4ada-8d13-5a6091bbf109 a aamas:Term ;
+aama:IDf2d343ea-f304-4222-8634-3338cc14ff46 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3742,7 +3774,7 @@ aama:ID66c4e832-3528-4ada-8d13-5a6091bbf109 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb5a1d046-3b04-4928-94ea-fa992c7f168a a aamas:Term ;
+aama:ID42886da9-f9d0-43c8-a938-8d077993580d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3768,7 +3800,7 @@ arb:arabic-Vform3nfiitive-fʕl a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID72898973-0bb1-49ba-a7a8-06b20cb84f78 a aamas:Term ;
+aama:ID62de4f95-2de8-45a6-bf35-27daa4344683 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3nfiitive-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -3780,7 +3812,7 @@ aama:ID72898973-0bb1-49ba-a7a8-06b20cb84f78 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID12320766-2775-455d-9254-7c7cf2446475 a aamas:Term ;
+aama:ID0eca39f7-25bc-4a63-9877-4d596732e27b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3nfiitive-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -3799,7 +3831,7 @@ arb:arabic-Vform1ActJuss-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID1ea6dfc0-126e-4176-a9ba-39bafe81d6a7 a aamas:Term ;
+aama:ID07910faf-b6fa-4d00-87be-84125601d333 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3818,7 +3850,7 @@ aama:ID1ea6dfc0-126e-4176-a9ba-39bafe81d6a7 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID5f76135b-f123-48d2-9d1f-123876abdd8c a aamas:Term ;
+aama:IDc67453fc-1350-43f0-911f-652b82bb6928 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3837,7 +3869,7 @@ aama:ID5f76135b-f123-48d2-9d1f-123876abdd8c a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDae0a4f16-df09-4e0c-b7e2-12f49f27b106 a aamas:Term ;
+aama:ID606f6c50-2dd6-4bae-978f-7c7a0dca92e1 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3856,7 +3888,7 @@ aama:IDae0a4f16-df09-4e0c-b7e2-12f49f27b106 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID658b45fa-6451-4af0-88ab-ae25dc522406 a aamas:Term ;
+aama:ID3df0f777-cc02-4c92-9688-bf634cd19948 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3875,7 +3907,7 @@ aama:ID658b45fa-6451-4af0-88ab-ae25dc522406 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDf82c6aba-18ce-4177-9396-a12d4c03f922 a aamas:Term ;
+aama:IDbbc38fad-0580-4a3a-89f2-2019b1d3b4c2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3894,7 +3926,7 @@ aama:IDf82c6aba-18ce-4177-9396-a12d4c03f922 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDbce53590-b74f-419b-a80e-18b88dcc2717 a aamas:Term ;
+aama:ID37c8863f-541a-4714-8f65-c4f442139b46 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3913,7 +3945,7 @@ aama:IDbce53590-b74f-419b-a80e-18b88dcc2717 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDe3cece3d-df88-41bc-9ac6-dae87c76337e a aamas:Term ;
+aama:ID8781de27-83fb-4e25-987c-a78a245c2ec0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3932,7 +3964,7 @@ aama:IDe3cece3d-df88-41bc-9ac6-dae87c76337e a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID3630e56c-7fce-4c2c-8661-c732788e0463 a aamas:Term ;
+aama:ID48b0ba85-ef7d-47b3-802d-07396c2786f4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3951,7 +3983,7 @@ aama:ID3630e56c-7fce-4c2c-8661-c732788e0463 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID15a4c6eb-5d4d-481d-a2cb-43c6cc2ddd41 a aamas:Term ;
+aama:ID6b99d875-b7e1-4dca-9c69-f83455a7bf54 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3970,7 +4002,7 @@ aama:ID15a4c6eb-5d4d-481d-a2cb-43c6cc2ddd41 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID15e4b16f-c87e-4d48-acaa-252d2484e515 a aamas:Term ;
+aama:IDc6e9ad50-b394-48fb-97d8-c439863466c4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -3989,7 +4021,7 @@ aama:ID15e4b16f-c87e-4d48-acaa-252d2484e515 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDd12a1dfe-0289-4adb-9fc2-e4bd8be747cf a aamas:Term ;
+aama:ID58bf9f5b-5c84-4ce5-b6da-332ec3db33d2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4008,7 +4040,7 @@ aama:IDd12a1dfe-0289-4adb-9fc2-e4bd8be747cf a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID3f9c43da-b32f-42ba-b7a7-72f86ccf45e4 a aamas:Term ;
+aama:ID3b2a5ac3-2083-4ec2-82ae-c7adbc2b0c56 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4027,7 +4059,7 @@ aama:ID3f9c43da-b32f-42ba-b7a7-72f86ccf45e4 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID2a399f0a-eea8-4959-827b-a244a945ef56 a aamas:Term ;
+aama:IDde5c3ffc-2270-411f-ac07-c0bd16af4e21 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4053,7 +4085,7 @@ arb:arabic-Vform1ActSubj-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID1acf4016-12d7-41be-94e8-816c09cc2a50 a aamas:Term ;
+aama:ID0fb6701e-30b0-4230-905c-d3c7f66ba7c8 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4072,7 +4104,7 @@ aama:ID1acf4016-12d7-41be-94e8-816c09cc2a50 a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDdc201557-5552-4bf1-b22e-6c94d3e51dd2 a aamas:Term ;
+aama:ID9f97b7a5-3b60-4ccc-b49a-6f141aad0bdf a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4091,7 +4123,7 @@ aama:IDdc201557-5552-4bf1-b22e-6c94d3e51dd2 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDd73d0de0-33c8-4916-a29b-7dcb9fcbfd47 a aamas:Term ;
+aama:IDad9f5b1d-2437-4fac-901b-a9159c62b02a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4110,7 +4142,7 @@ aama:IDd73d0de0-33c8-4916-a29b-7dcb9fcbfd47 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb41df86d-88cc-43b5-b862-502a5cd121ee a aamas:Term ;
+aama:IDdf322829-3916-4375-ad5a-d1d6e3f06f9c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4129,7 +4161,7 @@ aama:IDb41df86d-88cc-43b5-b862-502a5cd121ee a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDce01d34e-82be-46a3-9226-7e91a1a6c4fd a aamas:Term ;
+aama:IDee9960cf-978d-41d9-922e-f21ed9fc832a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4148,7 +4180,7 @@ aama:IDce01d34e-82be-46a3-9226-7e91a1a6c4fd a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID63bfd6d0-1647-4b4c-8f2f-20ea58c1369d a aamas:Term ;
+aama:ID63aa072a-7546-4db1-8171-6e386d8af60d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4167,7 +4199,7 @@ aama:ID63bfd6d0-1647-4b4c-8f2f-20ea58c1369d a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID0cced0fe-d1c2-4138-840a-59501281d044 a aamas:Term ;
+aama:IDe2b175b1-65a4-4a7b-9795-10748364db77 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4186,7 +4218,7 @@ aama:ID0cced0fe-d1c2-4138-840a-59501281d044 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID12cf66db-ca6b-42eb-bbd7-d47527a3094f a aamas:Term ;
+aama:ID7403cf34-a503-4cdd-af2a-d5db9045ab45 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4205,7 +4237,7 @@ aama:ID12cf66db-ca6b-42eb-bbd7-d47527a3094f a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID92b048fe-8d17-4204-b43d-50a50ae2331e a aamas:Term ;
+aama:ID8ddbe209-3f8d-4442-9682-b42165c6956f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4224,7 +4256,7 @@ aama:ID92b048fe-8d17-4204-b43d-50a50ae2331e a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDf4ea5e63-a99b-460e-937b-61a18acaed2b a aamas:Term ;
+aama:IDebbce6c5-2318-4cf5-b041-4417b70be763 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4243,7 +4275,7 @@ aama:IDf4ea5e63-a99b-460e-937b-61a18acaed2b a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDae3a996c-1194-4712-9240-43f21c2cf6cb a aamas:Term ;
+aama:ID8c2a3a7c-2849-43ea-91aa-a5953c946d7e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4262,7 +4294,7 @@ aama:IDae3a996c-1194-4712-9240-43f21c2cf6cb a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID43b12273-acbd-4f6f-9fad-8067d853398a a aamas:Term ;
+aama:IDb31fe8ef-9e73-4989-8c44-e77cd08e92ed a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4281,7 +4313,7 @@ aama:ID43b12273-acbd-4f6f-9fad-8067d853398a a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0d9aeeed-456b-4616-b3fc-baf6ee965144 a aamas:Term ;
+aama:IDfa26d700-1bef-4976-a59a-07709bb4caf9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4307,7 +4339,7 @@ arb:arabic-Vform3Infinitive-fʕl a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:IDdef2d69f-ba55-479b-96ee-42c9800af395 a aamas:Term ;
+aama:IDe7494983-3b2a-4cc1-8957-bc9c3c7aa0a6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Infinitive-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -4318,7 +4350,7 @@ aama:IDdef2d69f-ba55-479b-96ee-42c9800af395 a aamas:Term ;
 	arb:infinitiveVar arb:Infinitive1 ;
 	.
 
-aama:ID96f05bfe-2fb2-40a2-91e8-ad36d2ec73db a aamas:Term ;
+aama:ID5679c996-9153-46d5-98a9-98b3fe76d86a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform3Infinitive-fʕl ;
 	arb:derivedStem arb:Form3 ;
@@ -4336,7 +4368,7 @@ arb:arabic-Vform1PassSubj-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID6739b287-6887-4510-bb3e-3ab508b3d1bf a aamas:Term ;
+aama:ID9f4530f4-82fa-4925-ab62-2dd3db609c64 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4355,7 +4387,7 @@ aama:ID6739b287-6887-4510-bb3e-3ab508b3d1bf a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:IDc1cf6371-ce41-4171-8e76-f576dc489ae5 a aamas:Term ;
+aama:IDdf268659-bce7-454f-9e58-2d97194e5993 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4374,7 +4406,7 @@ aama:IDc1cf6371-ce41-4171-8e76-f576dc489ae5 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID8479c5ba-5c68-4ddd-aabd-1815e724e51d a aamas:Term ;
+aama:ID17c0f288-0224-408f-abe5-e119eac25507 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4393,7 +4425,7 @@ aama:ID8479c5ba-5c68-4ddd-aabd-1815e724e51d a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDa71fad95-0aa3-4542-894a-a6dbe739d269 a aamas:Term ;
+aama:ID82b1da64-7624-40ef-a813-b34e1604a3be a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4412,7 +4444,7 @@ aama:IDa71fad95-0aa3-4542-894a-a6dbe739d269 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID2e2c763c-f7e6-4404-947d-4ecc0a86542d a aamas:Term ;
+aama:IDb23c149b-9731-4922-aee1-861568dde563 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4431,7 +4463,7 @@ aama:ID2e2c763c-f7e6-4404-947d-4ecc0a86542d a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID2efce036-47f4-4fb5-8985-add78aef3b21 a aamas:Term ;
+aama:IDd8d5771a-4e49-4778-9793-d8771c0cfe45 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4450,7 +4482,7 @@ aama:ID2efce036-47f4-4fb5-8985-add78aef3b21 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID754e1369-a3ac-40c0-97f5-61fa9c078f09 a aamas:Term ;
+aama:ID133c9bcc-d4db-4467-a0c9-a0a4c2b38997 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4469,7 +4501,7 @@ aama:ID754e1369-a3ac-40c0-97f5-61fa9c078f09 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDe9735405-ba23-41f6-a0b5-6820f925122f a aamas:Term ;
+aama:ID6a9ecb47-0d3c-47c8-9711-fe7c12300899 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4488,7 +4520,7 @@ aama:IDe9735405-ba23-41f6-a0b5-6820f925122f a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID6773b03d-092b-4866-9e67-1ade3c66e276 a aamas:Term ;
+aama:IDa9fcdc6a-4d9f-4ee0-b86a-935cd684c128 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4507,7 +4539,7 @@ aama:ID6773b03d-092b-4866-9e67-1ade3c66e276 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID064a64e5-dd33-455f-a742-6302a832eb2a a aamas:Term ;
+aama:ID241d4f2e-ed26-4278-89c8-2bb221ea26e0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4526,7 +4558,7 @@ aama:ID064a64e5-dd33-455f-a742-6302a832eb2a a aamas:Term ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID893b01b9-e198-41de-bb23-4b72cd54523d a aamas:Term ;
+aama:ID63ce92d4-afc5-4b0c-8e17-66a8924ea12f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4545,7 +4577,7 @@ aama:ID893b01b9-e198-41de-bb23-4b72cd54523d a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID4ca7d529-1290-489b-9a41-6aabdd2e5c4d a aamas:Term ;
+aama:ID95e2c08b-af7b-41a3-b425-887d86fae93b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4564,7 +4596,7 @@ aama:ID4ca7d529-1290-489b-9a41-6aabdd2e5c4d a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID56d78874-59ad-43cc-bddf-61805f5cf4f5 a aamas:Term ;
+aama:ID2e470e12-a46e-4808-b62f-a38b3a56c2de a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
 	arb:aspect arb:Imperfect ;
@@ -4590,7 +4622,7 @@ arb:arabic-Vform1Part-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID9789b242-2afb-48fd-aecd-4d06f18bbe21 a aamas:Term ;
+aama:IDf1d9d4f2-3b6c-418e-8a49-268dd4832c62 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4607,7 +4639,7 @@ aama:ID9789b242-2afb-48fd-aecd-4d06f18bbe21 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID2a155ff4-5f17-4869-aae3-57811347c74c a aamas:Term ;
+aama:IDfb256b8b-039c-4802-89bb-79285624212d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4624,7 +4656,7 @@ aama:ID2a155ff4-5f17-4869-aae3-57811347c74c a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID0f07418b-0099-492f-94bc-cdb29b86a2c8 a aamas:Term ;
+aama:IDab8ca768-0055-4755-897d-f555c42049e1 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4641,7 +4673,7 @@ aama:ID0f07418b-0099-492f-94bc-cdb29b86a2c8 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDc2775026-2044-4055-9e10-a5188cb8337d a aamas:Term ;
+aama:ID62e5f913-ada0-4d27-92dc-6cf0113577a3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4658,7 +4690,7 @@ aama:IDc2775026-2044-4055-9e10-a5188cb8337d a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDf43014e8-ee09-4f74-872c-1d177bb79a2b a aamas:Term ;
+aama:ID497ee0a9-426c-4400-85b5-13c88ac50259 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4675,7 +4707,7 @@ aama:IDf43014e8-ee09-4f74-872c-1d177bb79a2b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID8fd9dd3e-4348-47c4-b1b8-de9b063cc425 a aamas:Term ;
+aama:ID957a43db-b88e-4e24-ad02-22645df7f0ae a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4692,7 +4724,7 @@ aama:ID8fd9dd3e-4348-47c4-b1b8-de9b063cc425 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID9a8d05f0-3b3e-4462-94b4-dce7610120f9 a aamas:Term ;
+aama:ID54e534d4-2ee0-4982-9326-d64be285db87 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4709,7 +4741,7 @@ aama:ID9a8d05f0-3b3e-4462-94b4-dce7610120f9 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDd8227cc4-4dd6-4df7-91c7-2a8da03b410e a aamas:Term ;
+aama:ID5cb8a5c3-5075-43ca-b22d-5a665101774c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4726,7 +4758,7 @@ aama:IDd8227cc4-4dd6-4df7-91c7-2a8da03b410e a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID1f63f9f3-776d-471e-94b1-6b143cd7ee9e a aamas:Term ;
+aama:ID14458468-c732-400e-ae9b-075a89394bbe a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4743,7 +4775,7 @@ aama:ID1f63f9f3-776d-471e-94b1-6b143cd7ee9e a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID7d1f8870-a3e3-45dc-bf1a-edb9aae8fa9b a aamas:Term ;
+aama:IDf164aa76-73f1-4ad3-81fa-f78a42f8c944 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4760,7 +4792,7 @@ aama:ID7d1f8870-a3e3-45dc-bf1a-edb9aae8fa9b a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID67116bfc-4f8e-4b00-bbf2-b92f2f753b27 a aamas:Term ;
+aama:IDc1ea69f4-2af3-41d5-9a86-fce315f07f69 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4777,7 +4809,7 @@ aama:ID67116bfc-4f8e-4b00-bbf2-b92f2f753b27 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID35034040-ac6a-4053-9ff5-c1a7f4ddde6c a aamas:Term ;
+aama:IDdba9b886-6db3-476d-ae02-8bd7a852bdf3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4794,7 +4826,7 @@ aama:ID35034040-ac6a-4053-9ff5-c1a7f4ddde6c a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID415eb555-e6c7-4807-895b-1cd0044d99cb a aamas:Term ;
+aama:IDef822c5c-a974-4fe9-a9d3-2101ee7b5ef4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4811,7 +4843,7 @@ aama:ID415eb555-e6c7-4807-895b-1cd0044d99cb a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb9fbc80e-ff23-4ba3-b65f-0144d7eed4f9 a aamas:Term ;
+aama:ID2d289d9c-342d-483e-a253-c10ec79a3dcc a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4828,7 +4860,7 @@ aama:IDb9fbc80e-ff23-4ba3-b65f-0144d7eed4f9 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID95d8ecab-7845-409a-bd4d-8afae2f68d7a a aamas:Term ;
+aama:IDe9c159eb-57f7-4e4f-a8a7-fff0aeec9588 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4845,7 +4877,7 @@ aama:ID95d8ecab-7845-409a-bd4d-8afae2f68d7a a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID0c0c352e-97c6-4095-9e93-8444ea725378 a aamas:Term ;
+aama:ID18adf4b1-9bdd-41e0-b875-7d3ea431027a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4862,7 +4894,7 @@ aama:ID0c0c352e-97c6-4095-9e93-8444ea725378 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDb516415b-3d07-42b6-aa6e-f00693874370 a aamas:Term ;
+aama:ID53cb55aa-b205-429e-85ab-f813ee9c9af9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4879,7 +4911,7 @@ aama:IDb516415b-3d07-42b6-aa6e-f00693874370 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID90780edc-52c1-4e5b-adcb-f13bb442e1c9 a aamas:Term ;
+aama:ID4ab057ae-a5e7-402c-a886-4586d8d74059 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4896,7 +4928,7 @@ aama:ID90780edc-52c1-4e5b-adcb-f13bb442e1c9 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID481348ad-6f45-476e-8936-6642c7337c8e a aamas:Term ;
+aama:ID8f06a74e-0cce-48de-9a8e-2e879f673a8d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4913,7 +4945,7 @@ aama:ID481348ad-6f45-476e-8936-6642c7337c8e a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID3fc9ccf5-4bdd-4a7e-b84f-57031a20aa4b a aamas:Term ;
+aama:IDa364600e-1336-4f03-a23c-8bc0ac1e156a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4930,7 +4962,7 @@ aama:ID3fc9ccf5-4bdd-4a7e-b84f-57031a20aa4b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDe0c2cf12-020b-40b5-9229-d1b815690e8c a aamas:Term ;
+aama:ID39b7a526-cc4a-4236-8348-73035d51072c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4947,7 +4979,7 @@ aama:IDe0c2cf12-020b-40b5-9229-d1b815690e8c a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDd5c32cee-61b1-4257-8e54-e3edfdf64e1b a aamas:Term ;
+aama:ID61b316ae-8553-4f4f-be3d-fef07a2e9c14 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4964,7 +4996,7 @@ aama:IDd5c32cee-61b1-4257-8e54-e3edfdf64e1b a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDf5d60b06-1213-4c08-975a-e04f91628d4a a aamas:Term ;
+aama:IDe5a4612f-9adc-4239-9412-3437daabbd9a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4981,7 +5013,7 @@ aama:IDf5d60b06-1213-4c08-975a-e04f91628d4a a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDdcc74231-afa1-4f59-a452-81e841b1cf64 a aamas:Term ;
+aama:IDb214bca6-5037-435a-9a31-36307097f829 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -4998,7 +5030,7 @@ aama:IDdcc74231-afa1-4f59-a452-81e841b1cf64 a aamas:Term ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID7a4c03ae-77c8-4b78-94cd-e5e5f5be1456 a aamas:Term ;
+aama:ID6e15b22f-2604-4316-8d93-22062bf44987 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -5015,7 +5047,7 @@ aama:ID7a4c03ae-77c8-4b78-94cd-e5e5f5be1456 a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID9abef7b7-5d6e-478d-86bf-09105f42304a a aamas:Term ;
+aama:ID403ab9a2-ad16-4661-a163-17aa5dafd639 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -5032,7 +5064,7 @@ aama:ID9abef7b7-5d6e-478d-86bf-09105f42304a a aamas:Term ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID36cf11e9-a66a-444b-9a3b-80272a57c20b a aamas:Term ;
+aama:IDbf168f0b-4bf0-45be-a41c-42b0d59b6102 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Part-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -5056,7 +5088,7 @@ arb:arabic-Vform2-fʕl a aamas:Termcluster ;
 	rdfs:comment "" 
 	.
 
-aama:ID00a04b63-a2d4-4be5-a6ad-d2437c1004d5 a aamas:Term ;
+aama:IDe4a83817-8265-4cee-adf1-965f2a943eb5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5072,7 +5104,7 @@ aama:ID00a04b63-a2d4-4be5-a6ad-d2437c1004d5 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID3c64e29e-fb73-4d14-9173-4ee9fd804fd1 a aamas:Term ;
+aama:ID1533ff29-9a6a-4779-9aca-a3588fb1b4e2 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5088,7 +5120,7 @@ aama:ID3c64e29e-fb73-4d14-9173-4ee9fd804fd1 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDd2c9d28b-1e4f-415e-b46b-ed7945bad8d0 a aamas:Term ;
+aama:ID76b6647e-410c-40ba-99fc-019fa7f69ded a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5104,7 +5136,7 @@ aama:IDd2c9d28b-1e4f-415e-b46b-ed7945bad8d0 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID93e75397-4c4e-49c5-90d1-951fd9283f4e a aamas:Term ;
+aama:IDb63a870c-b5e5-42af-a695-2ab76acd0cc7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5120,7 +5152,7 @@ aama:ID93e75397-4c4e-49c5-90d1-951fd9283f4e a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID078683cb-942b-41bc-9578-43ee358c30c7 a aamas:Term ;
+aama:ID26e48893-0c85-4f97-a357-899be1f1bd7f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5136,7 +5168,7 @@ aama:ID078683cb-942b-41bc-9578-43ee358c30c7 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID9c67132f-9dc2-4152-a33d-ee6b66d9aabe a aamas:Term ;
+aama:ID2817195e-af53-40c8-91c2-35eb105d8b74 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5152,7 +5184,7 @@ aama:ID9c67132f-9dc2-4152-a33d-ee6b66d9aabe a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDd7f32c2c-7c8a-4e72-bbc6-43dc82673587 a aamas:Term ;
+aama:IDbfb355a2-0efb-4580-b9b9-82ff2a91aa12 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5168,7 +5200,7 @@ aama:IDd7f32c2c-7c8a-4e72-bbc6-43dc82673587 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID27c95a77-ccb8-44e3-beef-154ae5137c1f a aamas:Term ;
+aama:IDb18221f0-27ca-4d10-8c5e-03bedda3f24d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5184,7 +5216,7 @@ aama:ID27c95a77-ccb8-44e3-beef-154ae5137c1f a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID9ec81506-eaf1-45c3-b160-06ca524f876d a aamas:Term ;
+aama:ID6f095bf7-5528-4e2d-a29a-1306477f08ce a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5200,7 +5232,7 @@ aama:ID9ec81506-eaf1-45c3-b160-06ca524f876d a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDeef98e8b-f252-41e8-a6de-d1e0be228b06 a aamas:Term ;
+aama:IDc742b23e-a406-4490-968d-f273ba8b2d2d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5216,7 +5248,7 @@ aama:IDeef98e8b-f252-41e8-a6de-d1e0be228b06 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID58339099-b194-42dc-a4c7-c07888bbec80 a aamas:Term ;
+aama:ID0ba3b398-6cbf-4126-81b0-42d13029a7ce a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5232,7 +5264,7 @@ aama:ID58339099-b194-42dc-a4c7-c07888bbec80 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDb8dce17b-812d-4976-862b-e6dd5689c799 a aamas:Term ;
+aama:ID602d1d93-4b4c-47ef-9cf8-fd3abb83ad7c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5248,7 +5280,7 @@ aama:IDb8dce17b-812d-4976-862b-e6dd5689c799 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID392b5883-64b9-4159-b4c0-0eb7283071fb a aamas:Term ;
+aama:ID4a3db36d-dd51-4d58-a77a-f5637581caf0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5264,7 +5296,7 @@ aama:ID392b5883-64b9-4159-b4c0-0eb7283071fb a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID23741fc9-2aef-4a3d-8b5b-b8436a1baaa2 a aamas:Term ;
+aama:ID67fa4545-8a4a-4653-9b78-5670f38c8a6a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5280,7 +5312,7 @@ aama:ID23741fc9-2aef-4a3d-8b5b-b8436a1baaa2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID51baeff3-9cb7-422d-ae14-24bde8564d70 a aamas:Term ;
+aama:IDb39d5a96-453b-4048-9f4f-3c255ca491ce a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5296,7 +5328,7 @@ aama:ID51baeff3-9cb7-422d-ae14-24bde8564d70 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID25d272d5-5297-4365-b9e2-8f174dcd4a60 a aamas:Term ;
+aama:ID19aee0c5-3069-4ec1-9b88-54cbcabd3a4a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5312,7 +5344,7 @@ aama:ID25d272d5-5297-4365-b9e2-8f174dcd4a60 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID27343545-1607-4aa4-9c14-65a0fc50b7b0 a aamas:Term ;
+aama:ID0b846fa8-2a33-4519-9c5c-747dcd4fe60f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5328,7 +5360,7 @@ aama:ID27343545-1607-4aa4-9c14-65a0fc50b7b0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID05e80c25-350d-4f51-bed3-19116c474638 a aamas:Term ;
+aama:IDc3a2be80-47ff-4ebe-80e9-397a20158d1f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5344,7 +5376,7 @@ aama:ID05e80c25-350d-4f51-bed3-19116c474638 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDfff875b6-473f-4af6-b401-828984f31587 a aamas:Term ;
+aama:ID53f5e061-4f4e-4b75-a5fd-cdffd040d0c9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5360,7 +5392,7 @@ aama:IDfff875b6-473f-4af6-b401-828984f31587 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf924c4f6-e97f-4468-9438-ad9ac9a8e801 a aamas:Term ;
+aama:IDf60ef774-bad3-45ce-a7c1-397a47cd9870 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5376,7 +5408,7 @@ aama:IDf924c4f6-e97f-4468-9438-ad9ac9a8e801 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDd31a7c30-14e1-4d85-8589-d263059aa1a4 a aamas:Term ;
+aama:ID5241c442-8cae-434b-ac83-041cb031a6c3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5392,7 +5424,7 @@ aama:IDd31a7c30-14e1-4d85-8589-d263059aa1a4 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc6a88a91-bf99-4a33-891b-3bd34c3178c6 a aamas:Term ;
+aama:IDa2c1b2db-1e63-4ecb-86ff-cc4ede0606e3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5408,7 +5440,7 @@ aama:IDc6a88a91-bf99-4a33-891b-3bd34c3178c6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe49aa951-e425-4114-87c0-dcbecab4a3a7 a aamas:Term ;
+aama:ID7c1d8a57-f19c-4580-aa6b-bb60b4f78906 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5424,7 +5456,7 @@ aama:IDe49aa951-e425-4114-87c0-dcbecab4a3a7 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3953460c-0c55-41ee-93b4-0ed38d2453a6 a aamas:Term ;
+aama:ID4a455724-e170-472f-91ca-40ed26d0b976 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5440,7 +5472,7 @@ aama:ID3953460c-0c55-41ee-93b4-0ed38d2453a6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID800103e1-fc8c-44f7-8d44-c163522378d2 a aamas:Term ;
+aama:IDaf48f4ab-e086-4ce9-9822-38af84a652d6 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5456,7 +5488,7 @@ aama:ID800103e1-fc8c-44f7-8d44-c163522378d2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID471ccebb-995b-4783-b5c3-a2b7fd0cd4c2 a aamas:Term ;
+aama:ID2c485d31-f7de-4bfb-8dd4-df1ef420fd4a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5472,7 +5504,7 @@ aama:ID471ccebb-995b-4783-b5c3-a2b7fd0cd4c2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID33df3907-3887-4593-8bed-59222c24202a a aamas:Term ;
+aama:ID9e82b4da-38cf-41ea-b172-979e118c7812 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5488,7 +5520,7 @@ aama:ID33df3907-3887-4593-8bed-59222c24202a a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6509330f-3b01-4f67-8990-fd335d6ef090 a aamas:Term ;
+aama:ID62ed0478-1ab6-41ca-9644-9c5530ab9a9f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5504,7 +5536,7 @@ aama:ID6509330f-3b01-4f67-8990-fd335d6ef090 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDd2894110-0444-46ae-ab51-03ee9fdfc2a3 a aamas:Term ;
+aama:ID42c6fb68-871b-4239-b1d2-1ed0187e6cca a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5520,7 +5552,7 @@ aama:IDd2894110-0444-46ae-ab51-03ee9fdfc2a3 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0363a721-9a0c-4e94-9b8b-5987739990f5 a aamas:Term ;
+aama:IDf1603fe8-38ed-4312-bdfd-97855be2bc04 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5536,7 +5568,7 @@ aama:ID0363a721-9a0c-4e94-9b8b-5987739990f5 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID78f0f80b-2e37-45ad-af25-81853dbc1a56 a aamas:Term ;
+aama:IDa0d0cf7e-7998-46ab-91c9-b6eb47edb391 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5552,7 +5584,7 @@ aama:ID78f0f80b-2e37-45ad-af25-81853dbc1a56 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID701c18f6-ee01-499e-ae8d-dbeae9e93fc8 a aamas:Term ;
+aama:IDd41a81fe-c55a-4ee8-823e-a71b148a4a08 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5568,7 +5600,7 @@ aama:ID701c18f6-ee01-499e-ae8d-dbeae9e93fc8 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID70b927df-c62d-4a37-b5e2-7a0bbd4c5b1d a aamas:Term ;
+aama:ID490b9599-e9b5-4b7b-a65c-000b4e19f54a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5584,7 +5616,7 @@ aama:ID70b927df-c62d-4a37-b5e2-7a0bbd4c5b1d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID62d8a8bd-f231-49e8-bfde-54d8a2e237a0 a aamas:Term ;
+aama:ID22037c7a-9ab5-45ca-8e6f-6d58627d76b8 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5600,7 +5632,7 @@ aama:ID62d8a8bd-f231-49e8-bfde-54d8a2e237a0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID82317a37-040c-416b-b401-62fe6bf1d922 a aamas:Term ;
+aama:IDf7156898-b195-4435-ba0f-727d9e1ca3d5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5616,7 +5648,7 @@ aama:ID82317a37-040c-416b-b401-62fe6bf1d922 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1115663d-6a88-4f60-9da0-63925d4213f3 a aamas:Term ;
+aama:IDc40d68d5-9f88-47ef-9eca-df49b510b310 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5632,7 +5664,7 @@ aama:ID1115663d-6a88-4f60-9da0-63925d4213f3 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDac95fa9a-705d-47ee-90d7-c5c36fd811b6 a aamas:Term ;
+aama:ID49dbf105-4f88-4fcd-814f-69baf55305ba a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5648,7 +5680,7 @@ aama:IDac95fa9a-705d-47ee-90d7-c5c36fd811b6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID9fab0585-7084-4f07-8d0c-e941a05a5a85 a aamas:Term ;
+aama:ID3a270591-8320-4c1a-a05e-fbf0c8150785 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5664,7 +5696,7 @@ aama:ID9fab0585-7084-4f07-8d0c-e941a05a5a85 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDef9f1b24-3cc0-4728-a9d5-bc07041697e6 a aamas:Term ;
+aama:ID47eacc76-4a4f-4651-a4f8-ce0cfcfdb20d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5680,7 +5712,7 @@ aama:IDef9f1b24-3cc0-4728-a9d5-bc07041697e6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID016964a0-647d-4b92-a2b9-5e4c7861e2df a aamas:Term ;
+aama:IDcb546570-cd69-42ec-9ccb-4279a5158ac7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5696,7 +5728,7 @@ aama:ID016964a0-647d-4b92-a2b9-5e4c7861e2df a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa1805480-3ab7-4f55-8c0d-0010b5e606c1 a aamas:Term ;
+aama:ID29caa947-37ae-4c7c-ac0e-d48b6cda6d7d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5712,7 +5744,7 @@ aama:IDa1805480-3ab7-4f55-8c0d-0010b5e606c1 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDdef97b7d-cefa-40fe-b83a-02524b71351d a aamas:Term ;
+aama:ID5cb5604e-6c27-463a-a523-0ed5593d3c26 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5728,7 +5760,7 @@ aama:IDdef97b7d-cefa-40fe-b83a-02524b71351d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID76b211d8-7b88-477b-9e15-f68476de2acb a aamas:Term ;
+aama:ID88f8d575-706c-4ade-98e5-fb1bb7789b0d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5744,7 +5776,7 @@ aama:ID76b211d8-7b88-477b-9e15-f68476de2acb a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID244f7ace-a5eb-4727-9c16-256f714efcb4 a aamas:Term ;
+aama:IDf5af6f2e-4ae9-4b7a-8e18-b61b5ced776c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5760,7 +5792,7 @@ aama:ID244f7ace-a5eb-4727-9c16-256f714efcb4 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID512e2916-d2a3-4ff3-bb5f-e245c1cea191 a aamas:Term ;
+aama:IDaf155302-5ae9-45f9-a85f-bf587e586e26 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5776,7 +5808,7 @@ aama:ID512e2916-d2a3-4ff3-bb5f-e245c1cea191 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID58b8d90e-206c-4062-ab9f-814e64b5381f a aamas:Term ;
+aama:IDe982d1cf-4198-4c26-9882-7e0ff17fd532 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5792,7 +5824,7 @@ aama:ID58b8d90e-206c-4062-ab9f-814e64b5381f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID36659e25-7f15-4869-a6b4-1df427ec7f2e a aamas:Term ;
+aama:ID4eae3e66-8bcf-4c24-89bf-1ebc1fa9a174 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5808,7 +5840,7 @@ aama:ID36659e25-7f15-4869-a6b4-1df427ec7f2e a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID62ea8a35-3cd4-4929-8815-20ac8265b2e0 a aamas:Term ;
+aama:ID2ec3088a-84b0-4d62-8f66-ecdf79977d0a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5824,7 +5856,7 @@ aama:ID62ea8a35-3cd4-4929-8815-20ac8265b2e0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDbbb46732-a515-4290-97e2-7d3a775b8bfd a aamas:Term ;
+aama:ID3e450f93-23b0-455e-bb2e-a578667ab09a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5840,7 +5872,7 @@ aama:IDbbb46732-a515-4290-97e2-7d3a775b8bfd a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1f35089d-6459-46ad-be63-01350db39b30 a aamas:Term ;
+aama:IDe9d89bf8-ed17-41d0-a5d8-e8937da6e90f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5856,7 +5888,7 @@ aama:ID1f35089d-6459-46ad-be63-01350db39b30 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID2337ac74-38ca-4b63-a958-a63c80d655d2 a aamas:Term ;
+aama:IDfaf2f1aa-6f54-4544-99b9-c9788b68a5df a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5872,7 +5904,7 @@ aama:ID2337ac74-38ca-4b63-a958-a63c80d655d2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3311ea8b-8f96-4aa2-81de-8757bfc435fd a aamas:Term ;
+aama:ID64c18459-c6e9-4d4d-bea6-3c16004c269f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5888,7 +5920,7 @@ aama:ID3311ea8b-8f96-4aa2-81de-8757bfc435fd a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa787f510-4caa-4d5d-b450-818a2b5f0fa2 a aamas:Term ;
+aama:ID0bb28df4-5591-495d-be2b-2d612d02d78b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5904,7 +5936,7 @@ aama:IDa787f510-4caa-4d5d-b450-818a2b5f0fa2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf9613999-a4d4-4c11-b326-0ef02b6e5d85 a aamas:Term ;
+aama:IDbb1ed0e1-0cc3-4ab0-8a50-c2e18ab70af7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5920,7 +5952,7 @@ aama:IDf9613999-a4d4-4c11-b326-0ef02b6e5d85 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe1ed2ec7-664f-45d2-88b2-f03950733140 a aamas:Term ;
+aama:ID7c1b1bcf-5dff-4570-8fbd-46381810098f a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5936,7 +5968,7 @@ aama:IDe1ed2ec7-664f-45d2-88b2-f03950733140 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID23d1684a-e7da-4e72-a483-f0f0f990661e a aamas:Term ;
+aama:IDbceb2187-d575-4346-bc5d-5019be2e0d88 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5952,7 +5984,7 @@ aama:ID23d1684a-e7da-4e72-a483-f0f0f990661e a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa458bce8-fdf3-4140-90ce-16dede615974 a aamas:Term ;
+aama:IDb756246b-83ee-4bcc-85a3-ddaa79c41381 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5968,7 +6000,7 @@ aama:IDa458bce8-fdf3-4140-90ce-16dede615974 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID6d45734d-f46b-41a3-a94f-0e60f0f66502 a aamas:Term ;
+aama:IDbf8f3ae7-cc6f-4331-b8be-a4443d51d2d3 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -5984,7 +6016,7 @@ aama:ID6d45734d-f46b-41a3-a94f-0e60f0f66502 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID05582be0-13f5-4f75-a03b-70aa4bca56a8 a aamas:Term ;
+aama:ID0735914e-a1fd-406c-aeb5-9d1c8f935277 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6000,7 +6032,7 @@ aama:ID05582be0-13f5-4f75-a03b-70aa4bca56a8 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDb0602931-c32b-4f7b-b5fc-970e50958a89 a aamas:Term ;
+aama:ID4eb04f34-0ec2-4a85-8849-1a4dcb28c243 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6016,7 +6048,7 @@ aama:IDb0602931-c32b-4f7b-b5fc-970e50958a89 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDc2c70ac2-10d0-4a38-bce1-58fca0642a0e a aamas:Term ;
+aama:IDc2130715-5964-4939-9939-b01f6d0d3225 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6032,7 +6064,7 @@ aama:IDc2c70ac2-10d0-4a38-bce1-58fca0642a0e a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID67327a8d-985e-4a42-a02b-f564f335ec6d a aamas:Term ;
+aama:ID5515bebb-3462-4eff-b58f-ef2e94375444 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6048,7 +6080,7 @@ aama:ID67327a8d-985e-4a42-a02b-f564f335ec6d a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID60fb002d-c4d4-4179-8d26-bb49756a9c10 a aamas:Term ;
+aama:IDa768611c-d226-48a1-bd17-53ffdbf314cd a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6064,7 +6096,7 @@ aama:ID60fb002d-c4d4-4179-8d26-bb49756a9c10 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID6692d84b-810d-43d5-997e-ba3088bb5eda a aamas:Term ;
+aama:ID231ec469-02bb-4e03-9a39-32b19be69a64 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6080,7 +6112,7 @@ aama:ID6692d84b-810d-43d5-997e-ba3088bb5eda a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:IDb099516a-2429-468a-9ffd-2df11ffbdf0f a aamas:Term ;
+aama:IDd22baf7b-cc40-4c45-ad39-1715f7291a7e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6096,7 +6128,7 @@ aama:IDb099516a-2429-468a-9ffd-2df11ffbdf0f a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID8eff24e8-bf52-40b8-90d8-9ea7c7aca170 a aamas:Term ;
+aama:ID77b1f82c-af5f-4b62-8f9c-8ab7d176a03a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6112,7 +6144,7 @@ aama:ID8eff24e8-bf52-40b8-90d8-9ea7c7aca170 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID01793003-10c7-4876-957b-9abf1ce6eae4 a aamas:Term ;
+aama:ID0e7adcb3-1226-4fb1-91f5-44407554653b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6128,7 +6160,7 @@ aama:ID01793003-10c7-4876-957b-9abf1ce6eae4 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID9a77ae6f-e850-4f32-a6ef-e1f3c33a3bd1 a aamas:Term ;
+aama:IDc5dfe68d-6e00-4cc3-957e-1bc660e22817 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6144,7 +6176,7 @@ aama:ID9a77ae6f-e850-4f32-a6ef-e1f3c33a3bd1 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID22e3aa64-4ad2-4f93-a444-09c58b36b9c1 a aamas:Term ;
+aama:ID4993dff2-f451-4f7d-9778-1ae843df7852 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6160,7 +6192,7 @@ aama:ID22e3aa64-4ad2-4f93-a444-09c58b36b9c1 a aamas:Term ;
 	arb:aspect arb:Perfect ;
 	.
 
-aama:ID4755bb46-8f4e-4733-9844-384c79209b7f a aamas:Term ;
+aama:ID9609b827-db62-44a5-bd6f-e25838540acf a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6176,7 +6208,7 @@ aama:ID4755bb46-8f4e-4733-9844-384c79209b7f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID31417a3d-2f43-4735-aa8e-cd02caa29e74 a aamas:Term ;
+aama:ID4c2a8b21-929d-43f6-ba22-72569b713a5e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6192,7 +6224,7 @@ aama:ID31417a3d-2f43-4735-aa8e-cd02caa29e74 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDc69b3ad5-5f5d-4a9f-9305-07c53f9d0940 a aamas:Term ;
+aama:IDa5e9c9ac-aa5c-4c8b-bdbe-df23e68306d7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6208,7 +6240,7 @@ aama:IDc69b3ad5-5f5d-4a9f-9305-07c53f9d0940 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID666488f4-39e7-44b7-adc6-d950c687951d a aamas:Term ;
+aama:IDc7ae5008-42d3-417f-aaa8-e2c0411d86be a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6224,7 +6256,7 @@ aama:ID666488f4-39e7-44b7-adc6-d950c687951d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6d36c35a-d1be-42b2-8109-8e6528e32dc8 a aamas:Term ;
+aama:ID47a9a01d-9b6d-4259-b068-af2cd9f22861 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6240,7 +6272,7 @@ aama:ID6d36c35a-d1be-42b2-8109-8e6528e32dc8 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe243cdff-1025-43fc-9d86-694384d074e2 a aamas:Term ;
+aama:IDb7df3d53-3386-4758-9281-f2e21deb39ea a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6256,7 +6288,7 @@ aama:IDe243cdff-1025-43fc-9d86-694384d074e2 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID309960f3-c36d-438f-a4b5-ea75faf9f455 a aamas:Term ;
+aama:ID3bbd2a8c-ab74-4950-8cac-2e4c80f29824 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6272,7 +6304,7 @@ aama:ID309960f3-c36d-438f-a4b5-ea75faf9f455 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDaf3789e2-f9a8-4170-ae20-d4852c779b1a a aamas:Term ;
+aama:IDc31fb456-b8ad-40f9-98a9-92300b0300fd a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6288,7 +6320,7 @@ aama:IDaf3789e2-f9a8-4170-ae20-d4852c779b1a a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID27087e52-e98c-476b-a01f-c810c4838dc6 a aamas:Term ;
+aama:ID0a8bac61-bc5e-4b8b-a278-3e254711b827 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6304,7 +6336,7 @@ aama:ID27087e52-e98c-476b-a01f-c810c4838dc6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID597f68b0-341d-41be-9017-0d0f94be0824 a aamas:Term ;
+aama:ID0b59ed81-0ee4-4055-acee-16dd57284164 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6320,7 +6352,7 @@ aama:ID597f68b0-341d-41be-9017-0d0f94be0824 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDa0dba67b-ac9f-42d1-b210-4fec35352ced a aamas:Term ;
+aama:IDf42d1570-e57a-4ad1-9a80-cc2af22f0558 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6336,7 +6368,7 @@ aama:IDa0dba67b-ac9f-42d1-b210-4fec35352ced a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6e6167b6-c74d-45f4-8442-bb3ac73a0efb a aamas:Term ;
+aama:IDde560aee-7cf6-4f92-b78f-87b05cb8fbc7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6352,7 +6384,7 @@ aama:ID6e6167b6-c74d-45f4-8442-bb3ac73a0efb a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe01e0762-edcc-4e14-bd1e-bc4ec5a408ae a aamas:Term ;
+aama:IDac447dd6-9b60-46f9-83fd-9b66228d7de5 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6368,7 +6400,7 @@ aama:IDe01e0762-edcc-4e14-bd1e-bc4ec5a408ae a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID1213f0ee-0f2d-41fd-8351-9410b8e3a039 a aamas:Term ;
+aama:IDb87cd7b7-31e0-410a-ae6b-c6e552bc70f7 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6384,7 +6416,7 @@ aama:ID1213f0ee-0f2d-41fd-8351-9410b8e3a039 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID59c4f549-4078-48fd-90de-af52c34c4022 a aamas:Term ;
+aama:IDdb24d32e-7f47-4c09-9cf6-b559a9ed8ca0 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6400,7 +6432,7 @@ aama:ID59c4f549-4078-48fd-90de-af52c34c4022 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0efeb57d-02e1-4251-ad15-5aced2d48dc0 a aamas:Term ;
+aama:ID279d8ef8-2af1-479f-9dd5-7314faa33f61 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6416,7 +6448,7 @@ aama:ID0efeb57d-02e1-4251-ad15-5aced2d48dc0 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID72d76bd9-c004-4732-a072-28673a0ebef7 a aamas:Term ;
+aama:ID89845453-bf95-4b0b-a086-b07823cb3750 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6432,7 +6464,7 @@ aama:ID72d76bd9-c004-4732-a072-28673a0ebef7 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6ae68a13-5a66-4fd3-bb02-c918c020f388 a aamas:Term ;
+aama:IDfc69948b-8d90-46fb-a5a8-0541363734af a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6448,7 +6480,7 @@ aama:ID6ae68a13-5a66-4fd3-bb02-c918c020f388 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID5343eb85-5677-4491-b0ce-1720170f19d6 a aamas:Term ;
+aama:ID174fab82-6428-4620-8e8f-74e49082ad6b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6464,7 +6496,7 @@ aama:ID5343eb85-5677-4491-b0ce-1720170f19d6 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6d5dbc96-212a-4df6-b5ac-89fe66b2a72c a aamas:Term ;
+aama:IDbc0810f0-4a53-497b-bb95-1a137037079e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6480,7 +6512,7 @@ aama:ID6d5dbc96-212a-4df6-b5ac-89fe66b2a72c a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0fe63859-e3e9-4430-a6e9-f4c70e2fc787 a aamas:Term ;
+aama:IDb035f077-9e04-4289-ae84-cc8b5d47fe6a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6496,7 +6528,7 @@ aama:ID0fe63859-e3e9-4430-a6e9-f4c70e2fc787 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID699827e3-8321-4990-801c-5c2a9ce8768b a aamas:Term ;
+aama:ID4c42d304-3551-4ec5-9689-194b298f8d57 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6512,7 +6544,7 @@ aama:ID699827e3-8321-4990-801c-5c2a9ce8768b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDd8485c3d-37c7-42b6-91c1-cb57634490c4 a aamas:Term ;
+aama:ID028e1329-c684-4e62-a7cb-ac87d7a3bf0a a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6528,7 +6560,7 @@ aama:IDd8485c3d-37c7-42b6-91c1-cb57634490c4 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID0785b6b2-1857-483b-9552-56dc9a810450 a aamas:Term ;
+aama:IDf643ff08-8d43-4d67-916e-d845f744b47e a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6544,7 +6576,7 @@ aama:ID0785b6b2-1857-483b-9552-56dc9a810450 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf5d13b6b-89c6-4bf0-b0e5-a71a5858ed9d a aamas:Term ;
+aama:ID76cebd67-7466-42bd-b10a-78c78cd91067 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6560,7 +6592,7 @@ aama:IDf5d13b6b-89c6-4bf0-b0e5-a71a5858ed9d a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID5e8ed1c6-7515-4f6a-bfdc-332b2a591181 a aamas:Term ;
+aama:ID193cd00c-c57b-474a-9f13-a8e8f8aff037 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6576,7 +6608,7 @@ aama:ID5e8ed1c6-7515-4f6a-bfdc-332b2a591181 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDbeb86832-080d-4855-9c76-2e5e8d052b25 a aamas:Term ;
+aama:IDf56155a6-f935-45ab-a90b-3d6dfae01526 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6592,7 +6624,7 @@ aama:IDbeb86832-080d-4855-9c76-2e5e8d052b25 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID6603b8a6-66ed-42bd-9468-d222b8d2df0b a aamas:Term ;
+aama:IDe8aa752c-f9a4-4083-b892-c019ed8feef9 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6608,7 +6640,7 @@ aama:ID6603b8a6-66ed-42bd-9468-d222b8d2df0b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID4372207f-5e78-4d15-907e-116e8c1bad6f a aamas:Term ;
+aama:ID377fc191-0e18-4b9a-945d-1ffef83e6276 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6624,7 +6656,7 @@ aama:ID4372207f-5e78-4d15-907e-116e8c1bad6f a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDe3372cc3-c82d-4449-a1f8-8c769a94bb66 a aamas:Term ;
+aama:ID76410d96-6eb3-490c-b8e3-8f31cd8c1b23 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6640,7 +6672,7 @@ aama:IDe3372cc3-c82d-4449-a1f8-8c769a94bb66 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDf52ee831-aa5b-4d5d-9eff-1034001bf004 a aamas:Term ;
+aama:ID9b2f2733-a59e-4eed-823f-7aaadcb54316 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6656,7 +6688,7 @@ aama:IDf52ee831-aa5b-4d5d-9eff-1034001bf004 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:IDba2b7d5d-5c79-4725-9dbd-887e27a429f7 a aamas:Term ;
+aama:IDd4fa27c8-cd35-491a-b193-83b54b01abe4 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6672,7 +6704,7 @@ aama:IDba2b7d5d-5c79-4725-9dbd-887e27a429f7 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID8ead6566-9b59-4c22-a726-dadc7c98bb2a a aamas:Term ;
+aama:ID5334189e-5b92-4097-bf30-bb779eed0589 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6688,7 +6720,7 @@ aama:ID8ead6566-9b59-4c22-a726-dadc7c98bb2a a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID4a067f2c-34ed-4a70-aaf0-36c650fdfb45 a aamas:Term ;
+aama:ID4098b3d2-8071-418c-85ee-86762dff451d a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6704,7 +6736,7 @@ aama:ID4a067f2c-34ed-4a70-aaf0-36c650fdfb45 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID62333d83-522f-4d82-9efe-3c8a61ab1962 a aamas:Term ;
+aama:IDfff31a05-f202-462f-8359-2fa6ab6bdd49 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6720,7 +6752,7 @@ aama:ID62333d83-522f-4d82-9efe-3c8a61ab1962 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID2cd0c229-158c-4eb3-bd62-503baa1c0401 a aamas:Term ;
+aama:ID86cbe096-8357-47c2-b3d0-ea98bff6f92b a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6736,7 +6768,7 @@ aama:ID2cd0c229-158c-4eb3-bd62-503baa1c0401 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID3021b9da-f49b-4202-a55f-7dce11c3321b a aamas:Term ;
+aama:IDc4e2a6b3-0b5e-4fc5-8a7c-cdf44d9a7512 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6752,7 +6784,7 @@ aama:ID3021b9da-f49b-4202-a55f-7dce11c3321b a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID49f60b8d-d154-494a-92ea-85d8a43edcf3 a aamas:Term ;
+aama:ID6fe210c4-e12a-4129-9de3-1b65bdd5d923 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6768,7 +6800,7 @@ aama:ID49f60b8d-d154-494a-92ea-85d8a43edcf3 a aamas:Term ;
 	arb:aspect arb:Imperfect ;
 	.
 
-aama:ID03651ce9-f9e5-48fa-a7bb-7fddfece11d1 a aamas:Term ;
+aama:ID5df7a29f-e098-4c91-bc2e-433293d8480c a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform2-fʕl ;
 	arb:derivedStem arb:Form2 ;
@@ -6791,7 +6823,7 @@ arb:arabic-Vform1Infinitive-nsr a aamas:Termcluster ;
 	rdfs:comment "GR2010" 
 	.
 
-aama:ID482303a2-c290-4e75-b515-424b882fc5ec a aamas:Term ;
+aama:IDa1dd51bd-92bc-4043-8262-3a1350149e30 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Infinitive-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -6802,7 +6834,7 @@ aama:ID482303a2-c290-4e75-b515-424b882fc5ec a aamas:Term ;
 	arb:infinitiveVar arb:Infinitive1 ;
 	.
 
-aama:ID4d3aeff5-c58f-4419-acfc-537636a90ecc a aamas:Term ;
+aama:ID754a3139-c9d1-481e-9a62-d1fa3167e444 a aamas:Term ;
 	aamas:lang aama:Arabic ;
 	aamas:memberOf arb:arabic-Vform1Infinitive-nsr ;
 	arb:derivedStem arb:Form1 ;
@@ -6820,7 +6852,7 @@ arb:arabic-PRel a aamas:MuTermcluster ;
 	rdfs:comment "Thackstodu000 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī." 
 	.
 
-aama:ID12e0b7ae-a614-4520-957a-c3370f78a4dd a aamas:Muterm ;
+aama:ID6cc1e94e-d2cf-43dc-9063-51ebb0ea7d3d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6831,7 +6863,7 @@ aama:ID12e0b7ae-a614-4520-957a-c3370f78a4dd a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:ID3bad4da0-39e0-47be-889e-18b8aa070e81 a aamas:Muterm ;
+aama:ID7d8a4cb5-1abe-42d1-a42c-9fb442fe21ef a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6842,7 +6874,7 @@ aama:ID3bad4da0-39e0-47be-889e-18b8aa070e81 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:ID9e3fbf9a-a6a2-4e7f-bc9f-0aa19cf702cc a aamas:Muterm ;
+aama:ID8d19fc45-df5d-43a9-9f7b-2eb6cb68c27f a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6853,7 +6885,7 @@ aama:ID9e3fbf9a-a6a2-4e7f-bc9f-0aa19cf702cc a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:IDd3d649e8-7558-4c95-8b74-9f29559bd662 a aamas:Muterm ;
+aama:ID293b1e01-c39b-4f91-81b6-2cda5cd6bde1 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6864,7 +6896,7 @@ aama:IDd3d649e8-7558-4c95-8b74-9f29559bd662 a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:IDbc9831fe-eb7a-46c9-b617-e444f1d435d2 a aamas:Muterm ;
+aama:IDe418de2a-3eda-422f-aeb1-d05e6525672a a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6875,7 +6907,7 @@ aama:IDbc9831fe-eb7a-46c9-b617-e444f1d435d2 a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:ID46a9bf04-57fb-4696-b724-8a0993729819 a aamas:Muterm ;
+aama:ID437795b1-00b2-45e9-8bfb-226c818e9b85 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6886,7 +6918,7 @@ aama:ID46a9bf04-57fb-4696-b724-8a0993729819 a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:ID720c9b86-543d-4759-98ee-3416fdb5764f a aamas:Muterm ;
+aama:ID4f5f8a16-aec4-4fcf-b397-f2a480ad9784 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6897,7 +6929,7 @@ aama:ID720c9b86-543d-4759-98ee-3416fdb5764f a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:IDb79ce9fd-81fa-4749-9a6c-132407cb4c39 a aamas:Muterm ;
+aama:IDac0cd956-bfd8-4cbe-9b24-a1517d82ad9d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PRel ;
 	aamas:morpheme aama:Arabic-PRORELATIVE ;
 	arb:pos arb:Pronoun ;
@@ -6915,7 +6947,7 @@ arb:arabic-PIndep a aamas:MuTermcluster ;
 	rdfs:comment "Thackstodu000%%p. 28" 
 	.
 
-aama:IDcf295c8d-1fc3-4068-ad61-d045adc64ef3 a aamas:Muterm ;
+aama:ID20a959de-8304-46f8-b92a-47236be111ec a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6926,7 +6958,7 @@ aama:IDcf295c8d-1fc3-4068-ad61-d045adc64ef3 a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID35d9607f-8f4f-4a42-af4d-ac6a008a1f5a a aamas:Muterm ;
+aama:ID505fccfe-1652-4eec-aeaa-e0640b89c360 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6937,7 +6969,7 @@ aama:ID35d9607f-8f4f-4a42-af4d-ac6a008a1f5a a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID5a8f1b5d-1bb6-4e6e-a8ea-db0716e9de5a a aamas:Muterm ;
+aama:ID114f5d3a-0bfb-457c-b976-6834d4af4dbb a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6948,7 +6980,7 @@ aama:ID5a8f1b5d-1bb6-4e6e-a8ea-db0716e9de5a a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID955052e7-ca83-4f05-99bd-9e93dff1b6cf a aamas:Muterm ;
+aama:ID0e5d6d80-8920-418f-92a5-53a9da91249a a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6959,7 +6991,7 @@ aama:ID955052e7-ca83-4f05-99bd-9e93dff1b6cf a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID73c36293-6d8b-4ae5-9256-f431f8bd7062 a aamas:Muterm ;
+aama:IDd3bbfb48-e277-415f-abd8-837484b89763 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6970,7 +7002,7 @@ aama:ID73c36293-6d8b-4ae5-9256-f431f8bd7062 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID8c83e689-dce5-4a12-ab13-dfc34972b64b a aamas:Muterm ;
+aama:IDcfa74223-6a16-4fc9-aac1-cdfb3b81b198 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6981,7 +7013,7 @@ aama:ID8c83e689-dce5-4a12-ab13-dfc34972b64b a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID1f070d3d-918d-46ef-b4e9-e8e204db962d a aamas:Muterm ;
+aama:IDb7e53c21-b5a0-49db-b9f4-66502bb2ca5d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -6992,7 +7024,7 @@ aama:ID1f070d3d-918d-46ef-b4e9-e8e204db962d a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDbf0f123a-1adb-4bce-91f7-1778dfaadfe7 a aamas:Muterm ;
+aama:ID8096ea1c-18e8-41f7-9326-298034e720b7 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7003,7 +7035,7 @@ aama:IDbf0f123a-1adb-4bce-91f7-1778dfaadfe7 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID4f37f97b-6e05-409e-8a87-74df032bef72 a aamas:Muterm ;
+aama:ID3e5513e8-228a-4497-b23c-77ea847ec231 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7014,7 +7046,7 @@ aama:ID4f37f97b-6e05-409e-8a87-74df032bef72 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID59c3855a-5940-4b79-92f3-b2fdb6470779 a aamas:Muterm ;
+aama:IDf0a8a964-18ca-4602-9500-55636d328779 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7025,7 +7057,7 @@ aama:ID59c3855a-5940-4b79-92f3-b2fdb6470779 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID13dcbeda-7c3a-4b8a-a28c-5093a9dbdd15 a aamas:Muterm ;
+aama:ID7d048fae-3c9f-4341-bb81-215e155003f1 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7036,7 +7068,7 @@ aama:ID13dcbeda-7c3a-4b8a-a28c-5093a9dbdd15 a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID8ae221d5-f5bc-4281-81a1-3fcf67cad051 a aamas:Muterm ;
+aama:ID0db1594c-948b-4747-b338-3b6ac31b55ff a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7047,7 +7079,7 @@ aama:ID8ae221d5-f5bc-4281-81a1-3fcf67cad051 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID33b17dbe-efee-40a2-ae4b-1b05571a0d7b a aamas:Muterm ;
+aama:ID83ae91a9-804d-4fba-a836-bf8b4ec95ba5 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7058,7 +7090,7 @@ aama:ID33b17dbe-efee-40a2-ae4b-1b05571a0d7b a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDecb51dbd-9d90-4c60-84a8-89308091b193 a aamas:Muterm ;
+aama:ID0c1c002b-854e-4a8d-9dac-356ee72b2cc6 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7069,7 +7101,7 @@ aama:IDecb51dbd-9d90-4c60-84a8-89308091b193 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID01c6e06a-cdb5-46d4-aa3b-eb145535417c a aamas:Muterm ;
+aama:IDdcdf3fe0-c361-419f-9ffd-1a62affa8e95 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PIndep ;
 	aamas:morpheme aama:Arabic-PROIND ;
 	arb:pos arb:Pronoun ;
@@ -7087,7 +7119,7 @@ arb:arabic-PCliticPro a aamas:MuTermcluster ;
 	rdfs:comment "Thackstodu000 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular%%dual%%and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels%%but is –ya after a long vowel or dipthong;when followed by an elidible alif%%the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics%%except for the 3fs%%harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-%%the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-%%the vowel of the enclitic is –i." 
 	.
 
-aama:IDc84eccd6-5a43-42c2-bc3a-54611133cc16 a aamas:Muterm ;
+aama:ID37f9b5d2-3dab-4521-a6a4-cdf07f1f0631 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7099,7 +7131,7 @@ aama:IDc84eccd6-5a43-42c2-bc3a-54611133cc16 a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID4a41858b-2793-4386-9345-ddcb9118bce6 a aamas:Muterm ;
+aama:IDd5263fba-b4df-4be9-88ba-9ca4cedb0064 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7111,7 +7143,7 @@ aama:ID4a41858b-2793-4386-9345-ddcb9118bce6 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID2e4568c8-2507-4d2b-bb03-7db03b823977 a aamas:Muterm ;
+aama:IDa9697e1a-91ca-4450-a0f7-3dac7fb436bb a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7123,7 +7155,7 @@ aama:ID2e4568c8-2507-4d2b-bb03-7db03b823977 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:IDafc75928-971b-46c7-8470-39e345ef44c5 a aamas:Muterm ;
+aama:ID8d9c4a9c-de95-4c7a-8c6d-a4dfd85c4b05 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7135,7 +7167,7 @@ aama:IDafc75928-971b-46c7-8470-39e345ef44c5 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDda7b0ad2-5c26-4c81-82c9-a3607a64379a a aamas:Muterm ;
+aama:IDb38a3538-7c85-43c4-9311-4f861cd17425 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7147,7 +7179,7 @@ aama:IDda7b0ad2-5c26-4c81-82c9-a3607a64379a a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID7be26b2d-8958-44a4-a7fd-4e4aa993fe76 a aamas:Muterm ;
+aama:IDf05b6268-a59e-46bb-b6cb-4764331b4e0f a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7159,7 +7191,7 @@ aama:ID7be26b2d-8958-44a4-a7fd-4e4aa993fe76 a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID8ce85fdc-45aa-49b7-895c-2fb994d95474 a aamas:Muterm ;
+aama:ID034f41fa-9225-4fdf-a1b4-86bf21bcb2d0 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7171,7 +7203,7 @@ aama:ID8ce85fdc-45aa-49b7-895c-2fb994d95474 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:IDee4cc957-d2a9-4438-88da-eccbcf967769 a aamas:Muterm ;
+aama:ID419b726d-32e7-4a8c-ae59-06a8389f5267 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7183,7 +7215,7 @@ aama:IDee4cc957-d2a9-4438-88da-eccbcf967769 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID4446229f-ed4a-433a-ab93-5dee8095c3e7 a aamas:Muterm ;
+aama:IDd9e5eaed-faaf-46e5-919f-db4574349f21 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7195,7 +7227,7 @@ aama:ID4446229f-ed4a-433a-ab93-5dee8095c3e7 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID079970f2-65be-4415-8520-faa0ac4b8ae4 a aamas:Muterm ;
+aama:ID0ed97615-0ea4-43d2-a8a5-ee46bc076a13 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7207,7 +7239,7 @@ aama:ID079970f2-65be-4415-8520-faa0ac4b8ae4 a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID48d92a12-55f1-4986-a9d9-85435edb6ffd a aamas:Muterm ;
+aama:IDe3f21b3e-8710-4908-84a1-46a0978c3ab5 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7219,7 +7251,7 @@ aama:ID48d92a12-55f1-4986-a9d9-85435edb6ffd a aamas:Muterm ;
 	arb:gender arb:Common ;
 	.
 
-aama:ID32214035-ce65-4048-a419-024f568c8ae1 a aamas:Muterm ;
+aama:IDe279c2a8-af8b-4403-8be5-2bfc073f41bd a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7231,7 +7263,7 @@ aama:ID32214035-ce65-4048-a419-024f568c8ae1 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID389dab2f-78ec-4773-aa2f-f6a3bd93da2d a aamas:Muterm ;
+aama:ID14c564c6-68a6-400e-b9e7-af9688f791f3 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7243,7 +7275,7 @@ aama:ID389dab2f-78ec-4773-aa2f-f6a3bd93da2d a aamas:Muterm ;
 	arb:gender arb:Fem ;
 	.
 
-aama:ID501f2ef7-b802-4cc2-8fac-08352591e8a9 a aamas:Muterm ;
+aama:IDdbcc8092-d3af-4a90-b71f-e478b3ec9d5f a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7255,7 +7287,7 @@ aama:ID501f2ef7-b802-4cc2-8fac-08352591e8a9 a aamas:Muterm ;
 	arb:gender arb:Masc ;
 	.
 
-aama:ID24006f2c-11b2-4f22-9253-b492bf438f89 a aamas:Muterm ;
+aama:ID616f4707-6bde-496f-9279-3b0c73d283d2 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PCliticPro ;
 	arb:case arb:GenObj ;
 	aamas:morpheme aama:Arabic-PROPOSSCLITIC ;
@@ -7274,7 +7306,7 @@ arb:arabic-PDemon a aamas:MuTermcluster ;
 	rdfs:comment "Thackstodu000 p. 45;arabic has two sets of demonstratives%%near and far%%which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable." 
 	.
 
-aama:IDa648ca5e-f28e-4b69-95d7-5e0be2e807e0 a aamas:Muterm ;
+aama:ID9bd96525-30b3-4d15-8f63-cfc3bd57f5a3 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7286,7 +7318,7 @@ aama:IDa648ca5e-f28e-4b69-95d7-5e0be2e807e0 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:IDef90bba4-f0cb-4bb3-9b57-2e046ad18759 a aamas:Muterm ;
+aama:IDf8da2605-f13e-44bb-9ee3-af3136393d7d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7298,7 +7330,7 @@ aama:IDef90bba4-f0cb-4bb3-9b57-2e046ad18759 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:IDa6812698-d90a-430f-84f3-72ad4ec84327 a aamas:Muterm ;
+aama:ID8c8511bc-dd85-4103-8660-e48748225525 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7310,7 +7342,7 @@ aama:IDa6812698-d90a-430f-84f3-72ad4ec84327 a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:IDa3009f8e-46a4-4456-afde-4c63188a9272 a aamas:Muterm ;
+aama:IDb375c5ee-d1f2-4ad7-8d8b-176dbddf8d57 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7322,7 +7354,7 @@ aama:IDa3009f8e-46a4-4456-afde-4c63188a9272 a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:IDf06b0a57-f2a5-4865-8038-3be63fe7f03c a aamas:Muterm ;
+aama:ID89710ae9-d18a-40e8-8af4-bdb008b54287 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7334,7 +7366,7 @@ aama:IDf06b0a57-f2a5-4865-8038-3be63fe7f03c a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:ID0c15710e-8d7b-4e5c-b9cc-d7f075808b48 a aamas:Muterm ;
+aama:ID8fb6dbde-c8db-45ec-8d29-af0f8969ba37 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7346,7 +7378,7 @@ aama:ID0c15710e-8d7b-4e5c-b9cc-d7f075808b48 a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:ID17320608-0903-463f-8745-4a1ba61c5571 a aamas:Muterm ;
+aama:ID92b360d7-900c-4f19-9cff-f35bb16aac48 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7358,7 +7390,7 @@ aama:ID17320608-0903-463f-8745-4a1ba61c5571 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:IDd50eb409-bf66-4ca0-ad9c-940239543713 a aamas:Muterm ;
+aama:ID58c83497-d95c-4740-a930-4a69857a3de9 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7370,7 +7402,7 @@ aama:IDd50eb409-bf66-4ca0-ad9c-940239543713 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:ID5499f587-3e24-444f-8e76-52b2c162cc07 a aamas:Muterm ;
+aama:ID98597745-f3b1-4637-8eac-a66cedc467c0 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7382,7 +7414,7 @@ aama:ID5499f587-3e24-444f-8e76-52b2c162cc07 a aamas:Muterm ;
 	arb:case arb:Common ;
 	.
 
-aama:ID917cb7fd-83b8-4171-b2fa-576621ef83df a aamas:Muterm ;
+aama:IDdae51440-9c7f-491e-be6b-14d76565bb68 a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7394,7 +7426,7 @@ aama:ID917cb7fd-83b8-4171-b2fa-576621ef83df a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:ID04ada3c0-c569-422d-bcd3-ab8030ee30ce a aamas:Muterm ;
+aama:ID6df7db3a-b46a-4595-8bba-de9d41118aac a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7406,7 +7438,7 @@ aama:ID04ada3c0-c569-422d-bcd3-ab8030ee30ce a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:IDc501dfbc-cdf5-43f8-ba36-35765d2cd7ad a aamas:Muterm ;
+aama:ID307c05d4-86b0-4f4e-932d-f5eb2f18e98d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7418,7 +7450,7 @@ aama:IDc501dfbc-cdf5-43f8-ba36-35765d2cd7ad a aamas:Muterm ;
 	arb:case arb:Nominative ;
 	.
 
-aama:IDa9ee7f0b-b90f-49df-b77d-f7059816cc76 a aamas:Muterm ;
+aama:ID64557bf2-f2b1-4b73-816a-8158cd10835d a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
@@ -7430,7 +7462,7 @@ aama:IDa9ee7f0b-b90f-49df-b77d-f7059816cc76 a aamas:Muterm ;
 	arb:case arb:Oblique ;
 	.
 
-aama:ID127e46eb-b426-46da-a5f6-cf9d13850854 a aamas:Muterm ;
+aama:ID25983a0d-1087-49a5-a40a-241d0c3626bc a aamas:Muterm ;
 	aamas:lang aama:Arabic ;	aamas:memberOf arb:arabic-PDemon ;
 	aamas:morpheme aama:Arabic-PRODEM ;
 	arb:pos arb:Pronoun ;
