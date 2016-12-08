@@ -2,7 +2,7 @@
 :lang :arabic
 :subfamily "Semitic West Central"
 :sgpref "arb"
-:datasource "Thackston11994"
+:datasource "Thackston1994"
 :geodemoURL "http://www.ethnologue.com/language/arb"
 :geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an, it was and remains the language of religion, scholarship, and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic."
 :schemata {:gender [:Common :Fem :Masc],
@@ -784,7 +784,7 @@
 ]
 :muterms [
     {:label "arabic-PCliticPro"
-    :note "Thackstodu000 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular,dual,and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels,but is –ya after a long vowel or dipthong;when followed by an elidible alif,the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics,except for the 3fs,harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-,the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-,the vowel of the enclitic is –i."
+    :note "Thackston1994 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular,dual,and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels,but is –ya after a long vowel or dipthong;when followed by an elidible alif,the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics,except for the 3fs,harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-,the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-,the vowel of the enclitic is –i."
     :pdgmType :NA
     :common {:case :GenObj,
              :morpheme :PROPOSSCLITIC,
@@ -808,7 +808,7 @@
             [:Dual :Person3 :Fem "-humā/-himā"]]
     }
     {:label "arabic-PDemon"
-    :note "Thackstodu000 p. 45;arabic has two sets of demonstratives,near and far,which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable."
+    :note "Thackston1994 p. 45;arabic has two sets of demonstratives,near and far,which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable."
     :pdgmType :NA
     :common {:morpheme :PRODEM,
              :pos :Pronoun,
@@ -830,7 +830,7 @@
             [:Oblique :Near :Dual :Fem "hātayni"]]
     }
     {:label "arabic-PIndep"
-    :note "Thackstodu000,p. 28"
+    :note "Thackston1994,p. 28"
     :pdgmType :NA
     :common {:morpheme :PROIND,
              :pos :Pronoun,
@@ -851,7 +851,7 @@
             [:Dual :Person3 :Common "humā"]]
     }
     {:label "arabic-PRel"
-    :note "Thackstodu000 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī."
+    :note "Thackston1994 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī."
     :pdgmType :NA
     :common {:morpheme :PRORELATIVE,
              :pos :Pronoun,
