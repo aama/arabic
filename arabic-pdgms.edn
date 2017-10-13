@@ -15,7 +15,6 @@
           :pos [:Pronoun :Verb],
           :person [:Person1 :Person2 :Person3],
           :derivedStem [:Base :D :L],
-          :morphClass [:Infinitive :Participle],
           :proClass [:Clitic :Demonstrative :Independent :Relative],
           :tam [:Nonpast :Past :Imperative :Jussive :Subjunctive],
           :number [:Dual :Plural :Singular],
@@ -157,7 +156,7 @@
              :lexeme :nsr,
              :rootClass :CCC
              :pos :Verb,
-             :morphClass :Infinitive}
+             }
     :terms [[:infinitiveVar :token],
             [:Infinitive1 "naṣr"],
             [:Infinitive2 "nuṣuwr"]]
@@ -169,7 +168,7 @@
              :lexeme :nsr,
              :rootClass :CCC,
              :pos :Verb,
-             :morphClass :Participle}
+             }
     :terms [[:state :voice :number :gender :token :token-prefix :token-stem :token-suffix],
             [:Constr :Active :Plural :Masc "naʌṣiruw" "Ø" "naʌṣir" "uw"],
             [:Constr :Active :Dual :Masc "naʌṣiraʌ" "Ø" "naʌṣir" "aʌ"],
@@ -514,7 +513,7 @@
              :lexeme :fʕl,
              :rootClass :CCC,
              :pos :Verb            ,
-             :morphClass :Participle}
+             }
     :terms [[:state :voice :number :gender :token],
             [:Constr :Active :Plural :Masc "mufaʕʕiluw"],
             [:Constr :Active :Dual :Masc "mufaʕʕilaʌ"],
@@ -749,25 +748,25 @@
              :lexeme :fʕl,
              :rootClass :CCC
              :pos :Verb,
-             :morphClass :Infinitive}
+             }
     :terms [[:infinitiveVar :token],
             [:Infinitive1 "mufaʌʕalaħ"],
             [:Infinitive2 "fiʕaʌl"]]
     }
     {:label "arabic-Vform3Participloe-fʕl"
-    :note "GR2010"
-    :pdgmType :Participle
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC
-             :pos :Verb,
-             :morphClass :Participle,
-             :voice :Active}
-    :terms [[:number :gender :token],
-            [:Singular :Masc "mufaʌʕil"],
-            [:Singular :Fem "mufaʌʕilaħ"],
-            [:Plural :Masc "mufaʌʕilûna"],
-            [:Plural :Fem "mufaʌʕilât"]]
+     :note "GR2010"
+     :pdgmType :Participle
+     :common {:derivedStem :L,
+              :lexeme :fʕl,
+              :rootClass :CCC
+              :pos :Verb,
+              
+              :voice :Active}
+     :terms [[:number :gender :token],
+             [:Singular :Masc "mufaʌʕil"],
+             [:Singular :Fem "mufaʌʕilaħ"],
+             [:Plural :Masc "mufaʌʕilûna"],
+             [:Plural :Fem "mufaʌʕilât"]]
     }
     {:label "arabic-Vform3nfiitive-fʕl"
     :note "GR2010"
@@ -776,7 +775,7 @@
              :lexeme :fʕl,
              :rootClass :CCC
              :pos :Verb,
-             :morphClass :Infinitive}
+             }
     :terms [[:infinitiveVar :gender :token],
             [:Infinitive1 :Masc "tafʕîl"],
             [:Infinitive2 :Fem "tafʕilaħ"]]
@@ -785,9 +784,8 @@
 :muterms [
     {:label "arabic-PCliticPro"
     :note "Thackston1994 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular,dual,and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels,but is –ya after a long vowel or dipthong;when followed by an elidible alif,the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics,except for the 3fs,harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-,the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-,the vowel of the enclitic is –i."
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:case :GenObj,
-             :morpheme :PROPOSSCLITIC,
              :pos :Pronoun,
              :proClass :Clitic}
     :terms [[:number :person :gender :token],
@@ -809,9 +807,8 @@
     }
     {:label "arabic-PDemon"
     :note "Thackston1994 p. 45;arabic has two sets of demonstratives,near and far,which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable."
-    :pdgmType :NA
-    :common {:morpheme :PRODEM,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Demonstrative}
     :terms [[:case :deixis :number :gender :token],
             [:Singular :Masc "ðālika"],
@@ -831,9 +828,8 @@
     }
     {:label "arabic-PIndep"
     :note "Thackston1994,p. 28"
-    :pdgmType :NA
-    :common {:morpheme :PROIND,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Independent}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "ʾana"],
@@ -852,9 +848,8 @@
     }
     {:label "arabic-PRel"
     :note "Thackston1994 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī."
-    :pdgmType :NA
-    :common {:morpheme :PRORELATIVE,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Relative}
     :terms [[:case :number :gender :token],
             [:Singular :Masc "allaðī"],
