@@ -5,20 +5,21 @@
 :datasource "Thackston1994"
 :geodemoURL "http://www.ethnologue.com/language/arb"
 :geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an, it was and remains the language of religion, scholarship, and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic."
-:schemata {:gender [:Common :Fem :Masc],
-          :state [:Constr :NonConstr :_NULL],
-          :rootClass [:CCC],
-          :infinitiveVar [:Infinitive1 :Infinitive2],
-          :case [:Common :GenObj :Nominative :Oblique],
-          :voice [:Active :Passive :Stative],
-          :pdgmType [:Infinitive :Participle :Finite :NA]
-          :pos [:Pronoun :Verb],
-          :person [:Person1 :Person2 :Person3],
-          :derivedStem [:Base :D :L],
-          :proClass [:Clitic :Demonstrative :Independent :Relative],
-          :tam [:Nonpast :Past :Imperative :Jussive :Subjunctive],
-          :number [:Dual :Plural :Singular],
-          :deixis [:Far :Near]}
+ :schemata {:vmorphClass [:InfinitiveB  :InfinitiveD :InfinitiveL :ParticipleB :ParticipleD :ParticipleL],
+            :case [:Common :GenObj :Nominative :Oblique],
+            :deixis [:Far :Near],
+            :derivedStem [:Base :D :L],
+            :gender [:Common :Fem :Masc],
+            :infinitiveVar [:Infinitive1 :Infinitive2],
+            :number [:Dual :Plural :Singular],
+            :person [:Person1 :Person2 :Person3],
+            :pos [:Pronoun :Verb],
+            :proClass [:Clitic :Demonstrative :Independent :Relative],
+            :rootClass [:CCC],
+            :state [:Constr :NonConstr :_NULL],
+            :tam [:Imperative :Jussive :Nonpast :Past :Subjunctive],
+            :voice [:Active :Passive :Stative]
+            :pdgmType [:Finite :PRO :VOther]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :deixis :derivedStem :polarity :pos :proClass :state :tam :voice],
           :inflClass [:infinitiveVar :rootClass],
@@ -149,22 +150,11 @@
             [:Dual :Person3 :Masc "yanṣuraʌ" "ya" "aʌ"],
             [:Dual :Person3 :Fem "tanṣuraʌ" "ta" "aʌ"]]
     }
-    {:label "arabic-Vform1Infinitive-nsr"
-    :note "GR2010"
-    :pdgmType :Infinitive
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :rootClass :CCC
-             :pos :Verb,
-             }
-    :terms [[:infinitiveVar :token],
-            [:Infinitive1 "naṣr"],
-            [:Infinitive2 "nuṣuwr"]]
-    }
     {:label "arabic-Vform1Part-nsr"
     :note "GR2010"
-    :pdgmType :Participle
-    :common {:derivedStem :Base,
+    :pdgmType :VOther
+    :common {:vmorphClass :ParticipleB
+             :derivedStem :Base,
              :lexeme :nsr,
              :rootClass :CCC,
              :pos :Verb,
@@ -508,8 +498,9 @@
     }
     {:label "arabic-Vform2Participle-fʕl"
     :note "GR2010"
-    :pdgmType :Participle
-    :common {:derivedStem :D,
+    :pdgmType :VOther
+    :common {:vmorphClass :ParticipleD
+             :derivedStem :D,
              :lexeme :fʕl,
              :rootClass :CCC,
              :pos :Verb            ,
@@ -741,22 +732,11 @@
             [:Dual :Person3 :Masc "fuʕʕilaʌ"],
             [:Dual :Person3 :Fem "fuʕʕilataʌ"]]
     }
-    {:label "arabic-Vform3Infinitive-fʕl"
-    :note "GR2010"
-    :pdgmType :Infinitive
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC
-             :pos :Verb,
-             }
-    :terms [[:infinitiveVar :token],
-            [:Infinitive1 "mufaʌʕalaħ"],
-            [:Infinitive2 "fiʕaʌl"]]
-    }
     {:label "arabic-Vform3Participloe-fʕl"
      :note "GR2010"
-     :pdgmType :Participle
-     :common {:derivedStem :L,
+     :pdgmType :VOther
+     :common {:vmorphClass :ParticipleL
+              :derivedStem :L,
               :lexeme :fʕl,
               :rootClass :CCC
               :pos :Verb,
@@ -768,10 +748,37 @@
              [:Plural :Masc "mufaʌʕilûna"],
              [:Plural :Fem "mufaʌʕilât"]]
     }
+    {:label "arabic-Vform1Infinitive-nsr"
+    :note "GR2010"
+    :pdgmType :VOther
+    :common {:vmorphClass :InfinitiveB
+             :derivedStem :Base,
+             :lexeme :nsr,
+             :rootClass :CCC
+             :pos :Verb,
+             }
+    :terms [[:infinitiveVar :token],
+            [:Infinitive1 "naṣr"],
+            [:Infinitive2 "nuṣuwr"]]
+    }
+    {:label "arabic-Vform3Infinitive-fʕl"
+    :note "GR2010"
+    :pdgmType :VOther
+    :common {:vmorphClass :InfinitiveL
+             :derivedStem :L,
+             :lexeme :fʕl,
+             :rootClass :CCC
+             :pos :Verb,
+             }
+    :terms [[:infinitiveVar :token],
+            [:Infinitive1 "mufaʌʕalaħ"],
+            [:Infinitive2 "fiʕaʌl"]]
+    }
     {:label "arabic-Vform3nfiitive-fʕl"
     :note "GR2010"
-    :pdgmType :Infinitive
-    :common {:derivedStem :D,
+    :pdgmType :VOther
+    :common {:vmorphClass :InfinitiveD
+             :derivedStem :D,
              :lexeme :fʕl,
              :rootClass :CCC
              :pos :Verb,
@@ -811,11 +818,11 @@
     :common {:pos :Pronoun,
              :proClass :Demonstrative}
     :terms [[:case :deixis :number :gender :token],
-            [:Singular :Masc "ðālika"],
-            [:Singular :Fem "tilka"],
+            [:Common  :Far  :Singular :Masc "ðālika"],
+            [:Common  :Far  :Singular :Fem "tilka"],
             [:Common :Far :Plural :Common "ʾulāʾika"],
-            [:Singular :Masc "hāðā"],
-            [:Singular :Fem "hāðihi"],
+            [:Common  :Near  :Singular :Masc "hāðā"],
+            [:Common  :Near  :Singular :Fem "hāðihi"],
             [:Common :Near :Plural :Common "hāʾulāʾi"],
             [:Nominative :Far :Dual :Masc "ðānika"],
             [:Nominative :Far :Dual :Fem "tānika"],
@@ -852,8 +859,8 @@
     :common {:pos :Pronoun,
              :proClass :Relative}
     :terms [[:case :number :gender :token],
-            [:Singular :Masc "allaðī"],
-            [:Singular :Fem "allatī"],
+            [:Common :Singular :Masc "allaðī"],
+            [:Common :Singular :Fem "allatī"],
             [:Common :Plural :Masc "allaðīna"],
             [:Common :Plural :Fem "allātī"],
             [:Nominative :Dual :Masc "allaðāni"],
