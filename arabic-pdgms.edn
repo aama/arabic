@@ -1,874 +1,858 @@
 {
-:lang :arabic
-:subfamily "Semitic West Central"
-:sgpref "arb"
-:datasource "Thackston1994"
-:geodemoURL "http://www.ethnologue.com/language/arb"
-:geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an, it was and remains the language of religion, scholarship, and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic."
- :schemata {:vmorphClass [:InfinitiveB  :InfinitiveD :InfinitiveL :ParticipleB :ParticipleD :ParticipleL],
-            :case [:Common :GenObj :Nominative :Oblique],
-            :deixis [:Far :Near],
-            :derivedStem [:Base :D :L],
-            :gender [:Common :Fem :Masc],
-            :infinitiveVar [:Infinitive1 :Infinitive2],
-            :number [:Dual :Plural :Singular],
-            :person [:Person1 :Person2 :Person3],
-            :pos [:Pronoun :Verb],
-            :proClass [:Clitic :Demonstrative :Independent :Relative],
-            :rootClass [:CCC],
-            :state [:Constr :NonConstr :_NULL],
-            :tam [:Imperative :Jussive :Nonpast :Past :Subjunctive],
-            :voice [:Active :Passive :Stative]
-            :pdgmType [:Finite :PRO :VOther]}
-:pclass {:pngClass [:person :number :gender],
+ :lang :arabic
+ :subfamily "Semitic West Central"
+ :sgpref "arb"
+ :datasource "Thackston1994"
+ :geodemoURL "http://www.ethnologue.com/language/arb"
+ :geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an, it was and remains the language of religion, scholarship, and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic."
+:schemata { :case [:Common :GenObj :Nominative :Oblique],
+           :deixis [:Far :Near],
+           :derivedStem [:Base :D :L],
+           :gender [:Common :Fem :Masc],
+           :infinitiveVar [:Infinitive1 :Infinitive2],
+           :number [:Dual :Plural :Singular],
+           :person [:Person1 :Person2 :Person3],
+           :pos [:Pronoun :Verb],
+           :proClass [:Clitic :Demonstrative :Independent :Relative],
+           :rootClass [:CCC],
+           :state [:Constr :NonConstr :_NULL],
+           :tam [:Imperative :Jussive :Nonpast :Past :Subjunctive],
+           :vmorphClass [:Finite :InfinitiveB :InfinitiveD :InfinitiveL :ParticipleB :ParticipleD :ParticipleL],
+           :voice [:Active :Passive :Stative]
+           }
+ :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :deixis :derivedStem :polarity :pos :proClass :state :tam :voice],
           :inflClass [:infinitiveVar :rootClass],
           :otherClass []}
-:morphemes {:PRODEM {:gloss "[x]", :lemma "[y]"},
-           :PROIND {:gloss "[x]", :lemma "[y]"},
-           :PROPOSSCLITIC {:gloss "[x]", :lemma "[y]"},
-           :PRORELATIVE {:gloss "[x]", :lemma "[y]"}}
-:lexemes {:fʕl {:lemma "fʕl", :gloss "do", :pos :Verb, :rootClass :CCC},
+ :lexemes {:fʕl {:lemma "fʕl", :gloss "do", :pos :Verb, :rootClass :CCC},
            :nsr {:lemma "nṣr", :gloss "help", :pos :Verb, :rootClass :CCC}}
-:lxterms [
-    {:label "arabic-Vform1ActImperf-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :pos :Verb,
-             :rootClass :CCC,
-             :tam :Nonpast,
-             :token-stem :nṣur,
-             :voice :Active}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀanṣuru" "ˀa" "u"],
-            [:Singular :Person2 :Masc "tanṣuru" "ta" "u"],
-            [:Singular :Person2 :Fem "tanṣuriyna" "ta" "iyna"],
-            [:Singular :Person3 :Masc "yanṣuru" "ya" "u"],
-            [:Singular :Person3 :Fem "tanṣuru" "ta" "u"],
-            [:Plural :Person1 :Common "nanṣuru" "na" "u"],
-            [:Plural :Person2 :Masc "tanṣuruwna" "ta" "uwna"],
-            [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
-            [:Plural :Person3 :Masc "yanṣuruwna" "ya" "uwna"],
-            [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
-            [:Dual :Person2 :Common "tanṣuraʌni" "ta" "aʌni"],
-            [:Dual :Person3 :Masc "yanṣuraʌni" "ya" "aʌni"],
-            [:Dual :Person3 :Fem "tanṣuraʌni" "ta" "aʌni"]]
-    }
-    {:label "arabic-Vform1ActImptv-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:token-prefix :ʌu,
-             :lexeme :nsr,
-             :voice :Active,
-             :pos :Verb,
-             :person :Person2,
-             :derivedStem :Base,
-             :token-stem :nṣur,
-             :rootClass :CCC,
-             :tam :Imperative}
-    :terms [[:number :gender :token :token-suffix],
-            [:Singular :Masc "ʌunṣur" "Ø"],
-            [:Singular :Fem "ʌunṣuriy" "iy"],
-            [:Plural :Masc "ʌunṣuruw" "uw"],
-            [:Plural :Fem "ʌunṣurna" "na"]]
-    }
-    {:label "arabic-Vform1ActJuss-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :pos :Verb,
-             :rootClass :CCC,
-             :tam :Jussive,
-             :token-stem :nṣur,
-             :voice :Active}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀanṣur" "ˀa" "Ø"],
-            [:Singular :Person2 :Masc "tanṣur" "ta" "Ø"],
-            [:Singular :Person2 :Fem "tanṣuriy" "ta" "iy"],
-            [:Singular :Person3 :Masc "yanṣur" "ya" "Ø"],
-            [:Singular :Person3 :Fem "tanṣur" "ta" "Ø"],
-            [:Plural :Person1 :Common "nanṣur" "na" "Ø"],
-            [:Plural :Person2 :Masc "tanṣuruw" "ta" "uw"],
-            [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
-            [:Plural :Person3 :Masc "yanṣuruw" "ya" "uw"],
-            [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
-            [:Dual :Person2 :Common "tanṣuraʌ" "ta" "aʌ"],
-            [:Dual :Person3 :Masc "yanṣuraʌ" "ya" "aʌ"],
-            [:Dual :Person3 :Fem "tanṣuraʌ" "ta" "aʌ"]]
-    }
-    {:label "arabic-Vform1ActPerf-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:token-prefix :Ø,
-             :lexeme :nsr,
-             :voice :Active,
-             :pos :Verb,
-             :derivedStem :Base,
-             :token-stem :naṣar,
-             :rootClass :CCC,
-             :tam :Past}
-    :terms [[:number :person :gender :token :token-suffix],
-            [:Singular :Person1 :Common "naṣartu" "tu"],
-            [:Singular :Person2 :Masc "naṣarta" "ta"],
-            [:Singular :Person2 :Fem "naṣarti" "ti"],
-            [:Singular :Person3 :Masc "naṣara" "a"],
-            [:Singular :Person3 :Fem "naṣarat" "at"],
-            [:Plural :Person1 :Common "naṣarnaʌ" "naʌ"],
-            [:Plural :Person2 :Masc "naṣartum" "tum"],
-            [:Plural :Person2 :Fem "naṣartunna" "tunna"],
-            [:Plural :Person3 :Masc "naṣaruw" "uw"],
-            [:Plural :Person3 :Fem "naṣarna" "na"],
-            [:Dual :Person2 :Common "naṣartumaʌ" "tumaʌ"],
-            [:Dual :Person3 :Masc "naṣaraʌ" "aʌ"],
-            [:Dual :Person3 :Fem "naṣarataʌ" "ataʌ"]]
-    }
-    {:label "arabic-Vform1ActSubj-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :pos :Verb,
-             :rootClass :CCC,
-             :tam :Subjunctive,
-             :token-stem :nṣur,
-             :voice :Active}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀanṣura" "ˀa" "a"],
-            [:Singular :Person2 :Masc "tanṣura" "ta" "a"],
-            [:Singular :Person2 :Fem "tanṣuriy" "ta" "iy"],
-            [:Singular :Person3 :Masc "yanṣura" "ya" "a"],
-            [:Singular :Person3 :Fem "tanṣura" "ta" "a"],
-            [:Plural :Person1 :Common "nanṣura" "na" "a"],
-            [:Plural :Person2 :Masc "tanṣuruw" "ta" "uw"],
-            [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
-            [:Plural :Person3 :Masc "yanṣuruw" "ya" "uw"],
-            [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
-            [:Dual :Person2 :Common "tanṣuraʌ" "ta" "aʌ"],
-            [:Dual :Person3 :Masc "yanṣuraʌ" "ya" "aʌ"],
-            [:Dual :Person3 :Fem "tanṣuraʌ" "ta" "aʌ"]]
-    }
-    {:label "arabic-Vform1Part-nsr"
-    :note "GR2010"
-    :pdgmType :VOther
-    :common {:vmorphClass :ParticipleB
-             :derivedStem :Base,
-             :lexeme :nsr,
-             :rootClass :CCC,
-             :pos :Verb,
-             }
-    :terms [[:state :voice :number :gender :token :token-prefix :token-stem :token-suffix],
-            [:Constr :Active :Plural :Masc "naʌṣiruw" "Ø" "naʌṣir" "uw"],
-            [:Constr :Active :Dual :Masc "naʌṣiraʌ" "Ø" "naʌṣir" "aʌ"],
-            [:Constr :Active :Dual :Fem "naʌṣirataʌ" "Ø" "naʌṣir" "ataʌ"],
-            [:Constr :Passive :Plural :Masc "manṣuwruw" "ma" "nṣuwr" "uw"],
-            [:Constr :Passive :Dual :Masc "manṣuwraʌ" "ma" "nṣuwr" "aʌ"],
-            [:Constr :Passive :Dual :Fem "manṣuwrataʌ" "ma" "nṣuwr" "ataʌ"],
-            [:Constr :Stative :Dual :Masc "naṣiyraʌ" "Ø" "naṣiyr" "aʌ"],
-            [:Constr :Stative :Dual :Fem "naṣiyrataʌ" "Ø" "naṣiyr" "ataʌ"],
-            [:NonConstr :Active :Plural :Masc "naʌṣiruwna" "Ø" "naʌṣir" "uwna"],
-            [:NonConstr :Active :Dual :Masc "naʌṣiraʌni" "Ø" "naʌṣir" "aʌni"],
-            [:NonConstr :Active :Dual :Fem "naʌṣirataʌni" "Ø" "naʌṣir" "ataʌni"],
-            [:NonConstr :Passive :Plural :Masc "manṣuwruwna" "ma" "nṣuwr" "uwna"],
-            [:NonConstr :Passive :Dual :Masc "manṣuwraʌni" "ma" "nṣuwr" "aʌni"],
-            [:NonConstr :Passive :Dual :Fem "manṣuwrataʌni" "ma" "nṣuwr" "ataʌni"],
-            [:NonConstr :Stative :Dual :Masc "naṣiyraʌni" "Ø" "naṣiyr" "aʌni"],
-            [:NonConstr :Stative :Dual :Fem "naṣiyrataʌni" "Ø" "naṣiyr" "ataʌni"],
-            [:_NULL :Active :Singular :Masc "naʌṣir" "Ø" "naʌṣir" "Ø"],
-            [:_NULL :Active :Singular :Fem "naʌṣirah" "Ø" "naʌṣir" "ah"],
-            [:_NULL :Active :Plural :Masc "Ɂanṣaʌr" "Ɂa" "naʌṣir" "internal"],
-            [:_NULL :Active :Plural :Masc "nuṣṣaʌr" "Ø" "naʌṣir" "internal"],
-            [:_NULL :Active :Plural :Fem "naʌṣiraʌt" "Ø" "naʌṣir" "aʌt"],
-            [:_NULL :Passive :Singular :Masc "manṣuwr" "ma" "nṣuwr" "Ø"],
-            [:_NULL :Passive :Singular :Fem "manṣuwrah" "ma" "nṣuwr" "Ø"],
-            [:_NULL :Passive :Plural :Fem "manṣuwraʌt" "ma" "nṣuwr" "aʌt"],
-            [:_NULL :Stative :Singular :Masc "naṣiyr" "Ø" "naṣiyr" "Ø"],
-            [:_NULL :Stative :Singular :Fem "naṣiyrah" "Ø" "naṣiyr" "ah"],
-            [:_NULL :Stative :Plural :Masc "nuṣaraʌˀ" "Ø" "naṣiyr" "internal"]]
-    }
-    {:label "arabic-Vform1PassImperf-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
+ :termclusters [
+                {:label "arabic-Vform1ActImperf-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
                           :pos :Verb,
-             :rootClass :CCC,
-             :tam :Nonpast,
-             :token-stem :nṣar,
-             :voice :Passive}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀunṣaru" "ˀu" "u"],
-            [:Singular :Person2 :Masc "tunṣaru" "tu" "u"],
-            [:Singular :Person2 :Fem "tunṣariyna" "tu" "iyna"],
-            [:Singular :Person3 :Masc "yunṣaru" "yu" "u"],
-            [:Singular :Person3 :Fem "tunṣaru" "tu" "u"],
-            [:Plural :Person1 :Common "nunṣaru" "nu" "u"],
-            [:Plural :Person2 :Masc "tunṣaruwna" "tu" "uwna"],
-            [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
-            [:Plural :Person3 :Masc "yunṣaruwna" "yu" "uwna"],
-            [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
-            [:Dual :Person2 :Common "tunṣaraʌni" "tu" "aʌni"],
-            [:Dual :Person3 :Masc "yunṣaraʌni" "yu" "aʌni"],
-            [:Dual :Person3 :Fem "tunṣaraʌni" "tu" "aʌni"]]
-    }
-    {:label "arabic-Vform1PassJuss-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :rootClass :CCC,
-             :tam :Jussive,
-             :pos :Verb,
-             :token-stem :nṣar,
-             :voice :Passive}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀunṣar" "ˀu" "Ø"],
-            [:Singular :Person2 :Masc "tunṣar" "tu" "Ø"],
-            [:Singular :Person2 :Fem "tunṣariy" "tu" "iy"],
-            [:Singular :Person3 :Masc "yunṣar" "yu" "Ø"],
-            [:Singular :Person3 :Fem "tunṣar" "tu" "Ø"],
-            [:Plural :Person1 :Common "nunṣar" "nu" "Ø"],
-            [:Plural :Person2 :Masc "tunṣaruw" "tu" "uw"],
-            [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
-            [:Plural :Person3 :Masc "yunṣaruw" "yu" "uw"],
-            [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
-            [:Dual :Person2 :Common "tunṣaraʌ" "tu" "aʌ"],
-            [:Dual :Person3 :Masc "yunṣaraʌ" "yu" "aʌ"],
-            [:Dual :Person3 :Fem "tunṣaraʌ" "tu" "aʌ"]]
-    }
-    {:label "arabic-Vform1PassPerf-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:token-prefix :Ø,
-             :lexeme :nsr,
-             :voice :Passive,
-             :pos :Verb,
-             :derivedStem :Base,
-             :token-stem :nuṣir,
-             :rootClass :CCC,
-             :tam :Past}
-    :terms [[:number :person :gender :token :token-suffix],
-            [:Singular :Person1 :Common "nuṣirtu" "tu"],
-            [:Singular :Person2 :Masc "nuṣirta" "ta"],
-            [:Singular :Person2 :Fem "nuṣirti" "ti"],
-            [:Singular :Person3 :Masc "nuṣira" "a"],
-            [:Singular :Person3 :Fem "nuṣirat" "at"],
-            [:Plural :Person1 :Common "nuṣirnaʌ" "naʌ"],
-            [:Plural :Person2 :Masc "nuṣirtum" "tum"],
-            [:Plural :Person2 :Fem "nuṣirtunna" "tunna"],
-            [:Plural :Person3 :Masc "nuṣiruw" "uw"],
-            [:Plural :Person3 :Fem "nuṣirna" "na"],
-            [:Dual :Person2 :Common "nuṣirtumaʌ" "tumaʌ"],
-            [:Dual :Person3 :Masc "nuṣiraʌ" "aʌ"],
-            [:Dual :Person3 :Fem "nuṣirataʌ" "ataʌ"]]
-    }
-    {:label "arabic-Vform1PassSubj-nsr"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :Base,
-             :lexeme :nsr,
-             :rootClass :CCC,
-             :tam :Subjunctive,
-             :pos :Verb,
-             :token-stem :nṣar,
-             :voice :Passive}
-    :terms [[:number :person :gender :token :token-prefix :token-suffix],
-            [:Singular :Person1 :Common "ˀunṣara" "ˀu" "a"],
-            [:Singular :Person2 :Masc "tunṣara" "tu" "a"],
-            [:Singular :Person2 :Fem "tunṣariy" "tu" "iy"],
-            [:Singular :Person3 :Masc "yunṣara" "yu" "a"],
-            [:Singular :Person3 :Fem "tunṣara" "tu" "a"],
-            [:Plural :Person1 :Common "nunṣara" "nu" "a"],
-            [:Plural :Person2 :Masc "tunṣaruw" "tu" "uw"],
-            [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
-            [:Plural :Person3 :Masc "yunṣaruw" "yu" "uw"],
-            [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
-            [:Dual :Person2 :Common "tunṣaraʌ" "tu" "aʌ"],
-            [:Dual :Person3 :Masc "yunṣaraʌ" "yu" "aʌ"],
-            [:Dual :Person3 :Fem "tunṣaraʌ" "tu" "aʌ"]]
-    }
-    {:label "arabic-Vform2-fʕl1"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Imperative
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person2 :Masc "faʕʕil"],
-            [:Singular :Person2 :Fem "faʕʕiliy"],
-            [:Plural :Person2 :Fem "faʕʕilna"],
-            [:Dual :Person2 :Masc "faʕʕiluw"],
-            [:Dual :Person2 :Common "faʕʕilaʌ"],
-            [:Singular :Person1 :Common "ʕufaʕʕilu"]]
-     }
-    {:label "arabic-Vform2-fʕl2"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Nonpast
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person2 :Masc "tufaʕʕilu"],
-            [:Singular :Person2 :Fem "tufaʕʕiliyna"],
-            [:Singular :Person3 :Masc "yufaʕʕilu"],
-            [:Singular :Person3 :Fem "tufaʕʕilu"],
-            [:Plural :Person1 :Common "nufaʕʕilu"],
-            [:Plural :Person2 :Masc "tufaʕʕiluwna"],
-            [:Plural :Person2 :Fem "tufaʕʕilna"],
-            [:Plural :Person3 :Masc "yufaʕʕiluwna"],
-            [:Plural :Person3 :Fem "tufaʕʕilna"],
-            [:Dual :Person2 :Common "tufaʕʕilaʌni"],
-            [:Dual :Person3 :Masc "yufaʕʕilaʌni"],
-            [:Dual :Person3 :Fem "tufaʕʕilaʌni"]]
-     }
-    {:label "arabic-Vform2-fʕl3"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Nonpast
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʕʕalu"],
-            [:Singular :Person2 :Masc "tufaʕʕalu"],
-            [:Singular :Person2 :Fem "tufaʕʕaliyna"],
-            [:Singular :Person3 :Masc "yufaʕʕalu"],
-            [:Singular :Person3 :Fem "tufaʕʕalu"],
-            [:Plural :Person1 :Common "nufaʕʕalu"],
-            [:Plural :Person2 :Masc "tufaʕʕaluwna"],
-            [:Plural :Person2 :Fem "tufaʕʕalna"],
-            [:Plural :Person3 :Masc "yufaʕʕaluwna"],
-            [:Plural :Person3 :Fem "tufaʕʕalna"],
-            [:Dual :Person2 :Common "tufaʕʕalaʌni"],
-            [:Dual :Person3 :Masc "yufaʕʕalaʌni"],
-            [:Dual :Person3 :Fem "tufaʕʕalaʌni"]]
-     }
-    {:label "arabic-Vform2-fʕl4"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Jussive
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʕʕil"],
-            [:Singular :Person2 :Masc "tufaʕʕil"],
-            [:Singular :Person2 :Fem "tufaʕʕiliy"],
-            [:Singular :Person3 :Masc "yufaʕʕil"],
-            [:Singular :Person3 :Fem "tufaʕʕil"],
-            [:Plural :Person1 :Common "nufaʕʕil"],
-            [:Plural :Person2 :Masc "tufaʕʕiluw"],
-            [:Plural :Person2 :Fem "tufaʕʕilna"],
-            [:Plural :Person3 :Masc "yufaʕʕiluw"],
-            [:Plural :Person3 :Fem "tufaʕʕilna"],
-            [:Dual :Person2 :Common "tufaʕʕilaʌ"],
-            [:Dual :Person3 :Masc "yufaʕʕilaʌ"],
-            [:Dual :Person3 :Fem "tufaʕʕilaʌ"]]
-     }
-    {:label "arabic-Vform2-fʕl5"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Jussive
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʕʕal"],
-            [:Singular :Person2 :Masc "tufaʕʕal"],
-            [:Singular :Person2 :Fem "tufaʕʕaliy"],
-            [:Singular :Person3 :Masc "yufaʕʕal"],
-            [:Singular :Person3 :Fem "tufaʕʕal"],
-            [:Plural :Person1 :Common "nufaʕʕal"],
-            [:Plural :Person2 :Masc "tufaʕʕaluw"],
-            [:Plural :Person2 :Fem "tufaʕʕalna"],
-            [:Plural :Person3 :Masc "yufaʕʕaluw"],
-            [:Plural :Person3 :Fem "tufaʕʕalna"],
-            [:Dual :Person2 :Common "tufaʕʕalaʌ"],
-            [:Dual :Person3 :Masc "yufaʕʕalaʌ"],
-            [:Dual :Person3 :Fem "tufaʕʕalaʌ"]]
-     }
-    {:label "arabic-Vform2-fʕl6"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Subjunctive
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʕʕila"],
-            [:Singular :Person2 :Masc "tufaʕʕila"],
-            [:Singular :Person2 :Fem "tufaʕʕiliy"],
-            [:Singular :Person3 :Masc "yufaʕʕila"],
-            [:Singular :Person3 :Fem "tufaʕʕila"],
-            [:Plural :Person1 :Common "nufaʕʕila"],
-            [:Plural :Person2 :Masc "tufaʕʕiluw"],
-            [:Plural :Person2 :Fem "tufaʕʕilna"],
-            [:Plural :Person3 :Masc "yufaʕʕiluw"],
-            [:Plural :Person3 :Fem "tufaʕʕilna"],
-            [:Dual :Person2 :Common "tufaʕʕilaʌ"],
-            [:Dual :Person3 :Masc "yufaʕʕilaʌ"],
-            [:Dual :Person3 :Fem "tufaʕʕilaʌ"]]
-     }
-    {:label "arabic-Vform2-fʕl7"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Subjunctive
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʕʕala"],
-            [:Singular :Person2 :Masc "tufaʕʕala"],
-            [:Singular :Person2 :Fem "tufaʕʕaliy"],
-            [:Singular :Person3 :Masc "yufaʕʕala"],
-            [:Singular :Person3 :Fem "tufaʕʕala"],
-            [:Plural :Person1 :Common "nufaʕʕala"],
-            [:Plural :Person2 :Masc "tufaʕʕaluw"],
-            [:Plural :Person2 :Fem "tufaʕʕalna"],
-            [:Plural :Person3 :Masc "yufaʕʕaluw"],
-            [:Plural :Person3 :Fem "tufaʕʕalna"],
-            [:Dual :Person2 :Common "tufaʕʕalaʌ"],
-            [:Dual :Person3 :Masc "yufaʕʕalaʌ"],
-            [:Dual :Person3 :Fem "tufaʕʕalaʌ"]]
-     }
-    {:label "arabic-Vform2-fʕl8"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Past
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "faʕʕaltu"],
-            [:Singular :Person2 :Masc "faʕʕalta"],
-            [:Singular :Person2 :Fem "faʕʕalti"],
-            [:Singular :Person3 :Masc "faʕʕala"],
-            [:Singular :Person3 :Fem "faʕʕalat"],
-            [:Plural :Person2 :Masc "faʕʕaltum"],
-            [:Plural :Person2 :Fem "faʕʕaltunna"],
-            [:Plural :Person3 :Masc "faʕʕaluw"],
-            [:Plural :Person3 :Fem "faʕʕalfa"],
-            [:Dual :Person2 :Common "faʕʕaltumaʌ"],
-            [:Dual :Person3 :Masc "faʕʕalaʌ"],
-            [:Dual :Person3 :Fem "faʕʕalataʌ"]]
-     }
-    {:label "arabic-Vform2-fʕl9"
-    :note ""
-    :pdgmType :Finite
-    :common {:derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Past
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "fuʕʕiltu"],
-            [:Singular :Person2 :Masc "fuʕʕilta"],
-            [:Singular :Person2 :Fem "fuʕʕilti"],
-            [:Singular :Person3 :Masc "fuʕʕila"],
-            [:Singular :Person3 :Fem "fuʕʕilat"],
-            [:Plural :Person1 :Common "fuʕʕilnaʌ"],
-            [:Plural :Person2 :Masc "fuʕʕiltum"],
-            [:Plural :Person2 :Fem "fuʕʕiltunna"],
-            [:Plural :Person3 :Masc "fuʕʕiluw"],
-            [:Plural :Person3 :Fem "fuʕʕilna"],
-            [:Dual :Person2 :Common "fuʕʕiltumaʌ"],
-            [:Dual :Person3 :Masc "fuʕʕilaʌ"],
-            [:Dual :Person3 :Fem "fuʕʕilataʌ"]]
-    }
-    {:label "arabic-Vform2Participle-fʕl"
-    :note "GR2010"
-    :pdgmType :VOther
-    :common {:vmorphClass :ParticipleD
-             :derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :pos :Verb            ,
-             }
-    :terms [[:state :voice :number :gender :token],
-            [:Constr :Active :Plural :Masc "mufaʕʕiluw"],
-            [:Constr :Active :Dual :Masc "mufaʕʕilaʌ"],
-            [:Constr :Active :Dual :Fem "mufaʕʕilataʌ"],
-            [:Constr :Passive :Plural :Masc "mafaʕʕaluw"],
-            [:Constr :Passive :Dual :Masc "mafaʕʕalaʌ"],
-            [:Constr :Passive :Dual :Fem "mafaʕʕalataʌ"],
-            [:NonConstr :Active :Plural :Masc "mufaʕʕiluwna"],
-            [:NonConstr :Active :Dual :Masc "mufaʕʕilaʌni"],
-            [:NonConstr :Active :Dual :Fem "mufaʕʕilataʌni"],
-            [:NonConstr :Passive :Plural :Masc "mafaʕʕaluwna"],
-            [:NonConstr :Passive :Dual :Masc "mafaʕʕalaʌni"],
-            [:NonConstr :Passive :Dual :Fem "mafaʕʕalataʌni"],
-            [:_NULL :Active :Singular :Masc "mufaʕʕil"],
-            [:_NULL :Active :Singular :Fem "mufaʕʕilah"],
-            [:_NULL :Active :Plural :Fem "mufaʕʕilaʌt"],
-            [:_NULL :Passive :Singular :Masc "mafaʕʕal"],
-            [:_NULL :Passive :Singular :Fem "mafaʕʕalah"],
-            [:_NULL :Passive :Plural :Fem "mafaʕʕalaʌt"]]
-    }
-    {:label "arabic-Vform3-fʕl1"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Imperative
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person2 :Masc "faʌʕil"],
-            [:Singular :Person2 :Fem "faʌʕiliy"],
-            [:Plural :Person2 :Fem "faʌʕilna"],
-            [:Dual :Person2 :Masc "faʌʕiluw"],
-            [:Dual :Person2 :Common "faʌʕilaʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl2"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Nonpast
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕilu"],
-            [:Singular :Person2 :Masc "tufaʌʕilu"],
-            [:Singular :Person2 :Fem "tufaʌʕiliyna"],
-            [:Singular :Person3 :Masc "yufaʌʕilu"],
-            [:Singular :Person3 :Fem "tufaʌʕilu"],
-            [:Plural :Person1 :Common "nufaʌʕilu"],
-            [:Plural :Person2 :Masc "tufaʌʕiluwna"],
-            [:Plural :Person2 :Fem "tufaʌʕilna"],
-            [:Plural :Person3 :Masc "yufaʌʕiluwna"],
-            [:Plural :Person3 :Fem "tufaʌʕilna"],
-            [:Dual :Person2 :Common "tufaʌʕilaʌni"],
-            [:Dual :Person3 :Masc "yufaʌʕilaʌni"],
-            [:Dual :Person3 :Fem "tufaʌʕilaʌni"]]
-     }
-    {:label "arabic-Vform3-fʕl3"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Nonpast
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕalu"],
-            [:Singular :Person2 :Masc "tufaʌʕalu"],
-            [:Singular :Person2 :Fem "tufaʌʕaliyna"],
-            [:Singular :Person3 :Masc "yufaʌʕalu"],
-            [:Singular :Person3 :Fem "tufaʌʕalu"],
-            [:Plural :Person1 :Common "nufaʌʕalu"],
-            [:Plural :Person2 :Masc "tufaʌʕaluwna"],
-            [:Plural :Person2 :Fem "tufaʌʕalna"],
-            [:Plural :Person3 :Masc "yufaʌʕaluwna"],
-            [:Plural :Person3 :Fem "tufaʌʕalna"],
-            [:Dual :Person2 :Common "tufaʌʕalaʌni"],
-            [:Dual :Person3 :Masc "yufaʌʕalaʌni"],
-            [:Dual :Person3 :Fem "tufaʌʕalaʌni"]]
-     }
-    {:label "arabic-Vform3-fʕl4"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Jussive
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕil"],
-            [:Singular :Person2 :Masc "tufaʌʕil"],
-            [:Singular :Person2 :Fem "tufaʌʕiliy"],
-            [:Singular :Person3 :Masc "yufaʌʕil"],
-            [:Singular :Person3 :Fem "tufaʌʕil"],
-            [:Plural :Person1 :Common "nufaʌʕil"],
-            [:Plural :Person2 :Masc "tufaʌʕiluw"],
-            [:Plural :Person2 :Fem "tufaʌʕilna"],
-            [:Plural :Person3 :Masc "yufaʌʕiluw"],
-            [:Plural :Person3 :Fem "tufaʌʕilna"],
-            [:Dual :Person2 :Common "tufaʌʕilaʌ"],
-            [:Dual :Person3 :Masc "yufaʌʕilaʌ"],
-            [:Dual :Person3 :Fem "tufaʌʕilaʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl5"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Jussive
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕal"],
-            [:Singular :Person2 :Masc "tufaʌʕal"],
-            [:Singular :Person2 :Fem "tufaʌʕaliy"],
-            [:Singular :Person3 :Masc "yufaʌʕal"],
-            [:Singular :Person3 :Fem "tufaʌʕal"],
-            [:Plural :Person1 :Common "nufaʌʕal"],
-            [:Plural :Person2 :Masc "tufaʌʕaluw"],
-            [:Plural :Person2 :Fem "tufaʌʕalna"],
-            [:Plural :Person3 :Masc "yufaʌʕaluw"],
-            [:Plural :Person3 :Fem "tufaʌʕalna"],
-            [:Dual :Person2 :Common "tufaʌʕalaʌ"],
-            [:Dual :Person3 :Masc "yufaʌʕalaʌ"],
-            [:Dual :Person3 :Fem "tufaʌʕalaʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl6"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Subjunctive
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕila"],
-            [:Singular :Person2 :Masc "tufaʌʕila"],
-            [:Singular :Person2 :Fem "tufaʌʕiliy"],
-            [:Singular :Person3 :Masc "yufaʌʕila"],
-            [:Singular :Person3 :Fem "tufaʌʕila"],
-            [:Plural :Person1 :Common "nufaʌʕila"],
-            [:Plural :Person2 :Masc "tufaʌʕiluw"],
-            [:Plural :Person2 :Fem "tufaʌʕilna"],
-            [:Plural :Person3 :Masc "yufaʌʕiluw"],
-            [:Plural :Person3 :Fem "tufaʌʕilna"],
-            [:Dual :Person2 :Common "tufaʌʕilaʌ"],
-            [:Dual :Person3 :Masc "yufaʌʕilaʌ"],
-            [:Dual :Person3 :Fem "tufaʌʕilaʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl7"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Subjunctive
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʕufaʌʕala"],
-            [:Singular :Person2 :Masc "tufaʌʕala"],
-            [:Singular :Person2 :Fem "tufaʌʕaliy"],
-            [:Singular :Person3 :Masc "yufaʌʕala"],
-            [:Singular :Person3 :Fem "tufaʌʕala"],
-            [:Plural :Person1 :Common "nufaʌʕala"],
-            [:Plural :Person2 :Masc "tufaʌʕaluw"],
-            [:Plural :Person2 :Fem "tufaʌʕalna"],
-            [:Plural :Person3 :Masc "yufaʌʕaluw"],
-            [:Plural :Person3 :Fem "tufaʌʕalna"],
-            [:Dual :Person2 :Common "tufaʌʕalaʌ"],
-            [:Dual :Person3 :Masc "yufaʌʕalaʌ"],
-            [:Dual :Person3 :Fem "tufaʌʕalaʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl8"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Past
-             :voice :Active
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "faʌʕaltu"],
-            [:Singular :Person2 :Masc "faʌʕalta"],
-            [:Singular :Person2 :Fem "faʌʕalti"],
-            [:Singular :Person3 :Masc "faʌʕala"],
-            [:Singular :Person3 :Fem "faʌʕalat"],
-            [:Plural :Person2 :Masc "faʌʕaltum"],
-            [:Plural :Person2 :Fem "faʌʕaltunna"],
-            [:Plural :Person3 :Masc "faʌʕaluw"],
-            [:Plural :Person3 :Fem "faʌʕalfa"],
-            [:Dual :Person2 :Common "faʌʕaltumaʌ"],
-            [:Dual :Person3 :Masc "faʌʕalaʌ"],
-            [:Dual :Person3 :Fem "faʌʕalataʌ"]]
-     }
-    {:label "arabic-Vform3-fʕl9"
-    :note "GR2010"
-    :pdgmType :Finite
-    :common {:derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC,
-             :tam :Past
-             :voice :Passive
-             :pos :Verb}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "fuʕʕiltu"],
-            [:Singular :Person2 :Masc "fuʕʕilta"],
-            [:Singular :Person2 :Fem "fuʕʕilti"],
-            [:Singular :Person3 :Masc "fuʕʕila"],
-            [:Singular :Person3 :Fem "fuʕʕilat"],
-            [:Plural :Person1 :Common "fuʕʕilnaʌ"],
-            [:Plural :Person2 :Masc "fuʕʕiltum"],
-            [:Plural :Person2 :Fem "fuʕʕiltunna"],
-            [:Plural :Person3 :Masc "fuʕʕiluw"],
-            [:Plural :Person3 :Fem "fuʕʕilna"],
-            [:Dual :Person2 :Common "fuʕʕiltumaʌ"],
-            [:Dual :Person3 :Masc "fuʕʕilaʌ"],
-            [:Dual :Person3 :Fem "fuʕʕilataʌ"]]
-    }
-    {:label "arabic-Vform3Participloe-fʕl"
-     :note "GR2010"
-     :pdgmType :VOther
-     :common {:vmorphClass :ParticipleL
-              :derivedStem :L,
-              :lexeme :fʕl,
-              :rootClass :CCC
-              :pos :Verb,
-              
-              :voice :Active}
-     :terms [[:number :gender :token],
-             [:Singular :Masc "mufaʌʕil"],
-             [:Singular :Fem "mufaʌʕilaħ"],
-             [:Plural :Masc "mufaʌʕilûna"],
-             [:Plural :Fem "mufaʌʕilât"]]
-    }
-    {:label "arabic-Vform1Infinitive-nsr"
-    :note "GR2010"
-    :pdgmType :VOther
-    :common {:vmorphClass :InfinitiveB
-             :derivedStem :Base,
-             :lexeme :nsr,
-             :rootClass :CCC
-             :pos :Verb,
-             }
-    :terms [[:infinitiveVar :token],
-            [:Infinitive1 "naṣr"],
-            [:Infinitive2 "nuṣuwr"]]
-    }
-    {:label "arabic-Vform3Infinitive-fʕl"
-    :note "GR2010"
-    :pdgmType :VOther
-    :common {:vmorphClass :InfinitiveL
-             :derivedStem :L,
-             :lexeme :fʕl,
-             :rootClass :CCC
-             :pos :Verb,
-             }
-    :terms [[:infinitiveVar :token],
-            [:Infinitive1 "mufaʌʕalaħ"],
-            [:Infinitive2 "fiʕaʌl"]]
-    }
-    {:label "arabic-Vform3nfiitive-fʕl"
-    :note "GR2010"
-    :pdgmType :VOther
-    :common {:vmorphClass :InfinitiveD
-             :derivedStem :D,
-             :lexeme :fʕl,
-             :rootClass :CCC
-             :pos :Verb,
-             }
-    :terms [[:infinitiveVar :gender :token],
-            [:Infinitive1 :Masc "tafʕîl"],
-            [:Infinitive2 :Fem "tafʕilaħ"]]
-    }
-]
-:muterms [
-    {:label "arabic-PCliticPro"
-    :note "Thackston1994 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular,dual,and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels,but is –ya after a long vowel or dipthong;when followed by an elidible alif,the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics,except for the 3fs,harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-,the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-,the vowel of the enclitic is –i."
-    :pdgmType :PRO
-    :common {:case :GenObj,
-             :pos :Pronoun,
-             :proClass :Clitic}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "-ī/-iya/-ya"],
-            [:Singular :Person2 :Masc "-ka"],
-            [:Singular :Person2 :Fem "-ki"],
-            [:Singular :Person3 :Masc "-hu/-hi"],
-            [:Singular :Person3 :Fem "-hā"],
-            [:Plural :Person1 :Common "-nā"],
-            [:Plural :Person2 :Masc "-kum(u)"],
-            [:Plural :Person2 :Fem "-kunna"],
-            [:Plural :Person3 :Masc "-hum(u)/-him(u)"],
-            [:Plural :Person3 :Fem "-hunna/-hinna"],
-            [:Dual :Person1 :Common "⊤"],
-            [:Dual :Person2 :Masc "-kumā"],
-            [:Dual :Person2 :Fem "-kumā"],
-            [:Dual :Person3 :Masc "-humā/-himā"],
-            [:Dual :Person3 :Fem "-humā/-himā"]]
-    }
-    {:label "arabic-PDemon"
-    :note "Thackston1994 p. 45;arabic has two sets of demonstratives,near and far,which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable."
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Demonstrative}
-    :terms [[:case :deixis :number :gender :token],
-            [:Common  :Far  :Singular :Masc "ðālika"],
-            [:Common  :Far  :Singular :Fem "tilka"],
-            [:Common :Far :Plural :Common "ʾulāʾika"],
-            [:Common  :Near  :Singular :Masc "hāðā"],
-            [:Common  :Near  :Singular :Fem "hāðihi"],
-            [:Common :Near :Plural :Common "hāʾulāʾi"],
-            [:Nominative :Far :Dual :Masc "ðānika"],
-            [:Nominative :Far :Dual :Fem "tānika"],
-            [:Nominative :Near :Dual :Masc "hāðāni"],
-            [:Nominative :Near :Dual :Fem "hātāni"],
-            [:Oblique :Far :Dual :Masc "ðaynika"],
-            [:Oblique :Far :Dual :Fem "taynika"],
-            [:Oblique :Near :Dual :Masc "hāðayni"],
-            [:Oblique :Near :Dual :Fem "hātayni"]]
-    }
-    {:label "arabic-PIndep"
-    :note "Thackston1994,p. 28"
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Independent}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ʾana"],
-            [:Singular :Person2 :Masc "ʾanta"],
-            [:Singular :Person2 :Fem "ʾanti"],
-            [:Singular :Person3 :Masc "huwa"],
-            [:Singular :Person3 :Fem "hiya"],
-            [:Plural :Person1 :Common "naḥnu"],
-            [:Plural :Person2 :Masc "ʾantum(u)"],
-            [:Plural :Person2 :Fem "ʾantunna"],
-            [:Plural :Person3 :Masc "hum(u)"],
-            [:Plural :Person3 :Fem "hunna"],
-            [:Dual :Person1 :Common "⊤"],
-            [:Dual :Person2 :Common "ʾantumā"],
-            [:Dual :Person3 :Common "humā"]]
-    }
-    {:label "arabic-PRel"
-    :note "Thackston1994 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī."
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Relative}
-    :terms [[:case :number :gender :token],
-            [:Common :Singular :Masc "allaðī"],
-            [:Common :Singular :Fem "allatī"],
-            [:Common :Plural :Masc "allaðīna"],
-            [:Common :Plural :Fem "allātī"],
-            [:Nominative :Dual :Masc "allaðāni"],
-            [:Nominative :Dual :Fem "allatāni"],
-            [:Oblique :Dual :Masc "allaðayni"],
-            [:Oblique :Dual :Fem "allatayni"]]
-    }
-]
+                          :rootClass :CCC,
+                          :tam :Nonpast,
+                          :token-stem :nṣur,
+                          :voice :Active}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀanṣuru" "ˀa" "u"],
+                         [:Singular :Person2 :Masc "tanṣuru" "ta" "u"],
+                         [:Singular :Person2 :Fem "tanṣuriyna" "ta" "iyna"],
+                         [:Singular :Person3 :Masc "yanṣuru" "ya" "u"],
+                         [:Singular :Person3 :Fem "tanṣuru" "ta" "u"],
+                         [:Plural :Person1 :Common "nanṣuru" "na" "u"],
+                         [:Plural :Person2 :Masc "tanṣuruwna" "ta" "uwna"],
+                         [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
+                         [:Plural :Person3 :Masc "yanṣuruwna" "ya" "uwna"],
+                         [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
+                         [:Dual :Person2 :Common "tanṣuraʌni" "ta" "aʌni"],
+                         [:Dual :Person3 :Masc "yanṣuraʌni" "ya" "aʌni"],
+                         [:Dual :Person3 :Fem "tanṣuraʌni" "ta" "aʌni"]]
+                 }
+                {:label "arabic-Vform1ActImptv-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :token-prefix :ʌu,
+                          :lexeme :nsr,
+                          :voice :Active,
+                          :pos :Verb,
+                          :person :Person2,
+                          :derivedStem :Base,
+                          :token-stem :nṣur,
+                          :rootClass :CCC,
+                          :tam :Imperative}
+                 :terms [[:number :gender :token :token-suffix],
+                         [:Singular :Masc "ʌunṣur" "Ø"],
+                         [:Singular :Fem "ʌunṣuriy" "iy"],
+                         [:Plural :Masc "ʌunṣuruw" "uw"],
+                         [:Plural :Fem "ʌunṣurna" "na"]]
+                 }
+                {:label "arabic-Vform1ActJuss-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Jussive,
+                          :token-stem :nṣur,
+                          :voice :Active}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀanṣur" "ˀa" "Ø"],
+                         [:Singular :Person2 :Masc "tanṣur" "ta" "Ø"],
+                         [:Singular :Person2 :Fem "tanṣuriy" "ta" "iy"],
+                         [:Singular :Person3 :Masc "yanṣur" "ya" "Ø"],
+                         [:Singular :Person3 :Fem "tanṣur" "ta" "Ø"],
+                         [:Plural :Person1 :Common "nanṣur" "na" "Ø"],
+                         [:Plural :Person2 :Masc "tanṣuruw" "ta" "uw"],
+                         [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
+                         [:Plural :Person3 :Masc "yanṣuruw" "ya" "uw"],
+                         [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
+                         [:Dual :Person2 :Common "tanṣuraʌ" "ta" "aʌ"],
+                         [:Dual :Person3 :Masc "yanṣuraʌ" "ya" "aʌ"],
+                         [:Dual :Person3 :Fem "tanṣuraʌ" "ta" "aʌ"]]
+                 }
+                {:label "arabic-Vform1ActPerf-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :token-prefix :Ø,
+                          :lexeme :nsr,
+                          :voice :Active,
+                          :pos :Verb,
+                          :derivedStem :Base,
+                          :token-stem :naṣar,
+                          :rootClass :CCC,
+                          :tam :Past}
+                 :terms [[:number :person :gender :token :token-suffix],
+                         [:Singular :Person1 :Common "naṣartu" "tu"],
+                         [:Singular :Person2 :Masc "naṣarta" "ta"],
+                         [:Singular :Person2 :Fem "naṣarti" "ti"],
+                         [:Singular :Person3 :Masc "naṣara" "a"],
+                         [:Singular :Person3 :Fem "naṣarat" "at"],
+                         [:Plural :Person1 :Common "naṣarnaʌ" "naʌ"],
+                         [:Plural :Person2 :Masc "naṣartum" "tum"],
+                         [:Plural :Person2 :Fem "naṣartunna" "tunna"],
+                         [:Plural :Person3 :Masc "naṣaruw" "uw"],
+                         [:Plural :Person3 :Fem "naṣarna" "na"],
+                         [:Dual :Person2 :Common "naṣartumaʌ" "tumaʌ"],
+                         [:Dual :Person3 :Masc "naṣaraʌ" "aʌ"],
+                         [:Dual :Person3 :Fem "naṣarataʌ" "ataʌ"]]
+                 }
+                {:label "arabic-Vform1ActSubj-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Subjunctive,
+                          :token-stem :nṣur,
+                          :voice :Active}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀanṣura" "ˀa" "a"],
+                         [:Singular :Person2 :Masc "tanṣura" "ta" "a"],
+                         [:Singular :Person2 :Fem "tanṣuriy" "ta" "iy"],
+                         [:Singular :Person3 :Masc "yanṣura" "ya" "a"],
+                         [:Singular :Person3 :Fem "tanṣura" "ta" "a"],
+                         [:Plural :Person1 :Common "nanṣura" "na" "a"],
+                         [:Plural :Person2 :Masc "tanṣuruw" "ta" "uw"],
+                         [:Plural :Person2 :Fem "tanṣurna" "ta" "na"],
+                         [:Plural :Person3 :Masc "yanṣuruw" "ya" "uw"],
+                         [:Plural :Person3 :Fem "tanṣurna" "ta" "na"],
+                         [:Dual :Person2 :Common "tanṣuraʌ" "ta" "aʌ"],
+                         [:Dual :Person3 :Masc "yanṣuraʌ" "ya" "aʌ"],
+                         [:Dual :Person3 :Fem "tanṣuraʌ" "ta" "aʌ"]]
+                 }
+                {:label "arabic-Vform1Part-nsr"
+                 :note "GR2010"
+                 :common {:vmorphClass :ParticipleB
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :rootClass :CCC,
+                          :pos :Verb,
+                          }
+                 :terms [[:state :voice :number :gender :token :token-prefix :token-stem :token-suffix],
+                         [:Constr :Active :Plural :Masc "naʌṣiruw" "Ø" "naʌṣir" "uw"],
+                         [:Constr :Active :Dual :Masc "naʌṣiraʌ" "Ø" "naʌṣir" "aʌ"],
+                         [:Constr :Active :Dual :Fem "naʌṣirataʌ" "Ø" "naʌṣir" "ataʌ"],
+                         [:Constr :Passive :Plural :Masc "manṣuwruw" "ma" "nṣuwr" "uw"],
+                         [:Constr :Passive :Dual :Masc "manṣuwraʌ" "ma" "nṣuwr" "aʌ"],
+                         [:Constr :Passive :Dual :Fem "manṣuwrataʌ" "ma" "nṣuwr" "ataʌ"],
+                         [:Constr :Stative :Dual :Masc "naṣiyraʌ" "Ø" "naṣiyr" "aʌ"],
+                         [:Constr :Stative :Dual :Fem "naṣiyrataʌ" "Ø" "naṣiyr" "ataʌ"],
+                         [:NonConstr :Active :Plural :Masc "naʌṣiruwna" "Ø" "naʌṣir" "uwna"],
+                         [:NonConstr :Active :Dual :Masc "naʌṣiraʌni" "Ø" "naʌṣir" "aʌni"],
+                         [:NonConstr :Active :Dual :Fem "naʌṣirataʌni" "Ø" "naʌṣir" "ataʌni"],
+                         [:NonConstr :Passive :Plural :Masc "manṣuwruwna" "ma" "nṣuwr" "uwna"],
+                         [:NonConstr :Passive :Dual :Masc "manṣuwraʌni" "ma" "nṣuwr" "aʌni"],
+                         [:NonConstr :Passive :Dual :Fem "manṣuwrataʌni" "ma" "nṣuwr" "ataʌni"],
+                         [:NonConstr :Stative :Dual :Masc "naṣiyraʌni" "Ø" "naṣiyr" "aʌni"],
+                         [:NonConstr :Stative :Dual :Fem "naṣiyrataʌni" "Ø" "naṣiyr" "ataʌni"],
+                         [:_NULL :Active :Singular :Masc "naʌṣir" "Ø" "naʌṣir" "Ø"],
+                         [:_NULL :Active :Singular :Fem "naʌṣirah" "Ø" "naʌṣir" "ah"],
+                         [:_NULL :Active :Plural :Masc "Ɂanṣaʌr" "Ɂa" "naʌṣir" "internal"],
+                         [:_NULL :Active :Plural :Masc "nuṣṣaʌr" "Ø" "naʌṣir" "internal"],
+                         [:_NULL :Active :Plural :Fem "naʌṣiraʌt" "Ø" "naʌṣir" "aʌt"],
+                         [:_NULL :Passive :Singular :Masc "manṣuwr" "ma" "nṣuwr" "Ø"],
+                         [:_NULL :Passive :Singular :Fem "manṣuwrah" "ma" "nṣuwr" "Ø"],
+                         [:_NULL :Passive :Plural :Fem "manṣuwraʌt" "ma" "nṣuwr" "aʌt"],
+                         [:_NULL :Stative :Singular :Masc "naṣiyr" "Ø" "naṣiyr" "Ø"],
+                         [:_NULL :Stative :Singular :Fem "naṣiyrah" "Ø" "naṣiyr" "ah"],
+                         [:_NULL :Stative :Plural :Masc "nuṣaraʌˀ" "Ø" "naṣiyr" "internal"]]
+                 }
+                {:label "arabic-Vform1PassImperf-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Nonpast,
+                          :token-stem :nṣar,
+                          :voice :Passive}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀunṣaru" "ˀu" "u"],
+                         [:Singular :Person2 :Masc "tunṣaru" "tu" "u"],
+                         [:Singular :Person2 :Fem "tunṣariyna" "tu" "iyna"],
+                         [:Singular :Person3 :Masc "yunṣaru" "yu" "u"],
+                         [:Singular :Person3 :Fem "tunṣaru" "tu" "u"],
+                         [:Plural :Person1 :Common "nunṣaru" "nu" "u"],
+                         [:Plural :Person2 :Masc "tunṣaruwna" "tu" "uwna"],
+                         [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
+                         [:Plural :Person3 :Masc "yunṣaruwna" "yu" "uwna"],
+                         [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
+                         [:Dual :Person2 :Common "tunṣaraʌni" "tu" "aʌni"],
+                         [:Dual :Person3 :Masc "yunṣaraʌni" "yu" "aʌni"],
+                         [:Dual :Person3 :Fem "tunṣaraʌni" "tu" "aʌni"]]
+                 }
+                {:label "arabic-Vform1PassJuss-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :rootClass :CCC,
+                          :tam :Jussive,
+                          :pos :Verb,
+                          :token-stem :nṣar,
+                          :voice :Passive}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀunṣar" "ˀu" "Ø"],
+                         [:Singular :Person2 :Masc "tunṣar" "tu" "Ø"],
+                         [:Singular :Person2 :Fem "tunṣariy" "tu" "iy"],
+                         [:Singular :Person3 :Masc "yunṣar" "yu" "Ø"],
+                         [:Singular :Person3 :Fem "tunṣar" "tu" "Ø"],
+                         [:Plural :Person1 :Common "nunṣar" "nu" "Ø"],
+                         [:Plural :Person2 :Masc "tunṣaruw" "tu" "uw"],
+                         [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
+                         [:Plural :Person3 :Masc "yunṣaruw" "yu" "uw"],
+                         [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
+                         [:Dual :Person2 :Common "tunṣaraʌ" "tu" "aʌ"],
+                         [:Dual :Person3 :Masc "yunṣaraʌ" "yu" "aʌ"],
+                         [:Dual :Person3 :Fem "tunṣaraʌ" "tu" "aʌ"]]
+                 }
+                {:label "arabic-Vform1PassPerf-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :token-prefix :Ø,
+                          :lexeme :nsr,
+                          :voice :Passive,
+                          :pos :Verb,
+                          :derivedStem :Base,
+                          :token-stem :nuṣir,
+                          :rootClass :CCC,
+                          :tam :Past}
+                 :terms [[:number :person :gender :token :token-suffix],
+                         [:Singular :Person1 :Common "nuṣirtu" "tu"],
+                         [:Singular :Person2 :Masc "nuṣirta" "ta"],
+                         [:Singular :Person2 :Fem "nuṣirti" "ti"],
+                         [:Singular :Person3 :Masc "nuṣira" "a"],
+                         [:Singular :Person3 :Fem "nuṣirat" "at"],
+                         [:Plural :Person1 :Common "nuṣirnaʌ" "naʌ"],
+                         [:Plural :Person2 :Masc "nuṣirtum" "tum"],
+                         [:Plural :Person2 :Fem "nuṣirtunna" "tunna"],
+                         [:Plural :Person3 :Masc "nuṣiruw" "uw"],
+                         [:Plural :Person3 :Fem "nuṣirna" "na"],
+                         [:Dual :Person2 :Common "nuṣirtumaʌ" "tumaʌ"],
+                         [:Dual :Person3 :Masc "nuṣiraʌ" "aʌ"],
+                         [:Dual :Person3 :Fem "nuṣirataʌ" "ataʌ"]]
+                 }
+                {:label "arabic-Vform1PassSubj-nsr"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :rootClass :CCC,
+                          :tam :Subjunctive,
+                          :pos :Verb,
+                          :token-stem :nṣar,
+                          :voice :Passive}
+                 :terms [[:number :person :gender :token :token-prefix :token-suffix],
+                         [:Singular :Person1 :Common "ˀunṣara" "ˀu" "a"],
+                         [:Singular :Person2 :Masc "tunṣara" "tu" "a"],
+                         [:Singular :Person2 :Fem "tunṣariy" "tu" "iy"],
+                         [:Singular :Person3 :Masc "yunṣara" "yu" "a"],
+                         [:Singular :Person3 :Fem "tunṣara" "tu" "a"],
+                         [:Plural :Person1 :Common "nunṣara" "nu" "a"],
+                         [:Plural :Person2 :Masc "tunṣaruw" "tu" "uw"],
+                         [:Plural :Person2 :Fem "tunṣarna" "tu" "na"],
+                         [:Plural :Person3 :Masc "yunṣaruw" "yu" "uw"],
+                         [:Plural :Person3 :Fem "tunṣarna" "tu" "na"],
+                         [:Dual :Person2 :Common "tunṣaraʌ" "tu" "aʌ"],
+                         [:Dual :Person3 :Masc "yunṣaraʌ" "yu" "aʌ"],
+                         [:Dual :Person3 :Fem "tunṣaraʌ" "tu" "aʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl1"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Imperative
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person2 :Masc "faʕʕil"],
+                         [:Singular :Person2 :Fem "faʕʕiliy"],
+                         [:Plural :Person2 :Fem "faʕʕilna"],
+                         [:Dual :Person2 :Masc "faʕʕiluw"],
+                         [:Dual :Person2 :Common "faʕʕilaʌ"],
+                         [:Singular :Person1 :Common "ʕufaʕʕilu"]]
+                 }
+                {:label "arabic-Vform2-fʕl2"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Nonpast
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person2 :Masc "tufaʕʕilu"],
+                         [:Singular :Person2 :Fem "tufaʕʕiliyna"],
+                         [:Singular :Person3 :Masc "yufaʕʕilu"],
+                         [:Singular :Person3 :Fem "tufaʕʕilu"],
+                         [:Plural :Person1 :Common "nufaʕʕilu"],
+                         [:Plural :Person2 :Masc "tufaʕʕiluwna"],
+                         [:Plural :Person2 :Fem "tufaʕʕilna"],
+                         [:Plural :Person3 :Masc "yufaʕʕiluwna"],
+                         [:Plural :Person3 :Fem "tufaʕʕilna"],
+                         [:Dual :Person2 :Common "tufaʕʕilaʌni"],
+                         [:Dual :Person3 :Masc "yufaʕʕilaʌni"],
+                         [:Dual :Person3 :Fem "tufaʕʕilaʌni"]]
+                 }
+                {:label "arabic-Vform2-fʕl3"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Nonpast
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʕʕalu"],
+                         [:Singular :Person2 :Masc "tufaʕʕalu"],
+                         [:Singular :Person2 :Fem "tufaʕʕaliyna"],
+                         [:Singular :Person3 :Masc "yufaʕʕalu"],
+                         [:Singular :Person3 :Fem "tufaʕʕalu"],
+                         [:Plural :Person1 :Common "nufaʕʕalu"],
+                         [:Plural :Person2 :Masc "tufaʕʕaluwna"],
+                         [:Plural :Person2 :Fem "tufaʕʕalna"],
+                         [:Plural :Person3 :Masc "yufaʕʕaluwna"],
+                         [:Plural :Person3 :Fem "tufaʕʕalna"],
+                         [:Dual :Person2 :Common "tufaʕʕalaʌni"],
+                         [:Dual :Person3 :Masc "yufaʕʕalaʌni"],
+                         [:Dual :Person3 :Fem "tufaʕʕalaʌni"]]
+                 }
+                {:label "arabic-Vform2-fʕl4"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Jussive
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʕʕil"],
+                         [:Singular :Person2 :Masc "tufaʕʕil"],
+                         [:Singular :Person2 :Fem "tufaʕʕiliy"],
+                         [:Singular :Person3 :Masc "yufaʕʕil"],
+                         [:Singular :Person3 :Fem "tufaʕʕil"],
+                         [:Plural :Person1 :Common "nufaʕʕil"],
+                         [:Plural :Person2 :Masc "tufaʕʕiluw"],
+                         [:Plural :Person2 :Fem "tufaʕʕilna"],
+                         [:Plural :Person3 :Masc "yufaʕʕiluw"],
+                         [:Plural :Person3 :Fem "tufaʕʕilna"],
+                         [:Dual :Person2 :Common "tufaʕʕilaʌ"],
+                         [:Dual :Person3 :Masc "yufaʕʕilaʌ"],
+                         [:Dual :Person3 :Fem "tufaʕʕilaʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl5"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Jussive
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʕʕal"],
+                         [:Singular :Person2 :Masc "tufaʕʕal"],
+                         [:Singular :Person2 :Fem "tufaʕʕaliy"],
+                         [:Singular :Person3 :Masc "yufaʕʕal"],
+                         [:Singular :Person3 :Fem "tufaʕʕal"],
+                         [:Plural :Person1 :Common "nufaʕʕal"],
+                         [:Plural :Person2 :Masc "tufaʕʕaluw"],
+                         [:Plural :Person2 :Fem "tufaʕʕalna"],
+                         [:Plural :Person3 :Masc "yufaʕʕaluw"],
+                         [:Plural :Person3 :Fem "tufaʕʕalna"],
+                         [:Dual :Person2 :Common "tufaʕʕalaʌ"],
+                         [:Dual :Person3 :Masc "yufaʕʕalaʌ"],
+                         [:Dual :Person3 :Fem "tufaʕʕalaʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl6"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Subjunctive
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʕʕila"],
+                         [:Singular :Person2 :Masc "tufaʕʕila"],
+                         [:Singular :Person2 :Fem "tufaʕʕiliy"],
+                         [:Singular :Person3 :Masc "yufaʕʕila"],
+                         [:Singular :Person3 :Fem "tufaʕʕila"],
+                         [:Plural :Person1 :Common "nufaʕʕila"],
+                         [:Plural :Person2 :Masc "tufaʕʕiluw"],
+                         [:Plural :Person2 :Fem "tufaʕʕilna"],
+                         [:Plural :Person3 :Masc "yufaʕʕiluw"],
+                         [:Plural :Person3 :Fem "tufaʕʕilna"],
+                         [:Dual :Person2 :Common "tufaʕʕilaʌ"],
+                         [:Dual :Person3 :Masc "yufaʕʕilaʌ"],
+                         [:Dual :Person3 :Fem "tufaʕʕilaʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl7"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Subjunctive
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʕʕala"],
+                         [:Singular :Person2 :Masc "tufaʕʕala"],
+                         [:Singular :Person2 :Fem "tufaʕʕaliy"],
+                         [:Singular :Person3 :Masc "yufaʕʕala"],
+                         [:Singular :Person3 :Fem "tufaʕʕala"],
+                         [:Plural :Person1 :Common "nufaʕʕala"],
+                         [:Plural :Person2 :Masc "tufaʕʕaluw"],
+                         [:Plural :Person2 :Fem "tufaʕʕalna"],
+                         [:Plural :Person3 :Masc "yufaʕʕaluw"],
+                         [:Plural :Person3 :Fem "tufaʕʕalna"],
+                         [:Dual :Person2 :Common "tufaʕʕalaʌ"],
+                         [:Dual :Person3 :Masc "yufaʕʕalaʌ"],
+                         [:Dual :Person3 :Fem "tufaʕʕalaʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl8"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Past
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "faʕʕaltu"],
+                         [:Singular :Person2 :Masc "faʕʕalta"],
+                         [:Singular :Person2 :Fem "faʕʕalti"],
+                         [:Singular :Person3 :Masc "faʕʕala"],
+                         [:Singular :Person3 :Fem "faʕʕalat"],
+                         [:Plural :Person2 :Masc "faʕʕaltum"],
+                         [:Plural :Person2 :Fem "faʕʕaltunna"],
+                         [:Plural :Person3 :Masc "faʕʕaluw"],
+                         [:Plural :Person3 :Fem "faʕʕalfa"],
+                         [:Dual :Person2 :Common "faʕʕaltumaʌ"],
+                         [:Dual :Person3 :Masc "faʕʕalaʌ"],
+                         [:Dual :Person3 :Fem "faʕʕalataʌ"]]
+                 }
+                {:label "arabic-Vform2-fʕl9"
+                 :note ""
+                 :common {:vmorphclass :Finite
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Past
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "fuʕʕiltu"],
+                         [:Singular :Person2 :Masc "fuʕʕilta"],
+                         [:Singular :Person2 :Fem "fuʕʕilti"],
+                         [:Singular :Person3 :Masc "fuʕʕila"],
+                         [:Singular :Person3 :Fem "fuʕʕilat"],
+                         [:Plural :Person1 :Common "fuʕʕilnaʌ"],
+                         [:Plural :Person2 :Masc "fuʕʕiltum"],
+                         [:Plural :Person2 :Fem "fuʕʕiltunna"],
+                         [:Plural :Person3 :Masc "fuʕʕiluw"],
+                         [:Plural :Person3 :Fem "fuʕʕilna"],
+                         [:Dual :Person2 :Common "fuʕʕiltumaʌ"],
+                         [:Dual :Person3 :Masc "fuʕʕilaʌ"],
+                         [:Dual :Person3 :Fem "fuʕʕilataʌ"]]
+                 }
+                {:label "arabic-Vform2Participle-fʕl"
+                 :note "GR2010"
+                 :common {:vmorphClass :ParticipleD
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :pos :Verb            ,
+                          }
+                 :terms [[:state :voice :number :gender :token],
+                         [:Constr :Active :Plural :Masc "mufaʕʕiluw"],
+                         [:Constr :Active :Dual :Masc "mufaʕʕilaʌ"],
+                         [:Constr :Active :Dual :Fem "mufaʕʕilataʌ"],
+                         [:Constr :Passive :Plural :Masc "mafaʕʕaluw"],
+                         [:Constr :Passive :Dual :Masc "mafaʕʕalaʌ"],
+                         [:Constr :Passive :Dual :Fem "mafaʕʕalataʌ"],
+                         [:NonConstr :Active :Plural :Masc "mufaʕʕiluwna"],
+                         [:NonConstr :Active :Dual :Masc "mufaʕʕilaʌni"],
+                         [:NonConstr :Active :Dual :Fem "mufaʕʕilataʌni"],
+                         [:NonConstr :Passive :Plural :Masc "mafaʕʕaluwna"],
+                         [:NonConstr :Passive :Dual :Masc "mafaʕʕalaʌni"],
+                         [:NonConstr :Passive :Dual :Fem "mafaʕʕalataʌni"],
+                         [:_NULL :Active :Singular :Masc "mufaʕʕil"],
+                         [:_NULL :Active :Singular :Fem "mufaʕʕilah"],
+                         [:_NULL :Active :Plural :Fem "mufaʕʕilaʌt"],
+                         [:_NULL :Passive :Singular :Masc "mafaʕʕal"],
+                         [:_NULL :Passive :Singular :Fem "mafaʕʕalah"],
+                         [:_NULL :Passive :Plural :Fem "mafaʕʕalaʌt"]]
+                 }
+                {:label "arabic-Vform3-fʕl1"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Imperative
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person2 :Masc "faʌʕil"],
+                         [:Singular :Person2 :Fem "faʌʕiliy"],
+                         [:Plural :Person2 :Fem "faʌʕilna"],
+                         [:Dual :Person2 :Masc "faʌʕiluw"],
+                         [:Dual :Person2 :Common "faʌʕilaʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl2"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Nonpast
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕilu"],
+                         [:Singular :Person2 :Masc "tufaʌʕilu"],
+                         [:Singular :Person2 :Fem "tufaʌʕiliyna"],
+                         [:Singular :Person3 :Masc "yufaʌʕilu"],
+                         [:Singular :Person3 :Fem "tufaʌʕilu"],
+                         [:Plural :Person1 :Common "nufaʌʕilu"],
+                         [:Plural :Person2 :Masc "tufaʌʕiluwna"],
+                         [:Plural :Person2 :Fem "tufaʌʕilna"],
+                         [:Plural :Person3 :Masc "yufaʌʕiluwna"],
+                         [:Plural :Person3 :Fem "tufaʌʕilna"],
+                         [:Dual :Person2 :Common "tufaʌʕilaʌni"],
+                         [:Dual :Person3 :Masc "yufaʌʕilaʌni"],
+                         [:Dual :Person3 :Fem "tufaʌʕilaʌni"]]
+                 }
+                {:label "arabic-Vform3-fʕl3"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Nonpast
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕalu"],
+                         [:Singular :Person2 :Masc "tufaʌʕalu"],
+                         [:Singular :Person2 :Fem "tufaʌʕaliyna"],
+                         [:Singular :Person3 :Masc "yufaʌʕalu"],
+                         [:Singular :Person3 :Fem "tufaʌʕalu"],
+                         [:Plural :Person1 :Common "nufaʌʕalu"],
+                         [:Plural :Person2 :Masc "tufaʌʕaluwna"],
+                         [:Plural :Person2 :Fem "tufaʌʕalna"],
+                         [:Plural :Person3 :Masc "yufaʌʕaluwna"],
+                         [:Plural :Person3 :Fem "tufaʌʕalna"],
+                         [:Dual :Person2 :Common "tufaʌʕalaʌni"],
+                         [:Dual :Person3 :Masc "yufaʌʕalaʌni"],
+                         [:Dual :Person3 :Fem "tufaʌʕalaʌni"]]
+                 }
+                {:label "arabic-Vform3-fʕl4"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Jussive
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕil"],
+                         [:Singular :Person2 :Masc "tufaʌʕil"],
+                         [:Singular :Person2 :Fem "tufaʌʕiliy"],
+                         [:Singular :Person3 :Masc "yufaʌʕil"],
+                         [:Singular :Person3 :Fem "tufaʌʕil"],
+                         [:Plural :Person1 :Common "nufaʌʕil"],
+                         [:Plural :Person2 :Masc "tufaʌʕiluw"],
+                         [:Plural :Person2 :Fem "tufaʌʕilna"],
+                         [:Plural :Person3 :Masc "yufaʌʕiluw"],
+                         [:Plural :Person3 :Fem "tufaʌʕilna"],
+                         [:Dual :Person2 :Common "tufaʌʕilaʌ"],
+                         [:Dual :Person3 :Masc "yufaʌʕilaʌ"],
+                         [:Dual :Person3 :Fem "tufaʌʕilaʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl5"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Jussive
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕal"],
+                         [:Singular :Person2 :Masc "tufaʌʕal"],
+                         [:Singular :Person2 :Fem "tufaʌʕaliy"],
+                         [:Singular :Person3 :Masc "yufaʌʕal"],
+                         [:Singular :Person3 :Fem "tufaʌʕal"],
+                         [:Plural :Person1 :Common "nufaʌʕal"],
+                         [:Plural :Person2 :Masc "tufaʌʕaluw"],
+                         [:Plural :Person2 :Fem "tufaʌʕalna"],
+                         [:Plural :Person3 :Masc "yufaʌʕaluw"],
+                         [:Plural :Person3 :Fem "tufaʌʕalna"],
+                         [:Dual :Person2 :Common "tufaʌʕalaʌ"],
+                         [:Dual :Person3 :Masc "yufaʌʕalaʌ"],
+                         [:Dual :Person3 :Fem "tufaʌʕalaʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl6"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Subjunctive
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕila"],
+                         [:Singular :Person2 :Masc "tufaʌʕila"],
+                         [:Singular :Person2 :Fem "tufaʌʕiliy"],
+                         [:Singular :Person3 :Masc "yufaʌʕila"],
+                         [:Singular :Person3 :Fem "tufaʌʕila"],
+                         [:Plural :Person1 :Common "nufaʌʕila"],
+                         [:Plural :Person2 :Masc "tufaʌʕiluw"],
+                         [:Plural :Person2 :Fem "tufaʌʕilna"],
+                         [:Plural :Person3 :Masc "yufaʌʕiluw"],
+                         [:Plural :Person3 :Fem "tufaʌʕilna"],
+                         [:Dual :Person2 :Common "tufaʌʕilaʌ"],
+                         [:Dual :Person3 :Masc "yufaʌʕilaʌ"],
+                         [:Dual :Person3 :Fem "tufaʌʕilaʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl7"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Subjunctive
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ʕufaʌʕala"],
+                         [:Singular :Person2 :Masc "tufaʌʕala"],
+                         [:Singular :Person2 :Fem "tufaʌʕaliy"],
+                         [:Singular :Person3 :Masc "yufaʌʕala"],
+                         [:Singular :Person3 :Fem "tufaʌʕala"],
+                         [:Plural :Person1 :Common "nufaʌʕala"],
+                         [:Plural :Person2 :Masc "tufaʌʕaluw"],
+                         [:Plural :Person2 :Fem "tufaʌʕalna"],
+                         [:Plural :Person3 :Masc "yufaʌʕaluw"],
+                         [:Plural :Person3 :Fem "tufaʌʕalna"],
+                         [:Dual :Person2 :Common "tufaʌʕalaʌ"],
+                         [:Dual :Person3 :Masc "yufaʌʕalaʌ"],
+                         [:Dual :Person3 :Fem "tufaʌʕalaʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl8"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Past
+                          :voice :Active
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "faʌʕaltu"],
+                         [:Singular :Person2 :Masc "faʌʕalta"],
+                         [:Singular :Person2 :Fem "faʌʕalti"],
+                         [:Singular :Person3 :Masc "faʌʕala"],
+                         [:Singular :Person3 :Fem "faʌʕalat"],
+                         [:Plural :Person2 :Masc "faʌʕaltum"],
+                         [:Plural :Person2 :Fem "faʌʕaltunna"],
+                         [:Plural :Person3 :Masc "faʌʕaluw"],
+                         [:Plural :Person3 :Fem "faʌʕalfa"],
+                         [:Dual :Person2 :Common "faʌʕaltumaʌ"],
+                         [:Dual :Person3 :Masc "faʌʕalaʌ"],
+                         [:Dual :Person3 :Fem "faʌʕalataʌ"]]
+                 }
+                {:label "arabic-Vform3-fʕl9"
+                 :note "GR2010"
+                 :common {:vmorphclass :Finite
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC,
+                          :tam :Past
+                          :voice :Passive
+                          :pos :Verb}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "fuʕʕiltu"],
+                         [:Singular :Person2 :Masc "fuʕʕilta"],
+                         [:Singular :Person2 :Fem "fuʕʕilti"],
+                         [:Singular :Person3 :Masc "fuʕʕila"],
+                         [:Singular :Person3 :Fem "fuʕʕilat"],
+                         [:Plural :Person1 :Common "fuʕʕilnaʌ"],
+                         [:Plural :Person2 :Masc "fuʕʕiltum"],
+                         [:Plural :Person2 :Fem "fuʕʕiltunna"],
+                         [:Plural :Person3 :Masc "fuʕʕiluw"],
+                         [:Plural :Person3 :Fem "fuʕʕilna"],
+                         [:Dual :Person2 :Common "fuʕʕiltumaʌ"],
+                         [:Dual :Person3 :Masc "fuʕʕilaʌ"],
+                         [:Dual :Person3 :Fem "fuʕʕilataʌ"]]
+                 }
+                {:label "arabic-Vform3Participloe-fʕl"
+                 :note "GR2010"
+                 :common {:vmorphClass :ParticipleL
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC
+                          :pos :Verb,
+                          
+                          :voice :Active}
+                 :terms [[:number :gender :token],
+                         [:Singular :Masc "mufaʌʕil"],
+                         [:Singular :Fem "mufaʌʕilaħ"],
+                         [:Plural :Masc "mufaʌʕilûna"],
+                         [:Plural :Fem "mufaʌʕilât"]]
+                 }
+                {:label "arabic-Vform1Infinitive-nsr"
+                 :note "GR2010"
+                 :common {:vmorphClass :InfinitiveB
+                          :derivedStem :Base,
+                          :lexeme :nsr,
+                          :rootClass :CCC
+                          :pos :Verb,
+                          }
+                 :terms [[:infinitiveVar :token],
+                         [:Infinitive1 "naṣr"],
+                         [:Infinitive2 "nuṣuwr"]]
+                 }
+                {:label "arabic-Vform3Infinitive-fʕl"
+                 :note "GR2010"
+                 :common {:vmorphClass :InfinitiveL
+                          :derivedStem :L,
+                          :lexeme :fʕl,
+                          :rootClass :CCC
+                          :pos :Verb,
+                          }
+                 :terms [[:infinitiveVar :token],
+                         [:Infinitive1 "mufaʌʕalaħ"],
+                         [:Infinitive2 "fiʕaʌl"]]
+                 }
+                {:label "arabic-Vform3nfiitive-fʕl"
+                 :note "GR2010"
+                 :common {:vmorphClass :InfinitiveD
+                          :derivedStem :D,
+                          :lexeme :fʕl,
+                          :rootClass :CCC
+                          :pos :Verb,
+                          }
+                 :terms [[:infinitiveVar :gender :token],
+                         [:Infinitive1 :Masc "tafʕîl"],
+                         [:Infinitive2 :Fem "tafʕilaħ"]]
+                 }
+ {:label "arabic-PCliticPro"
+  :note "Thackston1994 p. 39;arabic has three forms of attached (enclitic) pronouns for the singular,dual,and plural formations. These forms also serve as direct objects on verbs (except that the 1cs form is –nī and not –ī). The 1cs ending –ī supercedes all short inflectional vowels,but is –ya after a long vowel or dipthong;when followed by an elidible alif,the enclitic may become -iya. The 3mp and 2mp forms have a –u vowel added when followed by an elidible alif. The 3rd person enclitics,except for the 3fs,harmonize with the vowel that precedes immediately. When the immediately preceding vowel is –u- or –a-,the vowel of the enclitic is –u;when immediately preceded by –i- or –ay-,the vowel of the enclitic is –i."
+  :common {:case :GenObj,
+           :pos :Pronoun,
+           :proClass :Clitic}
+  :terms [[:number :person :gender :token],
+          [:Singular :Person1 :Common "-ī/-iya/-ya"],
+          [:Singular :Person2 :Masc "-ka"],
+          [:Singular :Person2 :Fem "-ki"],
+          [:Singular :Person3 :Masc "-hu/-hi"],
+          [:Singular :Person3 :Fem "-hā"],
+          [:Plural :Person1 :Common "-nā"],
+          [:Plural :Person2 :Masc "-kum(u)"],
+          [:Plural :Person2 :Fem "-kunna"],
+          [:Plural :Person3 :Masc "-hum(u)/-him(u)"],
+          [:Plural :Person3 :Fem "-hunna/-hinna"],
+          [:Dual :Person1 :Common "⊤"],
+          [:Dual :Person2 :Masc "-kumā"],
+          [:Dual :Person2 :Fem "-kumā"],
+          [:Dual :Person3 :Masc "-humā/-himā"],
+          [:Dual :Person3 :Fem "-humā/-himā"]]
+  }
+ {:label "arabic-PDemon"
+  :note "Thackston1994 p. 45;arabic has two sets of demonstratives,near and far,which serve both as adjectives and pronouns. Note:only the dual forms are inflected;all other forms are indeclinable."
+  :common {:pos :Pronoun,
+           :proClass :Demonstrative}
+  :terms [[:case :deixis :number :gender :token],
+          [:Common  :Far  :Singular :Masc "ðālika"],
+          [:Common  :Far  :Singular :Fem "tilka"],
+          [:Common :Far :Plural :Common "ʾulāʾika"],
+          [:Common  :Near  :Singular :Masc "hāðā"],
+          [:Common  :Near  :Singular :Fem "hāðihi"],
+          [:Common :Near :Plural :Common "hāʾulāʾi"],
+          [:Nominative :Far :Dual :Masc "ðānika"],
+          [:Nominative :Far :Dual :Fem "tānika"],
+          [:Nominative :Near :Dual :Masc "hāðāni"],
+          [:Nominative :Near :Dual :Fem "hātāni"],
+          [:Oblique :Far :Dual :Masc "ðaynika"],
+          [:Oblique :Far :Dual :Fem "taynika"],
+          [:Oblique :Near :Dual :Masc "hāðayni"],
+          [:Oblique :Near :Dual :Fem "hātayni"]]
+  }
+ {:label "arabic-PIndep"
+  :note "Thackston1994,p. 28"
+  :common {:pos :Pronoun,
+           :proClass :Independent}
+  :terms [[:number :person :gender :token],
+          [:Singular :Person1 :Common "ʾana"],
+          [:Singular :Person2 :Masc "ʾanta"],
+          [:Singular :Person2 :Fem "ʾanti"],
+          [:Singular :Person3 :Masc "huwa"],
+          [:Singular :Person3 :Fem "hiya"],
+          [:Plural :Person1 :Common "naḥnu"],
+          [:Plural :Person2 :Masc "ʾantum(u)"],
+          [:Plural :Person2 :Fem "ʾantunna"],
+          [:Plural :Person3 :Masc "hum(u)"],
+          [:Plural :Person3 :Fem "hunna"],
+          [:Dual :Person1 :Common "⊤"],
+          [:Dual :Person2 :Common "ʾantumā"],
+          [:Dual :Person3 :Common "humā"]]
+  }
+ {:label "arabic-PRel"
+  :note "Thackston1994 p. 52;the fem. plural relative has alternate forms allāʾī and allawātī."
+  :common {:pos :Pronoun,
+           :proClass :Relative}
+  :terms [[:case :number :gender :token],
+          [:Common :Singular :Masc "allaðī"],
+          [:Common :Singular :Fem "allatī"],
+          [:Common :Plural :Masc "allaðīna"],
+          [:Common :Plural :Fem "allātī"],
+          [:Nominative :Dual :Masc "allaðāni"],
+          [:Nominative :Dual :Fem "allatāni"],
+          [:Oblique :Dual :Masc "allaðayni"],
+          [:Oblique :Dual :Fem "allatayni"]]
+  }
+] 
 }
- 
- 
+
+
