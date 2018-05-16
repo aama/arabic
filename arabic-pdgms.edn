@@ -29,7 +29,7 @@
  :termclusters [
                 {:label "arabic-Vform1ActImperf-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :pos :Verb,
@@ -54,7 +54,7 @@
                  }
                 {:label "arabic-Vform1ActImptv-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :token-prefix :ʌu,
                           :lexeme :nsr,
                           :voice :Active,
@@ -72,7 +72,7 @@
                  }
                 {:label "arabic-Vform1ActJuss-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :pos :Verb,
@@ -97,7 +97,7 @@
                  }
                 {:label "arabic-Vform1ActPerf-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :token-prefix :Ø,
                           :lexeme :nsr,
                           :voice :Active,
@@ -123,7 +123,7 @@
                  }
                 {:label "arabic-Vform1ActSubj-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :pos :Verb,
@@ -185,7 +185,7 @@
                  }
                 {:label "arabic-Vform1PassImperf-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :pos :Verb,
@@ -210,7 +210,7 @@
                  }
                 {:label "arabic-Vform1PassJuss-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :rootClass :CCC,
@@ -235,7 +235,7 @@
                  }
                 {:label "arabic-Vform1PassPerf-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :token-prefix :Ø,
                           :lexeme :nsr,
                           :voice :Passive,
@@ -261,7 +261,7 @@
                  }
                 {:label "arabic-Vform1PassSubj-nsr"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :Base,
                           :lexeme :nsr,
                           :rootClass :CCC,
@@ -286,7 +286,7 @@
                  }
                 {:label "arabic-Vform2-fʕl1"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -303,7 +303,7 @@
                  }
                 {:label "arabic-Vform2-fʕl2"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -326,7 +326,7 @@
                  }
                 {:label "arabic-Vform2-fʕl3"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -350,7 +350,7 @@
                  }
                 {:label "arabic-Vform2-fʕl4"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -374,7 +374,7 @@
                  }
                 {:label "arabic-Vform2-fʕl5"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -398,7 +398,7 @@
                  }
                 {:label "arabic-Vform2-fʕl6"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -422,7 +422,7 @@
                  }
                 {:label "arabic-Vform2-fʕl7"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -446,7 +446,7 @@
                  }
                 {:label "arabic-Vform2-fʕl8"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -469,7 +469,7 @@
                  }
                 {:label "arabic-Vform2-fʕl9"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :D,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -521,7 +521,7 @@
                  }
                 {:label "arabic-Vform3-fʕl1"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -537,7 +537,7 @@
                  }
                 {:label "arabic-Vform3-fʕl2"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -561,7 +561,7 @@
                  }
                 {:label "arabic-Vform3-fʕl3"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -585,7 +585,7 @@
                  }
                 {:label "arabic-Vform3-fʕl4"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -609,7 +609,7 @@
                  }
                 {:label "arabic-Vform3-fʕl5"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -633,7 +633,7 @@
                  }
                 {:label "arabic-Vform3-fʕl6"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -657,7 +657,7 @@
                  }
                 {:label "arabic-Vform3-fʕl7"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -681,7 +681,7 @@
                  }
                 {:label "arabic-Vform3-fʕl8"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
@@ -704,7 +704,7 @@
                  }
                 {:label "arabic-Vform3-fʕl9"
                  :note "GR2010"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :derivedStem :L,
                           :lexeme :fʕl,
                           :rootClass :CCC,
