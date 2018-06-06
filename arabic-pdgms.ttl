@@ -1,0 +1,7165 @@
+#TTL FROM INPUT FILE:
+#../aama-data/data//arabic/arabic-pdgms.edn
+
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements>.
+@prefix dcterms:    <http://purl.org/dc/terms>.
+@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+@prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
+@prefix arb:   <http://id.oi.uchicago.edu/aama/2013/arabic/> .
+
+#LANG INFO:
+
+aama:Arabic a aamas:Language .
+aama:Arabic rdfs:label "Arabic" .
+aama:Arabic aamas:subfamily "Semitic West Central" .
+aama:Arabic aamas:lpref "arb" .
+aama:Arabic aamas:dataSource "Thackston11994" .
+aama:Arabic aamas:dataSourceNotes "" .
+aama:Arabic aamas:geodemoURL "http://www.ethnologue.com/language/arb" .
+aama:Arabic aamas:geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an%% it was and remains the language of religion%% scholarship%% and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic." .
+
+
+#SCHEMATA: infinitiveVar
+arb:infinitiveVar aamas:lang aama:Arabic .
+arb:Infinitivevar aamas:lang aama:Arabic .
+arb:infinitiveVar rdfs:domain aamas:Term .
+arb:Infinitivevar rdfs:label "infinitiveVar exponents" .
+arb:infinitiveVar rdfs:label "infinitiveVar" .
+arb:infinitiveVar rdfs:range arb:Infinitivevar .
+arb:Infinitivevar rdfs:subClassOf arb:MuExponent .
+arb:infinitiveVar rdfs:subPropertyOf arb:muProperty .
+arb:Infinitive1 aamas:lang aama:Arabic .
+arb:Infinitive1 rdf:type arb:Infinitivevar .
+arb:Infinitive1 rdfs:label "Infinitive1" .
+arb:Infinitive2 aamas:lang aama:Arabic .
+arb:Infinitive2 rdf:type arb:Infinitivevar .
+arb:Infinitive2 rdfs:label "Infinitive2" .
+
+#SCHEMATA: person
+arb:person aamas:lang aama:Arabic .
+arb:Person aamas:lang aama:Arabic .
+arb:person rdfs:domain aamas:Term .
+arb:Person rdfs:label "person exponents" .
+arb:person rdfs:label "person" .
+arb:person rdfs:range arb:Person .
+arb:Person rdfs:subClassOf arb:MuExponent .
+arb:person rdfs:subPropertyOf arb:muProperty .
+arb:Person1 aamas:lang aama:Arabic .
+arb:Person1 rdf:type arb:Person .
+arb:Person1 rdfs:label "Person1" .
+arb:Person2 aamas:lang aama:Arabic .
+arb:Person2 rdf:type arb:Person .
+arb:Person2 rdfs:label "Person2" .
+arb:Person3 aamas:lang aama:Arabic .
+arb:Person3 rdf:type arb:Person .
+arb:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: derivedStem
+arb:derivedStem aamas:lang aama:Arabic .
+arb:Derivedstem aamas:lang aama:Arabic .
+arb:derivedStem rdfs:domain aamas:Term .
+arb:Derivedstem rdfs:label "derivedStem exponents" .
+arb:derivedStem rdfs:label "derivedStem" .
+arb:derivedStem rdfs:range arb:Derivedstem .
+arb:Derivedstem rdfs:subClassOf arb:MuExponent .
+arb:derivedStem rdfs:subPropertyOf arb:muProperty .
+arb:Base aamas:lang aama:Arabic .
+arb:Base rdf:type arb:Derivedstem .
+arb:Base rdfs:label "Base" .
+arb:D aamas:lang aama:Arabic .
+arb:D rdf:type arb:Derivedstem .
+arb:D rdfs:label "D" .
+arb:L aamas:lang aama:Arabic .
+arb:L rdf:type arb:Derivedstem .
+arb:L rdfs:label "L" .
+
+#SCHEMATA: number
+arb:number aamas:lang aama:Arabic .
+arb:Number aamas:lang aama:Arabic .
+arb:number rdfs:domain aamas:Term .
+arb:Number rdfs:label "number exponents" .
+arb:number rdfs:label "number" .
+arb:number rdfs:range arb:Number .
+arb:Number rdfs:subClassOf arb:MuExponent .
+arb:number rdfs:subPropertyOf arb:muProperty .
+arb:Dual aamas:lang aama:Arabic .
+arb:Dual rdf:type arb:Number .
+arb:Dual rdfs:label "Dual" .
+arb:Plural aamas:lang aama:Arabic .
+arb:Plural rdf:type arb:Number .
+arb:Plural rdfs:label "Plural" .
+arb:Singular aamas:lang aama:Arabic .
+arb:Singular rdf:type arb:Number .
+arb:Singular rdfs:label "Singular" .
+
+#SCHEMATA: vmorphClass
+arb:vmorphClass aamas:lang aama:Arabic .
+arb:Vmorphclass aamas:lang aama:Arabic .
+arb:vmorphClass rdfs:domain aamas:Term .
+arb:Vmorphclass rdfs:label "vmorphClass exponents" .
+arb:vmorphClass rdfs:label "vmorphClass" .
+arb:vmorphClass rdfs:range arb:Vmorphclass .
+arb:Vmorphclass rdfs:subClassOf arb:MuExponent .
+arb:vmorphClass rdfs:subPropertyOf arb:muProperty .
+arb:Finite aamas:lang aama:Arabic .
+arb:Finite rdf:type arb:Vmorphclass .
+arb:Finite rdfs:label "Finite" .
+arb:InfinitiveB aamas:lang aama:Arabic .
+arb:InfinitiveB rdf:type arb:Vmorphclass .
+arb:InfinitiveB rdfs:label "InfinitiveB" .
+arb:InfinitiveD aamas:lang aama:Arabic .
+arb:InfinitiveD rdf:type arb:Vmorphclass .
+arb:InfinitiveD rdfs:label "InfinitiveD" .
+arb:InfinitiveL aamas:lang aama:Arabic .
+arb:InfinitiveL rdf:type arb:Vmorphclass .
+arb:InfinitiveL rdfs:label "InfinitiveL" .
+arb:ParticipleB aamas:lang aama:Arabic .
+arb:ParticipleB rdf:type arb:Vmorphclass .
+arb:ParticipleB rdfs:label "ParticipleB" .
+arb:ParticipleD aamas:lang aama:Arabic .
+arb:ParticipleD rdf:type arb:Vmorphclass .
+arb:ParticipleD rdfs:label "ParticipleD" .
+arb:ParticipleL aamas:lang aama:Arabic .
+arb:ParticipleL rdf:type arb:Vmorphclass .
+arb:ParticipleL rdfs:label "ParticipleL" .
+
+#SCHEMATA: pos
+arb:pos aamas:lang aama:Arabic .
+arb:Pos aamas:lang aama:Arabic .
+arb:pos rdfs:domain aamas:Term .
+arb:Pos rdfs:label "pos exponents" .
+arb:pos rdfs:label "pos" .
+arb:pos rdfs:range arb:Pos .
+arb:Pos rdfs:subClassOf arb:MuExponent .
+arb:pos rdfs:subPropertyOf arb:muProperty .
+arb:Pronoun aamas:lang aama:Arabic .
+arb:Pronoun rdf:type arb:Pos .
+arb:Pronoun rdfs:label "Pronoun" .
+arb:Verb aamas:lang aama:Arabic .
+arb:Verb rdf:type arb:Pos .
+arb:Verb rdfs:label "Verb" .
+
+#SCHEMATA: voice
+arb:voice aamas:lang aama:Arabic .
+arb:Voice aamas:lang aama:Arabic .
+arb:voice rdfs:domain aamas:Term .
+arb:Voice rdfs:label "voice exponents" .
+arb:voice rdfs:label "voice" .
+arb:voice rdfs:range arb:Voice .
+arb:Voice rdfs:subClassOf arb:MuExponent .
+arb:voice rdfs:subPropertyOf arb:muProperty .
+arb:Active aamas:lang aama:Arabic .
+arb:Active rdf:type arb:Voice .
+arb:Active rdfs:label "Active" .
+arb:Passive aamas:lang aama:Arabic .
+arb:Passive rdf:type arb:Voice .
+arb:Passive rdfs:label "Passive" .
+arb:Stative aamas:lang aama:Arabic .
+arb:Stative rdf:type arb:Voice .
+arb:Stative rdfs:label "Stative" .
+
+#SCHEMATA: state
+arb:state aamas:lang aama:Arabic .
+arb:State aamas:lang aama:Arabic .
+arb:state rdfs:domain aamas:Term .
+arb:State rdfs:label "state exponents" .
+arb:state rdfs:label "state" .
+arb:state rdfs:range arb:State .
+arb:State rdfs:subClassOf arb:MuExponent .
+arb:state rdfs:subPropertyOf arb:muProperty .
+arb:Constr aamas:lang aama:Arabic .
+arb:Constr rdf:type arb:State .
+arb:Constr rdfs:label "Constr" .
+arb:NonConstr aamas:lang aama:Arabic .
+arb:NonConstr rdf:type arb:State .
+arb:NonConstr rdfs:label "NonConstr" .
+arb:_NULL aamas:lang aama:Arabic .
+arb:_NULL rdf:type arb:State .
+arb:_NULL rdfs:label "_NULL" .
+
+#SCHEMATA: proClass
+arb:proClass aamas:lang aama:Arabic .
+arb:Proclass aamas:lang aama:Arabic .
+arb:proClass rdfs:domain aamas:Term .
+arb:Proclass rdfs:label "proClass exponents" .
+arb:proClass rdfs:label "proClass" .
+arb:proClass rdfs:range arb:Proclass .
+arb:Proclass rdfs:subClassOf arb:MuExponent .
+arb:proClass rdfs:subPropertyOf arb:muProperty .
+arb:Clitic aamas:lang aama:Arabic .
+arb:Clitic rdf:type arb:Proclass .
+arb:Clitic rdfs:label "Clitic" .
+arb:Demonstrative aamas:lang aama:Arabic .
+arb:Demonstrative rdf:type arb:Proclass .
+arb:Demonstrative rdfs:label "Demonstrative" .
+arb:Independent aamas:lang aama:Arabic .
+arb:Independent rdf:type arb:Proclass .
+arb:Independent rdfs:label "Independent" .
+arb:Relative aamas:lang aama:Arabic .
+arb:Relative rdf:type arb:Proclass .
+arb:Relative rdfs:label "Relative" .
+
+#SCHEMATA: lexeme
+arb:lexeme aamas:lang aama:Arabic .
+arb:Lexeme aamas:lang aama:Arabic .
+arb:lexeme rdfs:domain aamas:Term .
+arb:Lexeme rdfs:label "lexeme exponents" .
+arb:lexeme rdfs:label "lexeme" .
+arb:lexeme rdfs:range arb:Lexeme .
+arb:Lexeme rdfs:subClassOf arb:MuExponent .
+arb:lexeme rdfs:subPropertyOf arb:muProperty .
+arb:fʕl aamas:lang aama:Arabic .
+arb:fʕl rdf:type arb:Lexeme .
+arb:fʕl rdfs:label "fʕl" .
+arb:nsr aamas:lang aama:Arabic .
+arb:nsr rdf:type arb:Lexeme .
+arb:nsr rdfs:label "nsr" .
+
+#SCHEMATA: case
+arb:case aamas:lang aama:Arabic .
+arb:Case aamas:lang aama:Arabic .
+arb:case rdfs:domain aamas:Term .
+arb:Case rdfs:label "case exponents" .
+arb:case rdfs:label "case" .
+arb:case rdfs:range arb:Case .
+arb:Case rdfs:subClassOf arb:MuExponent .
+arb:case rdfs:subPropertyOf arb:muProperty .
+arb:Common aamas:lang aama:Arabic .
+arb:Common rdf:type arb:Case .
+arb:Common rdfs:label "Common" .
+arb:GenObj aamas:lang aama:Arabic .
+arb:GenObj rdf:type arb:Case .
+arb:GenObj rdfs:label "GenObj" .
+arb:Nominative aamas:lang aama:Arabic .
+arb:Nominative rdf:type arb:Case .
+arb:Nominative rdfs:label "Nominative" .
+arb:Oblique aamas:lang aama:Arabic .
+arb:Oblique rdf:type arb:Case .
+arb:Oblique rdfs:label "Oblique" .
+
+#SCHEMATA: tam
+arb:tam aamas:lang aama:Arabic .
+arb:Tam aamas:lang aama:Arabic .
+arb:tam rdfs:domain aamas:Term .
+arb:Tam rdfs:label "tam exponents" .
+arb:tam rdfs:label "tam" .
+arb:tam rdfs:range arb:Tam .
+arb:Tam rdfs:subClassOf arb:MuExponent .
+arb:tam rdfs:subPropertyOf arb:muProperty .
+arb:Imperative aamas:lang aama:Arabic .
+arb:Imperative rdf:type arb:Tam .
+arb:Imperative rdfs:label "Imperative" .
+arb:Jussive aamas:lang aama:Arabic .
+arb:Jussive rdf:type arb:Tam .
+arb:Jussive rdfs:label "Jussive" .
+arb:Nonpast aamas:lang aama:Arabic .
+arb:Nonpast rdf:type arb:Tam .
+arb:Nonpast rdfs:label "Nonpast" .
+arb:Past aamas:lang aama:Arabic .
+arb:Past rdf:type arb:Tam .
+arb:Past rdfs:label "Past" .
+arb:Subjunctive aamas:lang aama:Arabic .
+arb:Subjunctive rdf:type arb:Tam .
+arb:Subjunctive rdfs:label "Subjunctive" .
+
+#SCHEMATA: gender
+arb:gender aamas:lang aama:Arabic .
+arb:Gender aamas:lang aama:Arabic .
+arb:gender rdfs:domain aamas:Term .
+arb:Gender rdfs:label "gender exponents" .
+arb:gender rdfs:label "gender" .
+arb:gender rdfs:range arb:Gender .
+arb:Gender rdfs:subClassOf arb:MuExponent .
+arb:gender rdfs:subPropertyOf arb:muProperty .
+arb:Common aamas:lang aama:Arabic .
+arb:Common rdf:type arb:Gender .
+arb:Common rdfs:label "Common" .
+arb:Fem aamas:lang aama:Arabic .
+arb:Fem rdf:type arb:Gender .
+arb:Fem rdfs:label "Fem" .
+arb:Masc aamas:lang aama:Arabic .
+arb:Masc rdf:type arb:Gender .
+arb:Masc rdfs:label "Masc" .
+
+#SCHEMATA: deixis
+arb:deixis aamas:lang aama:Arabic .
+arb:Deixis aamas:lang aama:Arabic .
+arb:deixis rdfs:domain aamas:Term .
+arb:Deixis rdfs:label "deixis exponents" .
+arb:deixis rdfs:label "deixis" .
+arb:deixis rdfs:range arb:Deixis .
+arb:Deixis rdfs:subClassOf arb:MuExponent .
+arb:deixis rdfs:subPropertyOf arb:muProperty .
+arb:Far aamas:lang aama:Arabic .
+arb:Far rdf:type arb:Deixis .
+arb:Far rdfs:label "Far" .
+arb:Near aamas:lang aama:Arabic .
+arb:Near rdf:type arb:Deixis .
+arb:Near rdfs:label "Near" .
+
+#SCHEMATA: rootClass
+arb:rootClass aamas:lang aama:Arabic .
+arb:Rootclass aamas:lang aama:Arabic .
+arb:rootClass rdfs:domain aamas:Term .
+arb:Rootclass rdfs:label "rootClass exponents" .
+arb:rootClass rdfs:label "rootClass" .
+arb:rootClass rdfs:range arb:Rootclass .
+arb:Rootclass rdfs:subClassOf arb:MuExponent .
+arb:rootClass rdfs:subPropertyOf arb:muProperty .
+arb:CCC aamas:lang aama:Arabic .
+arb:CCC rdf:type arb:Rootclass .
+arb:CCC rdfs:label "CCC" .
+
+#PCLASSES:
+
+arb:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+arb:aspect aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:case aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:deixis aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:derivedStem aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:mood aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:polarity aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:state aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:tam aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:voice aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+arb:infinitiveVar aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+arb:rootClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+
+#LEXEMES:
+aama:Arabic-fʕl a aamas:Lexeme ;
+	aamas:lang aama:Arabic ;
+	rdfs:label "fʕl" ;
+	aamas:lemma "fʕl" ;
+	aamas:gloss "do" ;
+	arb:pos arb:Verb ;
+	arb:rootClass arb:CCC ;
+	.
+aama:Arabic-nsr a aamas:Lexeme ;
+	aamas:lang aama:Arabic ;
+	rdfs:label "nsr" ;
+	aamas:lemma "nṣr" ;
+	aamas:gloss "help" ;
+	arb:pos arb:Verb ;
+	arb:rootClass arb:CCC ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1ActImperf-nsr
+
+arb:arabic-Vform1ActImperf-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1ActImperf-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID585bc804-daa0-4657-9165-38291d4f8d4a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "ˀa" ;
+	arb:token "ˀanṣuru" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDe67f6c96-cebb-4c81-9464-6128a6c74fb3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuru" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDeca5bcee-bdf6-401f-a36a-bde02bbb32ff a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iyna" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuriyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID8ff38792-4d74-4ea0-b100-05af8e189a58 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuru" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID9642589f-a576-4030-a25e-fe70cc5393a2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuru" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID31b9c040-ff10-4ea1-a983-90d61b50393c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "na" ;
+	arb:token "nanṣuru" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID8ace2a24-e85c-4678-8d42-2bb6552ee777 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uwna" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuruwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID817c9154-de2b-4fb4-8873-0f3a9d163caa a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDdc4cc076-3c75-4472-aba1-05e79087d765 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uwna" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuruwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID495ae028-6684-438c-92fa-98d6db1fb67e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID0c5aac4f-4641-4f2a-88b8-c7d2640b3b50 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID91c18669-3100-43cb-8ad2-ce3d82a3d61c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuraʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID94bd2da3-d9e3-43c2-8cdc-6f932d346354 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1ActImptv-nsr
+
+arb:arabic-Vform1ActImptv-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1ActImptv-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDfc4d0f86-c6fd-4575-83b5-bbe254da033f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:person arb:Person2 ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Imperative ;
+	arb:tam arb:Nonpast ;
+	arb:token-prefix "ʌu" ;
+	arb:token-suffix "Ø" ;
+	arb:token "ʌunṣur" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID0070bad5-ea9d-40b3-a352-358c95833ba2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:person arb:Person2 ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Imperative ;
+	arb:tam arb:Nonpast ;
+	arb:token-prefix "ʌu" ;
+	arb:token-suffix "iy" ;
+	arb:token "ʌunṣuriy" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID2ef4e832-01d4-4b77-acdf-cc02de525621 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:person arb:Person2 ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Imperative ;
+	arb:tam arb:Nonpast ;
+	arb:token-prefix "ʌu" ;
+	arb:token-suffix "uw" ;
+	arb:token "ʌunṣuruw" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID1bffd69a-15ec-4d12-8a97-56c1fcdcd526 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActImptv-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:person arb:Person2 ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Imperative ;
+	arb:tam arb:Nonpast ;
+	arb:token-prefix "ʌu" ;
+	arb:token-suffix "na" ;
+	arb:token "ʌunṣurna" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1ActJuss-nsr
+
+arb:arabic-Vform1ActJuss-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1ActJuss-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDf24d691a-2bb3-42b9-a9a7-bd4866508b6b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "ˀa" ;
+	arb:token "ˀanṣur" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID69d9a835-ea1b-462b-a929-15c4b7dfa5ab a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣur" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDad3f7c97-eee1-457b-9f96-7e05d0c32c95 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iy" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuriy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID8b542f98-c5d3-4e32-a266-fb3cb868dbc8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣur" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDa8c9e8ec-0e0e-4424-842a-b55c98f88ffb a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣur" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDc8c4acd7-e8bd-49a9-9f3e-814cdbbe5797 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "na" ;
+	arb:token "nanṣur" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDf6924af1-d95a-47a7-b51b-42a7b7729f66 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID8785e3e4-54f3-45a7-8a83-358e261d3ffa a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDe1c77dc9-2427-4086-bf6d-63b1c0de384d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID78224abc-1da3-4d50-afdd-eb7891d56a67 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDbb6faa0b-f01e-48eb-af2b-1b3ab4418984 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:IDb325fa88-7c44-4b1f-8176-55603fba3722 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:IDb7ed0803-85e2-48b0-8d76-2266e3ea4fd2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1ActPerf-nsr
+
+arb:arabic-Vform1ActPerf-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1ActPerf-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID99caa089-46ed-4169-9abb-c45c7eb4fa7f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tu" ;
+	arb:token "naṣartu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDe2ff123f-af63-403d-997f-becd7d04ca2f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ta" ;
+	arb:token "naṣarta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID41714ebf-9393-45be-bf85-b29be3ffa4f6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ti" ;
+	arb:token "naṣarti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID22a1d2b4-1f09-4083-9165-0c1655d5bbd2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "a" ;
+	arb:token "naṣara" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID3df6221f-21f4-4a81-8503-101e2d34440e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "at" ;
+	arb:token "naṣarat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID9cba018f-b681-4015-bab9-7d1b08a5fa68 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "naʌ" ;
+	arb:token "naṣarnaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID0ac1724e-6faf-4a89-8482-b4a6ae051ac9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tum" ;
+	arb:token "naṣartum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID4ec67889-c6ec-42ca-864a-d2ae174a51f9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tunna" ;
+	arb:token "naṣartunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID13897daa-1401-46c9-bcb7-69af72bffc9e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "uw" ;
+	arb:token "naṣaruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID808c5386-9494-4cfa-8576-5063a4d7fa42 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "na" ;
+	arb:token "naṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDdbea2f97-2fda-4449-83f0-36a9a03231c6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tumaʌ" ;
+	arb:token "naṣartumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID8ac703bf-1db2-4e9a-9309-42d6011847ec a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "aʌ" ;
+	arb:token "naṣaraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID516cee92-8f0a-4c89-a286-98fcb8ffaf74 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "naṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ataʌ" ;
+	arb:token "naṣarataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1ActSubj-nsr
+
+arb:arabic-Vform1ActSubj-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1ActSubj-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID9247b9da-43cb-4b90-9da4-09bc70c386b0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "ˀa" ;
+	arb:token "ˀanṣura" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID0765b533-b970-4ace-9df2-48e4ab7577c5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣura" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDb8133a86-1b09-47db-bca4-ca9e667074b1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iy" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuriy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDd700690e-bb93-42de-8721-c90345f1f058 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣura" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID8f6ec121-74a0-47c2-9da9-9ffc94791945 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣura" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID1a3cac88-9d95-4866-a3ff-0c468f09592e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "na" ;
+	arb:token "nanṣura" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDd20e94c5-cd9d-4742-a30f-ce38a881c89c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID2473ac29-a522-4e82-8862-de6e07994906 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID63611bf2-5cd9-4d4d-9f49-4d09286a00e6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID4138300c-ec32-45c2-b213-aa3b1c7ee8ed a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣurna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID34cdd29f-662a-4892-a1ef-3c409044c3c3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:IDb2b86c0e-aa07-478d-a37c-b4f9764c17c3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ya" ;
+	arb:token "yanṣuraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID020adebf-be30-4bc6-a2c0-4410ed53e2b9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1ActSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Active ;
+	arb:token-stem "nṣur" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "ta" ;
+	arb:token "tanṣuraʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1Infinitive-nsr
+
+arb:arabic-Vform1Infinitive-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1Infinitive-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID92abe08f-c83d-46c2-888e-9f91806abd5b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Infinitive-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "naṣr" ;
+	arb:infinitiveVar arb:Infinitive1 ;
+	.
+
+aama:ID1fcf0af2-97cc-4263-aaf3-e9049d570aa2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Infinitive-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "nuṣuwr" ;
+	arb:infinitiveVar arb:Infinitive2 ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1Part-nsr
+
+arb:arabic-Vform1Part-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1Part-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDe61f8a13-0d68-4a5f-ab50-3c4a606cc4b5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "uw" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣiruw" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:IDb4bce27e-59bf-4124-87b2-fdfb51d4c25d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌ" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣiraʌ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID473bf766-eba0-4ba4-86ff-b96513e768bc a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌ" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣirataʌ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID09baaee1-8757-4f3f-ae20-6e20065be837 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "uw" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwruw" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:IDae51f60e-3557-44a8-9317-0601433edb58 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌ" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwraʌ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:IDd41aa1c3-6a4f-4fc7-8e65-c4b3f70ea7eb a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌ" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwrataʌ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID7714ca6a-e189-4a09-b045-481512fbe8b3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌ" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyraʌ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Stative ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID15c1223f-b6e3-4849-8d44-50e4034d519f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌ" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyrataʌ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Stative ;
+	arb:state arb:Constr ;
+	.
+
+aama:IDfb004765-db24-492c-afcf-97729376e903 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "uwna" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣiruwna" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID01b25179-c46b-429d-9f96-daa9f1274b86 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌni" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣiraʌni" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID8c663f1b-3016-4f82-9081-5908b6d1b060 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌni" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣirataʌni" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID1e40f3b0-e0a6-46fa-9e74-7401322ac38e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "uwna" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwruwna" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID39403cd9-8904-4f18-bdf2-59f94929440b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌni" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwraʌni" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:IDf43ca5e8-23ea-4e54-bc00-d05479a1c628 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌni" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwrataʌni" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID61f63067-ccd1-4443-b542-8b503c1a3c59 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌni" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyraʌni" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Stative ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID555877c4-d33d-4225-9d16-ba65b394539f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ataʌni" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyrataʌni" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Stative ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:IDde77eb28-baf8-4718-9445-a151cc7df907 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "Ø" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣir" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID4be28c8d-b9f9-4e1f-a34f-448ecb4d4847 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ah" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣirah" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID1b1b1420-94da-4c75-99c5-7bc6740f3275 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "internal" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ɂa" ;
+	arb:token "Ɂanṣaʌr" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID82d88b0e-2df8-4125-85fd-f7439dead51d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "internal" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "nuṣṣaʌr" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID387420bc-79d5-424f-8f9f-56311698066d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌt" ;
+	arb:token-stem "naʌṣir" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naʌṣiraʌt" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:IDd8193925-b139-40b8-b92b-f5ab91d1e202 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "Ø" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwr" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID5bb89806-a68d-4b79-84bf-69dfbf8489c2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "Ø" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwrah" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID0ebe6b51-8adf-4578-ac8e-1a99c098e8a2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "aʌt" ;
+	arb:token-stem "nṣuwr" ;
+	arb:token-prefix "ma" ;
+	arb:token "manṣuwraʌt" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID4f445fff-95db-4a05-8c37-7c24db6c2f0a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "Ø" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyr" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	arb:voice arb:Stative ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID0dece28d-48bc-44f0-828b-0597c524f6bf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "ah" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "naṣiyrah" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	arb:voice arb:Stative ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID3e93b97f-cb26-4985-93f2-72419ccb3b10 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1Part-nsr ;
+	arb:derivedStem arb:Form1 ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token-suffix "internal" ;
+	arb:token-stem "naṣiyr" ;
+	arb:token-prefix "Ø" ;
+	arb:token "nuṣaraʌˀ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Stative ;
+	arb:state arb:_NULL ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1PassImperf-nsr
+
+arb:arabic-Vform1PassImperf-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1PassImperf-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDfc502fa6-b7d9-40ca-b135-1eb61afe16a5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "ˀu" ;
+	arb:token "ˀunṣaru" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID9b0456b5-5f9a-4cab-b646-dc82c53a424e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaru" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID37d58fce-2cc3-46d9-a33e-58018f571f71 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iyna" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣariyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDbe75e3ca-cd57-400a-94ca-aec5134ed17b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaru" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID4952a2e4-288f-4455-83be-57f821f76372 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaru" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDaef72b08-f850-4ad1-badb-b9db5dae8cd9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "u" ;
+	arb:token-prefix "nu" ;
+	arb:token "nunṣaru" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDd0edb1f1-9888-4aac-80bb-71e4197851e7 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uwna" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaruwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDd6201fe7-9e4b-4cc1-8276-75a1f99cfe8d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID4533faf9-5cfd-43ff-8864-6755afb4b107 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uwna" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaruwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDc1f7fbee-9f71-4a40-b87e-706e78bd7ce0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDc8b923c6-ec3d-466a-a1a6-1963c7e51a4b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID854d6c4b-4120-4a1f-bd58-cb54d6d8878b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaraʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID8653f16e-c5fc-4c19-af12-22c48392d251 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassImperf-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌni" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1PassJuss-nsr
+
+arb:arabic-Vform1PassJuss-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1PassJuss-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDfa1b12a4-d67f-4fb1-99fa-2c8445e4a9ae a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "ˀu" ;
+	arb:token "ˀunṣar" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDbaf754e5-45a4-4f5e-baa2-626ab7114093 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣar" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDae5a2a1d-6c5d-4ef6-b6a5-e9b68b476b55 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iy" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣariy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID33efeed4-76d5-4e35-8fcb-ba02b3f0e4b1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣar" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID64d98a09-e5de-4ce1-bb75-0f6dead6777c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣar" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID83a4bea4-9d42-4422-92a3-ee059fd6f303 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "Ø" ;
+	arb:token-prefix "nu" ;
+	arb:token "nunṣar" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDa2fb6e94-381e-47cd-b9ea-607bf54de950 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDb36c2be4-05a3-4a62-a28e-f5f97fb4efcb a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID2d704db2-dbdc-494c-bc3e-55d8538303e4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID8c257a5b-fd33-4f2d-aaa4-1a8b17e25835 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID0d1f575c-20ed-4db5-9924-2f66e0af35b0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID981d93fa-23cd-493d-a357-1398468a8e69 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:IDb264c78a-5447-4aed-940a-0f147287dc6f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassJuss-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Jussive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1PassPerf-nsr
+
+arb:arabic-Vform1PassPerf-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1PassPerf-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID791d7f73-5895-4c99-8bf5-048458697334 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tu" ;
+	arb:token "nuṣirtu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID9b1ce1b2-c1c9-4aa3-b533-3a1182f68489 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ta" ;
+	arb:token "nuṣirta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID3e0a8fda-2aa7-4d28-8348-f7311d32da0c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ti" ;
+	arb:token "nuṣirti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDeac529ac-2403-4dc5-8992-e82aec4e7f0d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "a" ;
+	arb:token "nuṣira" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDd98ba8d4-80c2-4702-9776-9de60a605636 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "at" ;
+	arb:token "nuṣirat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDf33b19ca-d2aa-4ff1-b9fe-8d4f29f89399 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "naʌ" ;
+	arb:token "nuṣirnaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID9c083908-cd54-46b8-a4b4-933b8e0410cf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tum" ;
+	arb:token "nuṣirtum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDcc65bdbd-e7ef-4847-bb23-eae7caac8407 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tunna" ;
+	arb:token "nuṣirtunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID7054f8f1-6d7d-4d02-bc98-eb4f807e7d56 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "uw" ;
+	arb:token "nuṣiruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDdd979fba-ed11-468c-be46-b7ad44785ade a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "na" ;
+	arb:token "nuṣirna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID9934cf30-fadc-459d-86af-03141345544c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "tumaʌ" ;
+	arb:token "nuṣirtumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID4e6a9c00-6bee-4ed6-8903-2d670ff2264d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "aʌ" ;
+	arb:token "nuṣiraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:IDacd47bcb-194b-4e8b-ae47-1cc6f694bd33 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassPerf-nsr ;
+	arb:aspect arb:Perfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nuṣir" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Indicative ;
+	arb:tam arb:Past ;
+	arb:token-prefix "Ø" ;
+	arb:token-suffix "ataʌ" ;
+	arb:token "nuṣirataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform1PassSubj-nsr
+
+arb:arabic-Vform1PassSubj-nsr a aamas:Termcluster ;
+	rdfs:label "arabic-Vform1PassSubj-nsr" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID48e914bf-15f0-4c79-9db4-20dc3bf576cd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "ˀu" ;
+	arb:token "ˀunṣara" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDa44fd88f-30ff-4e0b-9c28-4ce0010f25a9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣara" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDb1d99723-9d16-4a63-a024-264ef39915cd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "iy" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣariy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDfbf5ebef-a985-4c03-b3da-929c1b2d804b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣara" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID1a696173-43dd-4315-92f9-a722407981be a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣara" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDfcc47482-7c12-4d15-a8c6-c99ee72c28b6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "a" ;
+	arb:token-prefix "nu" ;
+	arb:token "nunṣara" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID7ae7d83d-2ef9-40ca-b2cc-57ca32064ca2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID70f20fa1-183a-499d-a587-f8e2288d80db a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID5a7e531e-746b-41b6-af0c-77ad65064b8f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "uw" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaruw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID27cacf1d-179e-4d69-b543-f93a32540661 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "na" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣarna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	.
+
+aama:ID60a74c65-ac9e-49be-b822-26471b678cac a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID619eb39c-686a-4a3a-b2bc-5979c1a57079 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "yu" ;
+	arb:token "yunṣaraʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+aama:ID2bf33644-c270-4f40-91b0-08094744dc5b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform1PassSubj-nsr ;
+	arb:aspect arb:Imperfect ;
+	arb:derivedStem arb:Form1 ;
+	arb:vmorphClass arb:Finite ;
+	arb:pos arb:Verb ;
+	arb:voice arb:Passive ;
+	arb:token-stem "nṣar" ;
+	aamas:lexeme aama:Arabic-nsr ;
+	arb:mood arb:Subjunctive ;
+	arb:tam arb:Nonpast ;
+	arb:token-suffix "aʌ" ;
+	arb:token-prefix "tu" ;
+	arb:token "tunṣaraʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	.
+
+#TERMCLUSTER:  arabic-Vform2-fʕl
+
+arb:arabic-Vform2-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform2-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "" 
+	.
+
+aama:ID3d808e86-e4a3-437f-bed4-5318263226e8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd5c149a9-ba5e-4698-aaad-cb365dde0db5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID8321a67f-c6aa-4c2a-90d1-b050bb3bf90e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID7ef6077b-fc41-4d28-9f5e-7fee6c950d11 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID2fdaa347-d78c-4b23-bbc4-87fc0f35d77f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID46457e8a-06ba-4dcd-a98f-c7f04b21ef7f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕilu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDeced6b6f-7a0d-4d2c-b2bb-7e17d1254324 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID60b06653-fbba-4a7e-86ba-027e7a1d942a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiliyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd56a413c-a8a4-453e-95eb-ef7b45bb9042 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕilu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID9e230e15-356c-40c8-8696-bbc5e65cd6c0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilu" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID86e812bc-d147-463a-a91a-64f46f65c684 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕilu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID25fb3c3b-9493-488f-822c-78aad7b7de3c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDf12996e5-496e-452f-aa53-951d9366b2ae a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID46db1bef-a828-4e09-b088-4475fdd7311f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕiluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID52eb02c3-3239-4000-a5d2-8d27e8464e8e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6e1be306-6a83-4680-94aa-cae21cb24e4c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb52fcadb-be5c-4238-9ee3-97be9ba69688 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕilaʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc9d64d06-cf54-4ed7-b68e-35c2f0cd6bdf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDcab8c497-ac22-4186-b8a1-6d4b56cd3292 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕalu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID624853ca-1668-4bde-85c0-e83bc45a52a4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa056ac4f-74f9-42db-9c2b-707434e9a03d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaliyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd3ba9c02-23e9-4159-86c1-f6897474b80b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕalu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID93345a0b-68c7-4bef-9b65-f4701ea96460 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalu" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID152f27f8-94d4-4588-b944-26d0370b94c1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕalu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd94d0014-3b23-4974-94a6-ed072393c879 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID944702b3-4a27-4103-a739-0b79bea5e3c0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID3ebdd370-15bf-47b8-974e-ec7b650a17dd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕaluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID54247194-3567-461b-80cd-16518b63f586 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDe9c6c9e4-a406-4a35-af6e-f1042077c160 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID79471075-17d4-4da9-b4c7-0f41ac174491 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕalaʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID58bcbcf9-3695-46a2-8c7d-9bbc96b18045 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5bab4bb6-d886-4c8e-8a86-3aa87c5574b4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕil" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID8361859b-c8c8-4ba0-8588-91616daaa3e8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd760fa21-5f89-4985-b620-dbc0df9876e3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID84e2e9fc-e42d-4704-bcd5-e8e6a32a30b9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDdae701ba-8a40-4149-a63d-4bda2b76436c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕil" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID18be9f37-b2d1-4adb-b77b-af0d6bfeb0b4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕil" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDf74e8696-b3e5-4f26-9ada-774446af4951 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID832e1714-0486-4c5f-adda-6f58c7e89914 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd153a4ac-45b7-4461-9300-5059766f48c1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID666daa55-3e92-401a-83e4-8b5dc9fecd4e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDf322fbdf-7dce-40b3-8f40-e2c2f276a35c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa648d87c-2792-4f27-92f1-2084c8a3da62 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDff41e720-d5d2-44ac-aeff-bb038cf018d6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID1ba938ca-c38f-4535-bcc7-3391b927b2b8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕal" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID4958da3d-4e18-4b96-80f5-a66de53059d2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕal" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDdc8d40b9-0b77-483a-9fc3-16d48c69e94f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID3f279257-68c9-4910-b5de-170627a27820 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕal" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID94f01f13-b7fb-44ce-b9b2-0a1fe4063b14 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕal" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID1f5fb8ed-c2d6-4369-95b5-d9b8e75f3b76 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕal" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0530e039-ecf5-4c25-9d65-8efa5dc4ad0f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID789e0f66-a5c5-4a07-81ca-aa8548bb3338 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID84f5d133-359f-4014-8169-542d0f8531d2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDaa6e4650-e3db-483d-8cf5-02674fcdb765 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDe9c4bb9c-f760-474f-8a7b-ea4e13f7da29 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID8eb7c55e-57c6-4a4b-b42e-f2480eee51cd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID658ccf0f-56bb-400b-b416-03f43580d314 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd34636ae-d40d-46bd-9956-9aa84113c5db a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕila" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID1f2e895c-852a-441b-bc0d-f4990489f172 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6ff659e8-9d6c-4ecc-9bdf-76291ee8af64 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDf133e3a7-1798-466d-99ab-c04ae821b11b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID437e6dee-a14f-45f1-9ab3-4a1ec21333cc a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕila" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID231c6f2e-35f0-4c4d-9339-d005f4011c0e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕila" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDabbfa673-fcb5-420a-8788-a0e3143b7b8a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDddebfd6b-ed73-4126-942b-c608281303dd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID97a87b74-7ca7-43b1-a424-d8d0ed811e35 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb8b2f200-7dcb-49ac-8387-afe93696dbf5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb57e3166-5f3e-4df1-8b02-7d46db4d54fd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDff0c3dbe-b854-4484-afbb-029290a67009 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID84aaeccd-582a-4cf5-9e33-21ff01a1f081 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕilaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID2ae610e6-601b-464f-9cef-214f7a1f7656 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʕʕala" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDae2c4e30-24cc-40dc-8b92-ccf233549051 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID24388cb3-495a-4d8f-9dcb-a938424033af a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID70c48a07-34f2-4506-a1e9-62afbfbbd26b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID4e1531aa-d156-471e-bd30-6abe278ee204 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕala" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDbe3c8258-7454-406d-9bda-64c770098d10 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʕʕala" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID09ec1b5e-62dd-482a-b098-2bd29c084bdf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDda3b1523-d5a1-4ab5-b98c-69192ee5980e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID807ff5ee-2744-4897-9e2a-806c575f0b26 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID110c2b57-80c4-44f9-9da9-d08da724fe05 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDe2f029d3-05ce-40ff-9dbd-129e1baebdd1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa270b0d1-215a-4724-bbfb-0893fc720a6d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʕʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDcc4d54f3-1344-452f-b049-df12d738b6d1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʕʕalaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID849becdf-5000-4ee6-a91d-0318258b0119 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕaltu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID130472b2-e093-4476-8bea-e45a4a045bd8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID3fab4fd9-0b07-4c3c-822f-d09e1c088c7d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID6f79ce1d-2d4d-47e8-90bf-3e941b607a6d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDebe3e241-e945-4540-9593-f2d470b0df82 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID3b2caa5f-9e84-4ed2-8d47-8fdf333bbdaf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕaltum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID74032fa3-e42d-4aa7-92a5-63968cbeacef a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕaltunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID1a90effe-de2e-4c0e-9168-28926b53cf57 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDcaca2cc9-0dab-4a95-b282-8cf646663686 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalfa" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID251e8c7e-166a-4229-b829-0a79c5f3bf43 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕaltumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID4025023f-5192-4b9d-ad7c-0cc904b503d9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID1e4955bb-a60a-4f12-b866-71e677e8857c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʕʕalataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID5bfd2f4e-dfaa-4840-835a-e9445fc58d9f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID3c0f0841-7c5d-4327-b51a-185f044bd9d6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDd0ff3783-7adb-4df9-b26e-9f601780b6e8 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID572f382b-df10-43c8-b7ca-825436a55fd6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID93a1900d-e442-4d17-acd1-e35bedaf2ec1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID800fbf83-219c-4902-9a47-97d72aad3c26 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilnaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID1283d25a-5438-4ae9-bfb7-c0f8b165f5bd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID0909b34f-e92c-4772-9a2c-797c07bd0335 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID5ac5778f-441f-4940-9fc6-f8f97a0f9471 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID7bb11096-c1c7-40b0-99f9-a46401ac2962 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID0705286a-384e-4838-83c0-a0ce371ee719 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID684254fb-1a9a-4a0c-ae12-8d1a2bdb8bed a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDba69eefe-63b4-41fd-9e22-cdac3a8b5637 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+#TERMCLUSTER:  arabic-Vform2Participle-fʕl
+
+arb:arabic-Vform2Participle-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform2Participle-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID3e180512-dd37-4fd9-9a2b-bc8b1a0e2ee6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID5c551078-2426-420d-9ef1-1703437127a4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID263b50c8-da2c-4e8f-a6ae-6998be068ce2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilataʌ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID419c5608-8f8e-490b-8a11-b743fa522489 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID1c3e43e2-cafd-4ce4-ae52-7bf0fe995150 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:IDc1366e2b-67b4-4c8d-b397-509028efd412 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalataʌ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:Constr ;
+	.
+
+aama:ID82120950-febf-4fa6-b795-d4c3a5231bae a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕiluwna" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID53375e04-f1a7-405f-bd77-5fae982f1318 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilaʌni" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID56cf852a-9b94-42ee-91ff-53222652d685 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilataʌni" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID71f3ad4f-9a0a-4c1e-9654-33e3eab5535f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕaluwna" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:IDaaa77ab7-4a08-4bab-8a98-f0879e8603bd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalaʌni" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID424392be-2b5e-451c-9ecf-65aae971aac1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalataʌni" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:state arb:NonConstr ;
+	.
+
+aama:ID706fb1df-627e-4ec6-ad33-11a05983224a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕil" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID4af02cd3-db36-4194-a583-2d1c366569ac a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilah" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID7bde13bf-0c88-4ce1-8924-065343187f18 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mufaʕʕilaʌt" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:state arb:_NULL ;
+	.
+
+aama:IDb183640c-9419-4df1-82b7-d9c1fc85ae4a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕal" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID16a846ea-4a86-432b-adc5-1a259119e356 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalah" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+aama:ID7d0b5fe2-69ba-483d-a46d-becec4441b7c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform2Participle-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:token "mafaʕʕalaʌt" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:state arb:_NULL ;
+	.
+
+#TERMCLUSTER:  arabic-Vform3-fʕl
+
+arb:arabic-Vform3-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform3-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:ID29f4f284-fe2a-49b3-a521-b1ebe0cff2f9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0062400f-5e07-4b6d-8c96-37bd770b2536 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID287cbb6a-b1bd-4740-befd-8c245e712eba a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6725db85-436a-43af-8228-efafef5c954a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDbd0685f0-6e01-4282-9e6c-634197ee827d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Imperative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID61b2a451-baa6-47bc-9e53-c72582abb102 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕilu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID234fc005-af7e-4c19-a58e-56f9a259888f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6dbecd6f-7de7-4335-a720-ae20bacacd6a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiliyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5fbfc655-fea9-4925-8b87-01b7cf884201 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕilu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5651180d-dbde-46b0-ac0c-f39c7c7e63d2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilu" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc814de59-682b-474f-8dc0-66ad2dd3056a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕilu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID9a4e5d68-8656-425b-a8d1-09033e732984 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID60d109cf-c946-40b8-909f-4db4978edbb7 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID50642a4c-dec8-4412-9bef-d1a5862c99c5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕiluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6787aa49-322c-4ccc-9c8c-1a77f32a0b13 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID4cd2aa0e-49bd-4438-9f5f-4d3d0c565898 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID431cc1f2-b2d6-4756-96b3-40fed328a29c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕilaʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb350f040-f228-4e7c-8761-2ea7ab51b2ea a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID98bfd562-77ab-4def-ab1b-e61334592efd a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕalu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID9c7146d9-0d93-4dfb-91ab-85204be89019 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb7c0f136-2944-42e2-a451-dab0ec311042 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaliyna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDcc8c9648-3d02-4a6f-aa12-f5a2a2154da4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕalu" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDddd4f5e8-1d97-4784-893e-212ca7168196 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalu" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID7529cd53-a309-4bd8-95b3-68ee080fa517 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕalu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID038f6320-2b95-4a43-8e90-d5d9ec67ab1c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID4c95e89a-ff5f-4625-abd2-db504a69ad64 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID3a45c247-dfc6-43fd-bf46-781dac48c400 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕaluwna" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDafb54237-9c8e-46d1-ab62-52da1ace4e09 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0e9b5e02-407d-4361-ab50-7f55abb203a3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌni" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDe738dcc2-f4a2-47cc-ab38-1327a83745ad a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕalaʌni" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc23d9fc3-d313-46b8-80d7-1f1cb29f0b55 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌni" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID39e7f1fd-3b45-4851-9ce8-617eae7feb62 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕil" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDceaed5b1-73b1-4537-a7f4-2b724fd3c006 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5c663325-6ae7-4181-ad6d-6342691abb6e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0233f716-fa9f-461a-b9d5-2ba4297de3f1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕil" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc4487a72-eca1-4f65-b9e4-4a7c57cff49e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕil" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID012e612b-9634-4331-a911-e32329eae8f7 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕil" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID9004c80f-2e42-40d5-9d5c-b632eb42fee4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID8c5b8095-7ccf-47bf-b129-d3ffe4622019 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID443137fa-df6d-45d4-8942-918243577966 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID04176516-0704-4634-ad40-686a3ff542c3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDb7cb5095-b140-418e-9931-b259726b154e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6bbf7073-5879-41ac-a7a4-339833cc90f4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDdc2b5d23-0152-477c-9877-3b174ed8fdc1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6a16dacc-fa6f-4495-ac9b-b2d2b8800a58 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕal" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID928a556e-7937-4ba3-8643-61cc5d8f55f9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕal" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDbe1b9504-d7ec-481e-85f3-9bde2ec82497 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa44c4cfe-7074-4f08-b9e2-eb21f6014d02 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕal" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID50c91f12-e3ca-4d4e-b509-b4afb25a5d39 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕal" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID04f0eca2-7a98-4c32-baa4-1af6064304fb a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕal" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd3b9589f-f72e-4c15-bb49-879d1cd8cf78 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5e949dc9-011f-43cb-9984-018328483dcf a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID658556c7-2cca-455f-a42b-331aa2d41bc6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID4e6bf0d5-12d3-4cce-8853-3ed2060486c5 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDfb557922-e578-456e-9811-af728074c537 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDf29e87c5-4409-4a61-aefc-005511399858 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID42a67b82-9bca-45e8-9893-f772dc663fea a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Jussive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID432d3dde-63c6-419f-b53a-3374c91e7396 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕila" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID5c1993da-7c9a-4f7a-9097-d62c957e51e3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID52af112a-ddaf-4796-9383-e9cdfb6f5d27 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDd2361467-a58b-4b93-9cad-f9e080824ded a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID9d31485e-d745-4cf2-bd18-8cdddd9a5f35 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕila" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa5c3bf13-078b-4eaa-a1e5-ac66fe11cd0d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕila" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0140564e-dcc3-4ed6-ab9a-f5ebc1878c46 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID3d03d1e9-96fa-469c-95b8-0761ed62b096 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc429cac4-2048-4ae8-a993-7a9f92bab094 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID34250154-e462-4920-b6b1-435ef0be2656 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID46dfe823-e5e0-4920-a161-6acd77c50a50 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDa1cd5001-3131-4346-9c26-1d3ecb14fa58 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDe26f2c62-2776-4fda-a952-23c85c6d23f0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕilaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDcb8129f1-72fe-4fe9-b0de-73d97ece91a6 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "ʕufaʌʕala" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDccc00c3e-1278-4459-a58f-2d93bcac9690 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID72f28070-2aa6-4a42-a371-beffc6599111 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaliy" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID3382bdf7-2ab7-4183-95e9-ebbb3efd8eec a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID1054b464-23d2-4683-b4b0-f4ac789f17ab a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕala" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDac3bfc63-72f6-4ca3-be35-35c8da024996 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "nufaʌʕala" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID1e6e71a7-88e0-485e-9032-fffab7f4129d a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID6fbe2a58-8787-4539-9987-a02b0d793851 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDeebcece2-8c8c-49cb-9ccb-08ccd4a4992b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDacd2ebf3-1f1c-4f75-bd76-d5ba9df7aace a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID709a126f-ee31-4454-bdc5-1f91018d216f a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:ID0121c2af-f02c-4bf9-8909-b0db4ccca29e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "yufaʌʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDc8a8b6ff-3000-4359-a47f-e25174fe6cca a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "tufaʌʕalaʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Nonpast ;
+	arb:mood arb:Subjunctive ;
+	arb:aspect arb:Imperfect ;
+	.
+
+aama:IDcb5d0f13-5f22-4463-99f1-7e97b098b225 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕaltu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID9837db69-1bc2-4cf6-90e4-e938f0cb6df3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDa6c2b40e-b02d-40a7-9abc-88e13440bf37 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDb779d1de-f43c-449a-9a3f-4577db018411 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕala" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID41304721-170c-4123-93b2-abec8469ba9a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID2c27ae0c-202b-485b-84f5-d9b578475153 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕaltum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDa97e0559-0fdf-463b-857c-793a32d26568 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕaltunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDf22b3e30-44bb-4a39-a1a5-87e889a419f7 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕaluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID0175ae8b-1f32-44b3-b599-451f9672025a a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalfa" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID135e9eae-8eee-4ec8-bcf2-a21d51c9a361 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕaltumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID9970beaa-e82a-4c55-8b6a-f99e078632ed a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDd74b2b04-525e-4b6f-a6bd-25d0d9edbc01 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "faʌʕalataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Active ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID68aefee4-6f2f-4755-a90c-01ca27282a60 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltu" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID56cbb387-67b4-499e-8c34-fd5717f56fc1 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilta" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID6ac66356-568b-4f95-aca4-e33dae844486 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilti" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDe83f180a-d19e-4eb0-acf4-a8607c7dfcda a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕila" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDd16ad97b-4585-4c8c-aca3-3958a5126e71 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilat" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Singular ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID1c310ab7-76d2-43f7-9d60-2da2f616b241 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilnaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person1 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDacb8c38a-727b-4a20-bb00-bb2f957bc59c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltum" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID0b2e7f4b-92d5-40ef-a9e4-1987493dfd26 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltunna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person2 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDa97606ac-dcc9-41a8-a1b3-060a5156ed8b a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiluw" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDba05d6bf-d724-4626-b926-e19c2a46c16e a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilna" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Plural ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID753105d8-d27e-435c-ad00-5d3e0f23c057 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕiltumaʌ" ;
+	arb:gender arb:Common ;
+	arb:person arb:Person2 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:IDb5826e45-03c4-4d68-a3f8-09f6098517e4 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilaʌ" ;
+	arb:gender arb:Masc ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+aama:ID2c894453-bf13-4a50-a489-9a07fd422e77 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3-fʕl ;
+	arb:vmorphClass arb:Finite ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:token "fuʕʕilataʌ" ;
+	arb:gender arb:Fem ;
+	arb:person arb:Person3 ;
+	arb:number arb:Dual ;
+	arb:voice arb:Passive ;
+	arb:tam arb:Past ;
+	arb:mood arb:Indicative ;
+	arb:aspect arb:Perfect ;
+	.
+
+#TERMCLUSTER:  arabic-Vform3Infinitive-fʕl
+
+arb:arabic-Vform3Infinitive-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform3Infinitive-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDe256091f-2c83-49c5-ba22-5e220086662c a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Infinitive-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "mufaʌʕalaħ" ;
+	arb:infinitiveVar arb:Infinitive1 ;
+	.
+
+aama:ID3f51f116-1ec5-43b9-8a2c-3c1fc56047cc a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Infinitive-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "fiʕaʌl" ;
+	arb:infinitiveVar arb:Infinitive2 ;
+	.
+
+#TERMCLUSTER:  arabic-Vform3Participloe-fʕl
+
+arb:arabic-Vform3Participloe-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform3Participloe-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDc8261bb7-55a9-4e8d-9435-e13e31d5dbd0 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:voice arb:Active ;
+	arb:token "mufaʌʕil" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Singular ;
+	.
+
+aama:ID4170a326-e02b-4f76-966a-0186d1b2e8b2 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:voice arb:Active ;
+	arb:token "mufaʌʕilaħ" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Singular ;
+	.
+
+aama:IDaf17e443-ab95-4823-afad-b24d66e575d9 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:voice arb:Active ;
+	arb:token "mufaʌʕilûna" ;
+	arb:gender arb:Masc ;
+	arb:number arb:Plural ;
+	.
+
+aama:IDa8fa9400-b4ca-4927-b309-d3067657fed3 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3Participloe-fʕl ;
+	arb:derivedStem arb:Form3 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Participle ;
+	arb:voice arb:Active ;
+	arb:token "mufaʌʕilât" ;
+	arb:gender arb:Fem ;
+	arb:number arb:Plural ;
+	.
+
+#TERMCLUSTER:  arabic-Vform3nfiitive-fʕl
+
+arb:arabic-Vform3nfiitive-fʕl a aamas:Termcluster ;
+	rdfs:label "arabic-Vform3nfiitive-fʕl" ;
+	aamas:lang aama:Arabic ;
+	rdfs:comment "GR2010" 
+	.
+
+aama:IDfe34e21f-8563-4344-a318-46ac263eff85 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3nfiitive-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "tafʕîl" ;
+	arb:gender arb:Masc ;
+	arb:infinitiveVar arb:Infinitive1 ;
+	.
+
+aama:IDfa3b6d26-3daf-4b65-9a94-318cb7266e78 a aamas:Term ;
+	aamas:lang aama:Arabic ;
+	aamas:memberOf arb:arabic-Vform3nfiitive-fʕl ;
+	arb:derivedStem arb:Form2 ;
+	aamas:lexeme aama:Arabic-fʕl ;
+	arb:pos arb:Verb ;
+	arb:vmorphClass arb:Infinitive ;
+	arb:token "tafʕilaħ" ;
+	arb:gender arb:Fem ;
+	arb:infinitiveVar arb:Infinitive2 ;
+	.
