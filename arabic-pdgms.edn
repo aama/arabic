@@ -5,8 +5,7 @@
  :datasource "Thackston11994"
  :geodemoURL "http://www.ethnologue.com/language/arb"
  :geodemoTXT "Classical Arabic is the standardized form that arose out of the myriad varieties of Central Semitic spoken in the Arabian peninsula in the early centuries CE. Heavily influenced by the language of the Qur'an, it was and remains the language of religion, scholarship, and educated communication since the rise of Islam. In its current form it is referred to as Modern Standard Arabic."
- :schemata {:lexeme [:fʕl  :nsr],
- :case [:Common :GenObj :Nominative :Oblique],
+ :schemata { :case [:Common :GenObj :Nominative :Oblique],
  :deixis [:Far :Near],
  :derivedStem [:Base :D :L],
  :gender [:Common :Fem :Masc],
@@ -25,8 +24,10 @@
           :synsemClass [:aspect :case :deixis :derivedStem :mood :polarity :pos :proClass :state :tam :voice],
           :inflClass [:infinitiveVar :rootClass],
           :otherClass []}
- :lexemes{:fʕl {:lemma "fʕl", :gloss "do", :pos :Verb, :rootClass :CCC},
-          :nsr {:lemma "nṣr", :gloss "help", :pos :Verb, :rootClass :CCC}}
+ :lexemes {
+:fʕl   {:pos :Verb, :lemma "fʕl", :gloss "do", :rootClass :CCC},
+:nsr   {:pos :Verb, :lemma "nṣr", :gloss "help", :rootClass :CCC},
+}
  :termclusters [
                 {:label "arabic-Vform1ActImperf-nsr"
                  :note "GR2010"
